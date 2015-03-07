@@ -65,3 +65,6 @@
 		（2）. {insert_scripts files='common.js'}	//主要是用来插入js文件
 		（3）. {insert name='名称' type=参数 id=参数}		//过调用includes/lib_insert.php文件中的模板显示函数。格式为insert_名称()
 
+
+
+3.函数库地址  include
