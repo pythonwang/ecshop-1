@@ -1,0 +1,24 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<?php
+$GLOBALS['smarty']->assign('promotion_goods', get_promote_goods2());
+?>
+			<ol class="hide">
+			<div class="hotsell">
+					<ul>
+                     <!--{foreach from=$promotion_goods item=goods name="promotion_foreach"}-->
+                    <li>
+						<div class="txt">
+							<p class="til"><a href="{$goods.url}" target="_blank">{$goods.short_style_name}</a></p>
+							<p class="msg"><a href="{$goods.url}#comment">已有{$goods.comment_count}人评论</a></p>
+							<p class="prc">
+           {$goods.promote_price}
+                            </p>
+							<p class="pri">市场价￥{$goods.market_price}</p>
+						</div>
+						<a href="{$goods.url}" target="_blank" alt="{$goods.name|escape:html}"><img src="{if $goods.thumb2 neq ''}{$goods.thumb2}{else}{$goods.thumb}{/if}" align="absmiddle" /></a></li>
+                     <!--{/foreach}-->
+                        
+					   			  </ul>
+					<div class="clear"></div>
+				</div>
+			</ol>

@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* 
+Name: goods.css
+For : http://www.hecha.cn/
+Date: 20110323  Sincol
+*/
+
+h1,h2,h3,h4,h5,h6{display: inline;font-size:14px;}
+.procls ul li.lix h3{font-size:12px; font-weight:normal;}
+.procls ul li h2 {
+	font-size: 12px;
+	font-weight: normal;
+}

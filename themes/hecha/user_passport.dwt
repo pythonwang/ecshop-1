@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+
+<link href="themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/user6.css" rel="stylesheet" type="text/css" />
+
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/user6.css" rel="stylesheet" type="text/css" />
+
+<link href="themes/hecha/themes/hechaV2.5/skin/green/style/default4.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/style/style_new.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/style/promain.css" rel="stylesheet" type="text/css" />
+
+
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,user.js,transport.js'}
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header2.lbi" --><!-- #EndLibraryItem -->
+
+<div class="blank"></div>
+<!--#登录界面 start-->
+<!-- {if $action eq 'login'} -->
+
+<div class="ebody">
+                <div class="usbox1">
+                    <div class="fo_bg">
+                        <img src="themes/hecha/themes/hechaV2.5/skin/tm6/images/user/bg4_2.jpg" />
+                    </div>
+                    <div class="right usform">
+                        <div class="list">
+                            <div class="title"><em></em><strong>用户登录</strong></div>
+                            <form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
+                            <ul style="height:290px;">
+                                <li class="crz">
+                                    <p class="f1">用户名：</p>
+                                    <p class="f3"><input name="username" type="text" class="inpx1" id="username" style="width:200px;"  value="" /></p>
+                                    <p class="f5">输入用户名</p>
+                                </li>
+                                <li class="crz">
+                                    <p class="f1">密　码：</p>
+                                    <p class="f3"><input name="password" type="password" class="inpx1" style="width:200px;" id="password" /></p>
+                                    <p class="f5">输入密码</p>
+                                </li>
+                    <!-- 判断是否启用验证码{if $enabled_captcha} -->
+                    <li class="crz">
+						<p class="f1">验证码：</p>
+						<p class="f4" style="width: 100px;"><input name="captcha" type="text" class="inpx1" style="width:80px;" /></p>
+                        <p class="f4" style="width: 100px;padding-top:5px;"><img src="captcha.php?is_login=1&{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" id="showcaptcha"/></p>
+						<p class="f4" style="width: 100px;line-height:30px;"><span onclick="document.getElementById('showcaptcha').src='captcha.php?'+Math.random()"  class="bluetxt"  style="text-decoration:underline; cursor:pointer">看不清？换一张</span></p>
+					</li>
+                    <!--{/if}-->
+                                <li class="crz">
+                                    <p class="f1">&nbsp;</p>
+                                    <p class="f3"  style="width:140px;"><input name="submit" type="image" src="themes/hecha/themes/hechaV2.5/skin/tm6/images/user/login1.gif" /></p>
+                                    <p class="f3 k1" style="width:80px;"><a href="user.php?act=register">免费注册</a></p>
+                                </li>
+                                <li class="tx1" style="padding-top:20px;">忘了密码？</li>
+                                <li class="tx2 crz">
+                                    <p class="k1"><a href="user.php?act=qpassword_name">密码问题找回密码</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="user.php?act=get_password">注册邮件找回密码</a></p>
+                                </li>
+                            </ul>
+            <input type="hidden" name="act" value="act_login" />
+            <input type="hidden" name="back_act" value="{$back_act}" />
+                                </form>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+<!--{/if}-->
+<!--#登录界面 end-->
+
+<!--*会员注册界面 start-->
+    <!--{if $action eq 'register'}-->
+    <!-- {if $shop_reg_closed eq 1} -->
+    <div class="ebody">
+      <div class="usBox_2 clearfix">
+        <div class="f1 f5" align="center">{$lang.shop_register_closed}</div>
+      </div>
+    </div>
+    <!-- {else} -->
+    {insert_scripts files='utils.js'}
+
+        <div class="ebody">
+	<div class="usbox1">
+	  <div class="fo_bg">
+         <img src="themes/hecha/themes/hechaV2.5/skin/tm6/images/user/bg4_0.jpg" />
+      </div>
+		<div class="right usform">
+			<div class="list">
+				<div class="title"><strong>注册新用户</strong></div>
+            <form action="user.php" method="post" name="formUser" onsubmit="return register();">
+				<ul style="height:290px;" class="reg">
+					<li class="crz">
+						<p class="f1">用户名：</p>
+						<p class="f4"><input name="username" type="text" class="inpx1" style="width:170px;"  id="username" onblur="is_registered(this.value);"/></p>
+						<p class="f6 inf"><span id="username_notice">*请输入用户名</span></p>
+					</li>
+                    <li class="crz">
+						<p class="f1">Email：</p>
+						<p class="f4"><input name="email" type="text" class="inpx1" style="width:170px;"  id="email" onblur="checkEmail(this.value);"/></p>
+						<p class="f6 inf"><span id="email_notice">*请输入Email地址</span></p>
+					</li>
+					<li class="crz">
+						<p class="f1">密　码：</p>
+						<p class="f4"><input name="password" type="password" class="inpx1" style="width:170px;"  id="password1" onblur="check_password(this.value);" onkeyup="checkIntensity(this.value)"/></p>
+						<p class="f6 inf"><span id="password_notice">*请输入密码</span></p>
+					</li>
+					<li class="crz">
+						<p class="f1">确认密码：</p>
+						<p class="f4"><input name="confirm_password" type="password" class="inpx1" style="width:170px;" id="confirm_password" onblur="check_conform_password(this.value);"/></p>
+						<p class="f6 inf"><span id="conform_password_notice">*请重复一下上面密码</span></p>
+					</li>
+                    <!-- 判断是否启用验证码{if $enabled_captcha} -->
+					<li class="crz">
+						<p class="f1">验证码：</p>
+						<p class="f4" style="width: 100px;"><input name="captcha" type="text" class="inpx1" style="width:80px;" /></p>
+                                                <p class="f4" style="width: 100px;padding-top:5px;"><img src="captcha.php?{$rand}" alt="rand_num" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?'+Math.random()" id="showcaptcha" /></p>
+                                                <p class="f4" style="width: 100px;line-height:30px;"><span onclick="document.getElementById('showcaptcha').src='captcha.php?'+Math.random()"  class="bluetxt"  style="text-decoration:underline; cursor:pointer">看不清？换一张</span></p>
+						
+					</li>
+                    <!--{/if}-->
+					<li class="crz tx3" style="display:none;">
+						<p class="f1">&nbsp;</p>
+						<p class="inp"><input name="agreement" type="checkbox" value="1" checked="checked" /></p><p>{$lang.agreement}</p>
+					</li>
+					<li class="crz">
+						<p class="f1">&nbsp;</p>
+						<p class="f3" style="width:140px;">
+                        <input name="Submit" type="image" src="themes/hecha/themes/hechaV2.5/skin/tm6/images/user/reg1.gif" /></p>
+               
+                       <p class="f3 k1" style="width:80px;"><a href="user.php">直接登入</a></p>
+					</li>
+					<li class="tx4">您提供的所有信息，绝不会被公开或用作其他用途，请放心填写。</li>
+				</ul>
+          <input name="act" type="hidden" value="act_register" >
+          <input type="hidden" name="back_act" value="{$back_act}" />
+                        </form>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+        </div>
+
+
+<!--{/if}-->
+<!--{/if}-->
+<!--#会员注册界面 end-->
+
+<!--*找回密码界面 -->
+    <!--{if $action eq 'get_password'} -->
+    {insert_scripts files='utils.js'}
+    <script type="text/javascript">
+    {foreach from=$lang.password_js item=item key=key}
+      var {$key} = "{$item}";
+    {/foreach}
+    </script>
+    
+<div class="m_right all">
+					<div class="m_box">
+						<h3 class="m_title">忘记密码</h3>
+						<!--<div class="psw_step1">
+						</div>-->
+						<div class="regcontain forpsw">
+							<div class="regtitle">
+								注册邮件找回密码 
+							</div>
+							<div class="oo_body1">
+								<p class="psw_txt">请填写您在注册时申请的用户名和 E-Mail 地址</p>
+								<form action="user.php" method="post" name="getPassword" onsubmit="return submitPwdInfo();">
+								<div class="psw_input">
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户名：
+									<input name="user_name" type="text" size="30"  class="input" style=" width:205px"  /><br>
+                                   
+                                    E-mail地址：
+                                    <input name="email" type="text" size="30"  class="input" style=" width:205px"  />
+                                    
+									<input type="hidden" name="act" value="send_pwd_email" />
+									<input type="submit" name="submit" value="提 交" class="mbtn_7" />
+                                    <input name="button" type="button" onclick="history.back()" value="{$lang.back_page_up}" class="mbtn_7" />
+								</div>
+								</form>
+								<p class="psw_txt">
+									· 如果您忘记密码、忘记注册时使用的E-mai地址，或注册时使用的E-mail地址已经不再使用，我们建议您<a href="user.php?act=register" class="moreintro">创建一个新帐户</a>。
+								</p>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+
+<!--{/if}-->
+
+<!--*通过问题找回密码的确认找回账号界面 -->
+    <!--{if $action eq 'qpassword_name'} -->
+<div class="m_right all">
+					<div class="m_box">
+						<h3 class="m_title">忘记密码</h3>
+						<!--<div class="psw_step1">
+						</div>-->
+						<div class="regcontain forpsw">
+							<div class="regtitle">
+								密码问题找回密码
+							</div>
+							<div class="oo_body1">
+								<p class="psw_txt">请输入您注册的用户名以取得您的密码提示问题。</p>
+								<form action="user.php" method="post">
+								<div class="psw_input">
+									用户名：
+									<input name="user_name" type="text" size="30"  class="input" style=" width:205px"  />
+                                     
+									<input type="hidden" name="act" value="get_passwd_question" />
+									<input type="submit" name="submit" value="提 交" class="mbtn_7" />
+                                    <input name="button" type="button" onclick="history.back()" value="{$lang.back_page_up}" class="mbtn_7" />
+								</div>
+								</form>
+								<p class="psw_txt">
+									· 如果您忘记密码、忘记注册时使用的E-mai地址，或注册时使用的E-mail地址已经不再使用，我们建议您<a href="user.php?act=register" class="moreintro">创建一个新帐户</a>。
+								</p>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+<!--{/if}-->
+
+<!--*根据输入账号显示密码问题界面 -->
+    <!--{if $action eq 'get_passwd_question'} -->
+<div class="m_right all">
+					<div class="m_box">
+						<h3 class="m_title">忘记密码</h3>
+						<!--<div class="psw_step1">
+						</div>-->
+						<div class="regcontain forpsw">
+							<div class="regtitle">
+								密码问题找回密码 
+							</div>
+							<div class="oo_body1">
+								<p class="psw_txt">请根据您注册时设置的密码问题输入设置的答案</p>
+								<form action="user.php" method="post">
+								<div class="psw_input">
+                                密码提示问题：{$passwd_question}<br>
+									{$lang.passwd_answer}：
+									<input name="passwd_answer" type="text" size="30"  class="input" style=" width:180px"  />
+                                   <!-- 判断是否启用验证码{if $enabled_captcha} -->
+                                    {$lang.comment_captcha}：
+                                    <input name="captcha" type="text" size="10"  class="input" style=" width:80px"  />
+                                    <img src="captcha.php?is_login=1&{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" />
+                                    <br>
+                                   <!--{/if}--> 
+									<input type="hidden" name="act" value="check_answer" />
+									<input type="submit" name="submit" value="提 交" class="mbtn_7" />
+                                    <input name="button" type="button" onclick="history.back()" value="{$lang.back_page_up}" class="mbtn_7" />
+								</div>
+								</form>
+								<p class="psw_txt">
+									· 如果您忘记密码、忘记注册时使用的E-mai地址，或注册时使用的E-mail地址已经不再使用，我们建议您<a href="user.php?act=register" class="moreintro">创建一个新帐户</a>。
+								</p>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+<!--{/if}-->
+
+<!-- {if $action eq 'reset_password'} -->
+    <script type="text/javascript">
+    {foreach from=$lang.password_js item=item key=key}
+      var {$key} = "{$item}";
+    {/foreach}
+    </script>
+<div class="m_right all">
+					<div class="m_box">
+						<h3 class="m_title">忘记密码</h3>
+						<!--<div class="psw_step1">
+						</div>-->
+						<div class="regcontain forpsw">
+							<div class="regtitle">
+								密码问题找回密码 
+							</div>
+							<div class="oo_body1">
+								<p class="psw_txt">请填写新的密码</p>
+								<form action="user.php" method="post" name="getPassword2" onSubmit="return submitPwd()">
+								<div class="psw_input">
+									&nbsp;&nbsp;&nbsp;&nbsp;{$lang.new_password}：
+									<input name="new_password" type="password" size="30"  class="input" style=" width:205px"  /><br>
+                                   
+                                    {$lang.confirm_password}：
+                                    <input name="confirm_password" type="password" size="30"  class="input" style=" width:205px"  />
+                                    
+            <input type="hidden" name="act" value="act_edit_password" />
+            <input type="hidden" name="uid" value="{$uid}" />
+            <input type="hidden" name="code" value="{$code}" />
+									<input type="submit" name="submit" value="确 定" class="mbtn_7" />
+								</div>
+								</form>
+								<p class="psw_txt">
+									· 如果您忘记密码、忘记注册时使用的E-mai地址，或注册时使用的E-mail地址已经不再使用，我们建议您<a href="user.php?act=register" class="moreintro">创建一个新帐户</a>。
+								</p>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+<!--{/if}-->
+<!--#找回密码界面 end-->
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer2.lbi" --><!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+{foreach from=$lang.passport_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var username_exist = "{$lang.username_exist}";
+</script>
+</html>

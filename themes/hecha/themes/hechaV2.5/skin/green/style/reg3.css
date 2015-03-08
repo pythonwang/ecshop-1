@@ -1,0 +1,248 @@
+.body3 {
+	zoom:1;
+}.reg3_title1 {
+	line-height: 29px;
+	background-image: url(../images/reg3/title1.gif);
+	background-repeat: repeat-x;
+	height: 29px;
+	font-size: 14px;
+	color: #fff;
+	padding-right: 12px;
+	padding-left: 12px;
+	padding-top: 2px;
+}
+.reg3_title1 p {
+	font-weight: bold;
+	font-size: 12px;
+}
+.reg3_title1 p strong{
+	color: #000;
+}
+.reg3_title1 p small {
+	font-family: "宋体";
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.reg3_box {
+	zoom:1;
+	padding-top: 20px;
+}
+.reg3_box ol {
+	background-image: url(../images/reg3/reg3_bg1.gif);
+	background-repeat: no-repeat;
+	height: 462px;
+	width: 468px;
+	zoom:1;
+}
+.reg3_box ol .title {
+	padding-top: 15px;
+	margin-right: 18px;
+	margin-left: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #68b82e;
+	padding-bottom: 10px;
+}
+.reg3_box ol dl {
+	clear: both;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 13px;
+	*padding-top: 10px;
+}
+.reg3_box ol dt {
+	font-size: 14px;
+	float: left;
+	line-height: 29px;
+	text-align: right;
+}
+.reg3_box ol dd small {
+	color: #6a6a6a;
+	font-size: 12px;
+}
+.reg3_box ol dd {
+	line-height: 29px;
+}
+.reg3_box ol dl strong{
+	font-size: 14px;
+}
+.reg3_box ol dd p{
+	line-height: 17px;
+	color: #939393;
+	padding-top: 6px;
+}
+.reg3_box ol dd p.l1 {
+	text-align: right;
+	padding-right: 50px;
+}
+.reg3_box ol dd p.l1 a {
+	color: #3a93d7;
+	text-decoration: underline;
+}
+
+.reg3_box .inp1  {
+	line-height: 27px;
+	font-size: 14px;
+	background-image: url(../images/reg3/inp_bg1.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 27px;
+	padding-right: 5px;
+	padding-left: 5px;
+	border: 1px solid #cfcfcf;
+	width: 200px;
+}
+.reg3_box ol dd .sub {
+	background-image: url(../images/reg3/inp_bg2.gif);
+	float: left;
+	height: 70px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin-right: 10px;
+}
+.reg3_box ol dd .reg {
+	font-size: 14px;
+	padding-left: 15px;
+	line-height: 35px;
+}
+.reg3_box ol dd .reg a {
+	color: #0159a2;
+	text-decoration: underline;
+}
+.reg3_box ol dd .red {
+	color: #ff0000;
+	font-family: "宋体";
+	padding-left: 5px;
+}
+
+
+
+.reg3_box ol.t1 dt{
+	width: 100px;
+}
+.reg3_box ol.t1 dd{
+	margin-left: 105px;
+}
+.reg3_box ol.t2 dt{
+	width: 180px;
+}
+.reg3_box ol.t2 dd{
+	margin-left: 185px;
+}
+.reg3_box ol.t3 dt{
+	width: 100px;
+}
+.reg3_box ol.t3 dd{
+	margin-left: 105px;
+}
+.reg3_box ol.t1 {
+	float: left;
+	position: relative;
+
+}
+.reg3_box ol.t1 .kfinfo {
+	line-height: 22px;
+	height: 22px;
+	position: absolute;
+	right: 25px;
+	bottom: 12px;
+}
+.reg3_box ol.t1 .kfinfo a {
+	color: #3a93d7;
+	text-decoration: underline;
+}
+.reg3_box .xlog {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #dbdbdb;
+	width: 440px;
+	overflow: hidden;
+}
+.reg3_box .xlog .til {
+	padding-bottom: 5px;
+	padding-left: 12px;
+	font-size: 14px;
+}
+
+.reg3_box .xlog p {
+	float: left;
+	padding-left: 30px;
+	line-height: 16px;
+	height: 16px;
+	background-image: url(../images/reg3/login_ico.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #dbdbdb;
+	margin-left: -1px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-right: 12px;
+}
+.reg3_box .xlog p.ico2 {
+	background-position: 10px -16px;
+}
+.reg3_box .xlog p.ico3 {
+	background-position: 10px -32px;
+}
+.reg3_box .xlog p.ico4 {
+	background-position: 10px -48px;
+}
+.reg3_box .xlog a {
+	color: #0159a2;
+}
+.reg3_box .xlog a:hover {
+	color: #3c9c37;
+	text-decoration: underline;
+}
+
+
+
+
+.reg3_box ol.t2 {
+	float: right;
+
+}
+.reg3_box ol.t3 {
+	float: right;
+
+}
+.reg3_box ol dl.s1 {
+}
+.reg3_box ol dl.s1 dt {
+	clear: both;
+	float: none;
+	padding-left: 45px;
+	width: auto;
+	text-align: left;
+}
+.reg3_box ol dl.s1 dd {
+	clear: both;
+	float: none;
+	width: auto;
+	padding-top: 5px;
+	margin-left: 0px;
+	padding-left: 45px;
+}
+.reg3_box ol dl.s1 dd a {
+	color: #005aa0;
+}
+
+.reg3_box ol dl.s1 dd span {
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+	line-height: 16px;
+	height: 16px;
+	padding-left: 22px;
+}
+.reg3_box ol dl.s1 dd span.i1 {
+	background-image: url(../images/reg3/taobao.gif);
+}
+.reg3_box ol dl.s1 dd span.i2 {
+	background-image: url(../images/reg3/sina.gif);
+}

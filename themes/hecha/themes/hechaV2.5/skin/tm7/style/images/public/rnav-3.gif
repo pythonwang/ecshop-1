@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" content="和茶网 v1.1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta http-equiv=refresh content="10;url=http://www.hecha.cn/sitemap.php">
+<title>页面出错_和茶网-原产地 好品牌-网上购茶首选平台</title>
+<link rel="shortcut icon" href="http://www.hecha.cn/favicon.ico" />
+<link rel="icon" href="http://www.hecha.cn/animated_favicon.gif" type="image/gif" />
+<link href="http://www.hecha.cn/themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/style/goods_list.css" rel="stylesheet" type="text/css" />
+<link href="http://www.hecha.cn/themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm5/style/home.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="themes/hechaV2.5/js/general.js"></script>
+<script type="text/javascript" src="themes/hechaV2.5/js/transportation.js"></script>
+<script type="text/javascript" src="themes/hechaV2.5/js/member.js"></script>
+<script type="text/javascript" src="themes/hechaV2.5/js/cookies.js"></script>
+<script type="text/javascript" src="themes/hechaV2.5/js/utility.js"></script>
+<script type="text/javascript" src="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/js/jquery.libs-1.2.6pack.js"></script>
+<script type="text/javascript" src="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/js/effect_commonv3.js"></script>
+<script type="text/javascript" src="http://www.hecha.cn/js/index_url.js"></script>
+<script type=text/javascript src="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/js/common.js"></script>
+<style type="text/css">.errorx {height: 370px;background-image: url(themes/hechaV2.5/skin/tm5/images/404bg.gif);background-repeat: no-repeat;}.errorx dl {color: #560e0f;padding-left: 400px;padding-top: 100px;}.errorx dt {font-size: 14px;line-height: 30px;font-weight: bold;padding-bottom: 10px;}.errorx dd {line-height: 24px;}.errorx dl a {color: #560e0f;}.errorx dl a:hover {text-decoration: underline;}.errorx dl small {color: #a6937c;padding-right: 5px;padding-left: 5px;}</style>
+</head>
+<body>
+<div class="top6">
+	<div class="ebody">
+		<span id="qq_cb"></span>
+		<p class="left">
+		<span id="J_TaobaoBar">
+		</span>
+		<span id="is_show_login_out">
+		</span>
+		<span id="loginInfo">
+		<span class="la">
+		<a href="http://www.hecha.cn/myaccount.php?act=login" rel="nofollow" >登录</a><small>|</small>
+		<a href="http://www.hecha.cn/member.php?act=register&back_act=http://www.hecha.cn/" rel="nofollow" >免费注册</a><small>|</small>
+		</span>
+		</span>
+		<a href="http://www.hecha.cn/myaccount.php?back_act=myaccount.php" rel="nofollow" >我的账户</a>
+		</p>
+		<p class="rlink">
+			<a href="http://www.hecha.cn/myaccount.php?back_act=myaccount.php" rel="nofollow" >我的订单</a><small>|</small>
+			<a href="http://www.hecha.cn/ol/" target="_blank" rel="nofollow" >在线客服</a><small>|</small>
+			<a href="http://www.hecha.cn/about/hc-about.html">关于和茶</a><small>|</small>
+			<a href="http://www.hecha.cn/help/">帮助中心</a>
+		</p>
+		<dl><dt><a href="http://www.hecha.cn/cart.php" rel="nofollow" >购物车<strong><span  id="cart">0</span></strong>件<!--[if gte IE 7]><!--></a><!--<![endif]--><!--[if lte IE 6]><table><tr><td><![endif]--></a>
+			<ul id="cart_detail">
+			<li>购物车中没有商品</li>
+			</ul>
+		<!--[if lte IE 6]></td></tr></table></a><![endif]--></dt></dl>
+	</div>
+</div>
+<script type=text/javascript src="http://www.hecha.cn/js/vist.js"></script>
+<script language="javascript">
+	jQuery.post("http://"+document.domain+"/index4_ajax.php",{act:'loginInfoNew'}, function(dealstr){	
+				var allArrN			=new Array();
+				allArrN				= dealstr.split("|||***|||");
+		
+				var allArr			=new Array();
+				
+				
+				var returnstrarray	= new Array();
+				var loginInfo='';
+				var cartInfo='';
+		
+				returnstrarray		= allArrN[0].split("||*||");
+				loginInfo			= returnstrarray[0];
+				cartInfo			= returnstrarray[1];
+				cartInfo_detail		= returnstrarray[2];
+				qq_cb_str			= returnstrarray[3];
+		
+				document.getElementById('loginInfo').innerHTML=loginInfo;
+				document.getElementById('cart').innerHTML=cartInfo;
+				document.getElementById('cart_detail').innerHTML=cartInfo_detail;
+				if( qq_cb_str != '' && qq_cb_str != '-1' )
+				{
+					document.getElementById('qq_cb').innerHTML='<div class="top6"><div class="ebody"><div style="float:left">'+qq_cb_str+'</div><div style="float:right;cursor:hand; color:#FF0000; text-decoration:underline" onclick="qqcb_close()">关闭</div></div></div>';
+				}
+			});
+			
+	var keywords_array = new Array();
+	var is_show_keywords	= 0;
+	var now_keywords_num	= 0;
+	function go_show_key_words()
+	{
+		if( event.keyCode == 38 || event.keyCode == 40 )
+		{
+			if( keywords_array.length > 0 )
+			{
+				total_keywords_num	= keywords_array.length - 1;
+				if( event.keyCode == 38 )
+				{
+					now_keywords_num	= now_keywords_num - 1;
+					if( now_keywords_num < 1 )
+					{
+						now_keywords_num = total_keywords_num;
+					}
+				}
+				
+				if( event.keyCode == 40 )
+				{
+					now_keywords_num	= now_keywords_num + 1;
+					if( now_keywords_num > total_keywords_num )
+					{
+						now_keywords_num = 1;
+					}
+				}
+				
+				document.searchForm.keywords.value = keywords_array[now_keywords_num];
+				focus_key_words(now_keywords_num);
+			}
+			return false
+		}
+		//return false;
+		keywords_value	= document.searchForm.keywords.value;
+		if( keywords_value != ''  )
+		{
+			jQuery.post("http://"+document.domain+"/get_show_key_words.php",{keywords:keywords_value}, function(dealstr)
+			{
+				//alert(dealstr);
+				//return false;
+				
+				eval(dealstr);
+				if( keywords_array['show_str'] != '' )
+				{
+					jQuery("#show_key_words").html(keywords_array['show_str']);
+					document.getElementById('show_key_words').className = "block";
+				}	
+				else
+				{
+					jQuery("#show_key_words").html('');
+					document.getElementById('show_key_words').className = "none";
+				}
+				now_keywords_num	= 0;
+			});
+		}
+		else
+		{
+			document.getElementById('show_key_words').className = "none";
+			now_keywords_num	= 0;
+		}
+	}
+	
+	function focus_key_words(focus_num)
+	{
+		if( keywords_array.length > 0 )
+		{
+			total_keywords_num	= keywords_array.length - 1;
+			for( i=1; i<=total_keywords_num; i++ )
+			{
+				if( i == focus_num )
+				{
+					document.getElementById('show_key_words_col_'+i).className='hover';
+				}
+				else
+				{
+					document.getElementById('show_key_words_col_'+i).className='';
+				}
+			}
+		}
+	}
+	
+	function hidden_key_words()
+	{
+		if( is_show_keywords == 0 )
+		{
+			document.getElementById('show_key_words').className='none';
+		}
+	}		
+</script>
+<script type="text/javascript" src="/js/cookies.js"></script>
+<script type="text/javascript" src="http://www.hecha.cn/js/taobao.min.js" charset="gb2312" ></script>
+<script>
+       from_etao_user		= getCookie("etao_user");
+	   from_etao_user_name	= getCookie("etao_user_name");
+	   from_etao_user_islogin = getCookie("etao_user_islogin");
+	   if( from_etao_user_name == null ) 
+	   	from_etao_user_name = '';
+	   else
+	   	from_etao_user_name	=decodeURI(from_etao_user_name)
+	   if( from_etao_user == 1 )
+	   {
+		   Taobao.init({appKey: '12166207' ,nickName: from_etao_user_name});
+	   }	   
+		
+	    if( from_etao_user_islogin == 1 )
+		{
+			document.getElementById("is_show_login_out").innerHTML ='<a href="http://www.hecha.cn/member.php?act=login_out">[退出登录]</a>';
+		}
+</script>
+<script  type="text/javascript">
+var _bdhm_top = 0;
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+var _bdhm_tim = new Image(1,1);
+_bdhm_tim.id = "bdhmPerimg";
+_bdhm_tim.src = _bdhmProtocol + "hm.baidu.com/_tt.gif?si=5929d4f83ef0b1fad3dd9365bf2c00b4&rnd=" + Math.round(Math.random()*2147483647);
+_bdhm_tim.onload=function(){_bdhm_top = 1;}
+</script>
+<div class="header6_bg">
+<div class="ebody">
+	<div class="header6">
+			<div class="logo"><a href="http://www.hecha.cn/"><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm6/images/header/logo.gif" width="350" height="70" border="0" title="茶叶_茶具_保健茶_和茶网－原产地 好品牌-网上购茶首选平台" alt="茶叶_茶具_保健茶_和茶网－原产地 好品牌-网上购茶首选平台"/></a></div>
+			<div class="tel">
+			<p><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm6/images/header/ico_tel.gif" width="83" height="17" align="absmiddle" /></p>
+			<p>400-8899-379</p>
+			</div>
+		<div class="search">
+			<dl>
+				<form id="searchForm" name="searchForm" method="get" action="http://www.hecha.cn/search.php" onSubmit="if(document.searchForm.keywords.value==''){alert('请输入关键词!');document.searchForm.keywords.focus();return false;}" >
+				<dt><input name="keywords" id="sname" onfocus="this.select();" type="text" class="inp2" value="" onkeyup="go_show_key_words()" autocomplete="off" onblur="hidden_key_words()"/>
+					<ul id="show_key_words" class='none' onmousemove="is_show_keywords=1" onMouseOut="is_show_keywords=0">
+					</ul>
+				</dt>
+				<dd><input name="sub" type="image" src="http://www.hecha.cn/themes/hechaV2.5/skin/tm6/images/header/search_sub.gif"/></dd>
+				</form>
+			</dl>
+			<p>热门：<a href="http://www.hecha.cn/dahongpao_list.html">大红袍</a>
+			<a href="http://www.hecha.cn/tieguanyin_list.html">铁观音</a>
+			<a href="http://www.hecha.cn/xiaozhong_list.html">正山小种</a>
+			<a href="http://www.hecha.cn/longjing_list.html">西湖龙井</a>
+			<a href="http://www.hecha.cn/taiwanwulong_list.html">台湾乌龙</a></p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="menu6">
+	<div class="ebody">
+	<ul>
+		<li ><a href="http://www.hecha.cn"><span class="n1" title="首页">首页</span></a></li>
+		<li ><a href="http://www.hecha.cn/tieguanyin_list.html"><span class="n2" title="铁观音">铁观音</span></a></li>
+		<li ><a href="http://www.hecha.cn/longjing_list.html"><span class="n3" title="西湖龙井">西湖龙井</span></a></li>
+		<li ><a href="http://www.hecha.cn/puer_list.html"><span class="n4" title="普洱茶">普洱茶</span></a></li>
+		<li ><a href="http://www.hecha.cn/dahongpao_list.html"><span class="n5" title="大红袍">大红袍</span></a></li>
+		<li ><a href="http://www.hecha.cn/hongcha_list.html"><span class="n6" title="红茶">红茶</span></a></li>
+		<li ><a href="http://www.hecha.cn/baicha_list.html"><span class="n7" title="白茶">白茶</span></a></li>
+		<li ><a href="http://www.hecha.cn/lipincha_list.html"><span class="n8" title="礼品茶">礼品茶</span></a></li>
+		<li ><a href="http://www.hecha.cn/chaju_list.html"><span class="n9" title="精品茶具">精品茶具</span></a></li>
+                <li ><a href="http://www.hecha.cn/activity/wine_sale1301.php"><span class="n10" title="进口红酒">进口红酒</span></a></li>
+		<div class="clear"></div>
+	</ul>
+	<div class="rbox">
+		<p class="p1"><script type="text/javascript" src="http://www.hecha.cn/js/new_activity.js"></script></p>
+	</div>
+	<div class="clear"></div>
+	</div>
+</div><div class="abody">
+	<div class="line15"></div>
+	<div class="errorx">
+		<dl>
+			<dt>对不起，您要访问的页面暂时没有找到！</dt>
+			<dd>
+				<p><a href="sitemap.php">系统将在10秒后自动转入导航页。</a></p>
+				<p>您也可以访问：<a href="http://www.hecha.cn/" target="_blank">和茶网首页</a> <small>|</small> <a href="http://www.hecha.cn/" target="_blank">商品搜索</a> <small>|</small> <a href="http://www.hecha.cn/sitemap.php" target="_blank">网站地图</a> <small>|</small> <a href="http://www.hecha.cn/ol/">在线客服</a></p>
+			</dd>
+		</dl>
+	</div>
+</div>
+<!--<div class="abody actbox">
+	<div class="clear line10"></div>
+	<div class="xlist5">
+		<ul>
+			<li><a href="http://www.hecha.cn/activity/yitaohuodong.html" target="_blank"><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/act20110609/proe_1.jpg" width="310" height="122" align="absmiddle" /></a></li>
+			<li><a href="http://www.hecha.cn/activity/p1106.php" target="_blank"><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/act20110609/proe_2.jpg" width="310" height="122" align="absmiddle" /></a></li>
+			<li><a href="http://www.hecha.cn/sgoods-1724.html" target="_blank"><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/act20110609/proe_3.jpg" width="310" height="122" align="absmiddle" /></a></li>
+			<li><a href="http://www.hecha.cn/sgoods-1827.html" target="_blank"><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/act20110609/proe_4.jpg" width="310" height="122" align="absmiddle" /></a></li>
+			<li><a href="http://www.hecha.cn/sgoods-261.html" target="_blank"><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/act20110609/proe_5.jpg" width="310" height="122" align="absmiddle" /></a></li>
+			<li><a href="http://www.hecha.cn/sgoods-1749.html" target="_blank"><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/act20110609/proe_6.jpg" width="310" height="122" align="absmiddle" /></a></li>
+			<div class="clear"></div>
+		</ul>
+	</div>
+</div>-->
+<div class="ebody">
+		<div class="line10"></div>
+	<div class="kfbox6 crz">
+		<ul class="s1">
+			<li class="t1">新手上路</li>
+			<li><a href="http://www.hecha.cn/help/show-22.html" target="_blank" rel="nofollow" >帐户自助服务</a></li>
+			<li><a href="http://www.hecha.cn/help/show-36.html" target="_blank" rel="nofollow" >新用户注册</a></li>
+			<li><a href="http://www.hecha.cn/help/show-362.html" target="_blank" rel="nofollow" >怎样下订单</a></li>
+			<li><a href="http://www.hecha.cn/help/show-370.html" target="_blank" rel="nofollow" >注册常见问题</a></li>
+		</ul>
+		<ul class="s2">
+			<li class="t1">如何付款</li>
+			<li><a href="http://www.hecha.cn/help/show-15684.html" target="_blank" rel="nofollow" >支付方式</a></li>
+			<li><a href="http://www.hecha.cn/help/show-32.html" target="_blank" rel="nofollow" >在线支付介绍</a></li>
+			<li><a href="http://www.hecha.cn/help/show-15700.html" target="_blank" rel="nofollow" >汇款单招领</a></li>
+		</ul>
+		<ul class="s3">
+			<li class="t1">配送说明</li>
+			<li><a href="http://www.hecha.cn/help/show-20955.html" target="_blank" rel="nofollow" >运费说明</a></li>
+			<li><a href="http://www.hecha.cn/help/show-20956.html" target="_blank" rel="nofollow" >配送方式</a></li>
+			<li><a href="http://www.hecha.cn/help/show-20957.html" target="_blank" rel="nofollow" >配送范围</a></li>
+		</ul>
+		<ul class="s4">
+			<li class="t1">售后服务</li>
+			<li><a href="http://www.hecha.cn/help/show-358.html" target="_blank" rel="nofollow" >退换货原则和流程</a></li>
+			<li><a href="http://www.hecha.cn/help/show-382.html" target="_blank" rel="nofollow" >服务保障承诺</a></li>
+			<li><a href="http://www.hecha.cn/help/show-15679.html" target="_blank" rel="nofollow" >验货与签收</a></li>
+		</ul>
+		<ul class="s5">
+			<li class="t1">常见问题</li>
+			<li><a href="http://www.hecha.cn/help/show-38.html" target="_blank" rel="nofollow" >账号 & 密码问题</a></li>
+			<li><a href="http://www.hecha.cn/help/show-367.html" target="_blank" rel="nofollow" >缺货登记</a></li>
+			<li><a href="http://www.hecha.cn/help/show-15701.html" target="_blank" rel="nofollow" >关于团购</a></li>
+		</ul>
+		<ul class="s6">
+			<li class="t2">400 8899 379</li>
+			<li class="t3"><a href="http://www.hecha.cn/ol/" target="_blank" rel="nofollow" >点击这里进入</a></li>
+		</ul>
+	</div>
+	<div class="clear line10"></div>
+</div>
+<div class="ebody">
+		<div class="footer6">
+		<ul class="service">
+			<li class="t1" title="支付宝特约商家"><a href="http://www.hecha.cn/help/show-32.html" target="_blank" rel="nofollow" >支付宝特约商家</a></li>
+			<li class="t2" title="7天退换货保障"><a href="http://www.hecha.cn/help/show-359.html" target="_blank" rel="nofollow" >7天退换货保障</a></li>
+			<li class="t3" title="满98元免费配送"><a href="http://www.hecha.cn/help/show-20955.html" target="_blank" rel="nofollow" >满98元免费配送</a></li>
+			<li class="t4" title="400城市送货上市货到付款"><a href="http://www.hecha.cn/help/show-20957.html" target="_blank" rel="nofollow" >400城市送货上市货到付款</a></li>
+		<div class="clear"></div>
+		</ul>
+		<div class="line15"></div>
+		<p>Copyright© 2007-2013 福建和茶网络科技有限公司版权所有，并保留所有权利 闽ICP证：闽<a href="http://www.miibeian.gov.cn/" target="_blank">10202223-1</a>号</p>
+		<p class="link"><a href="http://www.hecha.cn/about/hc-about.html" target="_blank">关于和茶</a> | <a href="http://www.hecha.cn/baike/" target="_blank" >和茶百科</a> |<a href="http://www.hecha.cn/help/" target="_blank">帮助中心</a> | <a href="http://www.hecha.cn/help/show-1.html" target="_blank" rel="nofollow" >交易条款</a> | <a href="http://www.hecha.cn/help/show-9.html" target="_blank" rel="nofollow" >诚征英才</a> | <a href="http://www.hecha.cn/sitemap.php" target="_blank">网站地图</a> | <a href="http://www.hecha.cn/friendship.php" target="_blank">友情链接</a> | <a href="#">回顶部</a></p>
+		<div class="line5"></div>
+		<p><span><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm6/images/public/fot_img1.gif" alt="国家级信息化示范试点项目" /></span><span><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm6/images/public/fot_img2.gif" alt="北京大学茶文化济注研究所专业支持"  /></span>
+		</p>
+	</div>
+</div>
+<script type="text/javascript" src="/js/cookies.js"></script>
+<div class="totop">
+<div style="display:block" id="show_ke_ol"><a href="http://www.hecha.cn/ol/" target="_blank">在线客服</a></div>
+<div style="clear:both"></div>
+<a onClick="javascript:scroll(0,0)" href="javascript:;"><img src="http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/totop.gif" /></a></div>
+<span style="display:none"><img src="http://www.hecha.cn/cart_save_show.php" width=1 height=1></span>
+<script type=text/javascript src="http://www.hecha.cn/js/cmbc_bottom.js"></script>
+	<script language="javascript">
+		from_site	= getCookie("from_site");
+		if( from_site == 'cmbc' ) 
+		{
+			document.getElementById("show_cmbc_bottom").innerHTML =cmbc_bottom;
+			document.getElementById("flink_show").innerHTML = ''
+			
+		}	
+                qq_user_first_login	= getCookie("qq_user_first_login");
+		if( qq_user_first_login == 'qq_user_first_login' ) 
+		{
+                        deleteCookie("qq_user_first_login");
+                        window.open('member.php?act=qq_tuan_user_first','newwindow');
+		}	
+	</script>
+	
+<!--<div class="kfol" id="kfimg"> <a href="http://www.hecha.cn/ol/" target="_blank"><img src="http://www.hecha.cn/images/kf_show.png" align="absmiddle" /></a> </div>-->
+<div class="kfol" id="kfimg">
+<p><img src="http://www.hecha.cn/images/kf_img1.jpg" align="absmiddle" /><p>
+<p><img src="http://www.hecha.cn/images/kf_img2.jpg" align="absmiddle" /><p>
+<p><a href="http://www.hecha.cn/ol/?t=2" target="_blank"><img src="http://www.hecha.cn/images/kf_img4.jpg" align="absmiddle" /></a><p>
+<p><a href="http://www.hecha.cn/ol/?t=1" target="_blank"><img src="http://www.hecha.cn/images/kf_img3.jpg" align="absmiddle" /></a><p>
+<p><img src="http://www.hecha.cn/images/kf_img5.jpg" align="absmiddle" onclick="document.getElementById('kfimg').style.display='none';document.getElementById('show_ke_ol').style.display='block';" style="cursor:hand;" /><p>
+</div>
+<SCRIPT type=text/javascript>
+var verticalpos="frombottom"
+function JSFX_FloatTopDiv()
+{
+var startX =0,
+startY = 459;
+var ns = (navigator.appName.indexOf("Netscape") != -1);
+var d = document;
+function ml(id)
+{
+  var el=d.getElementById?d.getElementById(id):d.all?d.all[id]:d.divs[id];
+  if(d.divs)el.style=el;
+  el.sP=function(x,y){this.style.right=x;this.style.top=y;};
+  el.x = startX;
+  if (verticalpos=="fromtop")
+  el.y = startY;
+  else{
+  el.y = ns ? pageYOffset + innerHeight : document.documentElement.scrollTop + 
+document.documentElement.clientHeight;
+  el.y -= startY;
+  }
+  return el;
+}
+window.stayTopright=function()
+{
+  if (verticalpos=="fromtop"){
+  var pY = ns ? pageYOffset : document.documentElement.scrollTop;
+  ftlObj.y += (pY + startY - ftlObj.y)/8;
+  }
+  else{
+  var pY = ns ? pageYOffset + innerHeight : document.documentElement.scrollTop + 
+document.documentElement.clientHeight;
+//alert(pY);
+  ftlObj.y += (pY - startY - ftlObj.y)/8;
+  }
+  ftlObj.sP(ftlObj.x, ftlObj.y+"px");
+  setTimeout("stayTopright()", 10);
+}
+ftlObj = ml("kfimg");
+stayTopright();
+}
+JSFX_FloatTopDiv();
+</SCRIPT>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5929d4f83ef0b1fad3dd9365bf2c00b4' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24030060-2']);
+  _gaq.push(['_setDomainName', '.hecha.cn']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<div style="display:none"><script src="http://s94.cnzz.com/stat.php?id=1068883&web_id=1068883&show=pic1" language="JavaScript"></script></div></body>
+</html>

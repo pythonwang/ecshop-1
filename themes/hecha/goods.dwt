@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$page_title}</title>
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+
+<link href="themes/hechaV2.5/skin/tm7/style_test/home7.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/goods6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/commentv5.2.css" rel="stylesheet" type="text/css" />
+
+<link href="themes/hecha/themes/hechaV2.5/skin/tm7/style_test/home7.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/goods6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/commentv5.2.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/generalt.js"></script>
+<script type="text/javascript" src="js/utility.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+
+<script type="text/javascript" src="themes/hecha/themes//hechaV2.5/skin/tm7/js/common.js"></script>
+<script src="themes/hecha/themes/hechaV2.5/skin/tm5/js/lazyload.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/transport.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+{insert_scripts files='utils.js'}
+
+<!--<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+	$("body").find("img").not(".hd_img,.goods_small_img").lazyload({threshold : 300,effect : "fadeIn",placeholder : "http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/grey.gif",failurelimit : 10});
+});
+</script>-->
+
+<style type="text/css">
+#attr li{overflow:hidden;}
+</style>
+
+
+</head>
+<style type="text/css">
+.scrollable{width: 440px;height: 90px;float: left; position:relative;overflow:hidden;}
+.scrollable #items {width:2000px; position:absolute;clear:both;z-index:0;}
+.rclick{cursor:pointer;}
+.lclick{cursor:pointer;}
+
+</style>
+<body class="hchstw1">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+<!-- #BeginLibraryItem "/library/category_tree_float.lbi" --><!-- #EndLibraryItem -->
+
+
+<script type="text/javascript" src="js/banner4.0_goods.js"></script>
+<?php
+$GLOBALS['smarty']->assign('goods',get_goods_info2($GLOBALS['smarty']->_var['goods']['goods_id']));
+?> 
+<div class="abody">
+	<div class="path_s1"><!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem --></div>
+	<div class="clear line10"></div>
+	<div class="proinfo6">
+		<div class="img6">
+			<div class="bigimg">
+<input type="hidden" name="showmainimgvalue" value="<!-- {if $pictures}-->{$pictures.0.img_url}<!-- {else}-->{$goods.goods_img}<!-- {/if}-->" id="showmainimgvalue"/>
+<a href="<!-- {if $pictures}-->{$pictures.0.img_url}<!-- {else}-->{$goods.goods_img}<!-- {/if}-->" target="_blank" class="jqzoom" id="BigViewImage">
+<img src="<!-- {if $pictures}-->{$pictures.0.img_url}<!-- {else}-->{$goods.goods_img}<!-- {/if}-->" height="380" width="380" align="absmiddle" id="showmainimg"></a>
+																																																																																								</div>
+			<span class="lclick">&nbsp;</span>
+			<span class="rclick">&nbsp;</span>
+			<div class="scrollable" style="margin-left:11px;">
+				<ul id="items">
+             <!-- {foreach from=$pictures item=picture name=picture}-->   
+									<li onmouseover="cthis({$smarty.foreach.picture.index}, {$smarty.foreach.picture.total})" {if $smarty.foreach.picture.first}class="this"{/if} id="simg_{$smarty.foreach.picture.index}">
+					<a href="{$picture.img_url}" title="点击查看大图" target="_blank"><img src="{$picture.thumb_url}" width="50" height="50" align="absmiddle" onmousemove="document.getElementById('showmainimg').src='{$picture.img_url}';document.getElementById('showmainimgvalue').value='{$picture.img_url}';document.getElementById('BigViewImage').setAttribute('href','{$picture.img_url}')" alt="{$picture.img_desc}"/></a>
+					</li>
+            <!--{/foreach}-->
+                    
+								<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div class="txt6">
+			<h1 id="lgoodname">{$goods.goods_name}</h1>
+			<ul style="zoom:1;">
+				<li><p class="left">本 店 价：</p><em>市场价：<small>￥{$goods.market_price}</small></em> 
+                <strong class="prib" id="old_shop_price">
+        {$goods.shop_price_formated}
+                </strong>
+                </li>
+				<li id="show_activities_price" style="display:none; float:none; clear:both"></li>
+				<li><p class="left">顾客评分：</p>
+				<!--<p><span style="width:40px;" id="avgcomment">加载中...</span></p>(&nbsp;<span id="total_com_num" class="link1"></span>&nbsp;)-->
+				<p class="xstars" style=" margin-top:6px;"><span style="width:60px;" class="star{$goods.comment_rank_int}">&nbsp;</span></p>{$goods.comment_rank}分(&nbsp;<span class="link1"><a href="#">已有{$goods.comment_count}人评论</a></span>)
+				</li>
+                <li><p class="left">产品编号：</p>{$goods.goods_sn}</li>
+                <!-- {if $goods.goods_brand neq ""} -->
+                <li><p class="left">品牌商家：</p>{$goods.goods_brand}</li>
+                <!--{/if}-->
+			</ul>
+          <!-- {foreach from=$properties item=property_group key=key} -->
+			<ol id="attr">
+          <!-- {foreach from=$property_group item=property} -->
+			<li>{$property.name|escape:html}：{$property.value}</li>
+          <!-- {/foreach}-->
+			<div class="clear"></div>
+			</ol>
+         <!-- {/foreach}-->     
+         <form action="javascript:addToCart({$goods.goods_id})" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" >
+						<div class="buy6">
+				<p class="bn">我要买： <input type="text" name="number" id="number" style="text-align:center" value="1" onblur="changePrice()"/>
+				件&nbsp;&nbsp;&nbsp;&nbsp;售价：<font style=" color:#F00; font-size:18px; font-weight:bold">￥</font><font id="ECS_GOODS_AMOUNT" style=" color:#F00; font-size:18px; font-weight:bold"></font>
+				</p>
+				<p class="bd">
+					<span style="cursor:pointer;">
+						<img src="themes/hecha/themes/hechaV2.5/skin/tm6/images/public/buy2.jpg" width="139" height="41" align="absmiddle" onclick="javascript:collect({$goods.goods_id});"/>
+					</span>
+					<span style="cursor:pointer;"><img src="themes/hecha/themes/hechaV2.5/skin/tm6/images/public/cart2.gif" width="139" height="41" align="absmiddle" onclick="javascript:addToCart({$goods.goods_id});"/></span>
+				</p>
+			</div>
+        </form>    
+						<div class="shareto">
+			<em onclick="javascript:collect(2797)" style="cursor:pointer;">收藏此商品</em>
+					<big>分享到：</big>
+					
+					<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+					<a class="bds_qzone"></a>
+					<a class="bds_tsina"></a>
+					<a class="bds_tqq"></a>
+					<a class="bds_renren"></a>
+					<a class="bds_baidu"></a>
+					<a class="bds_douban"></a>
+					<span class="bds_more">更多</span>
+					<a class="shareCount"></a>
+					</div>
+					<script type="text/javascript" id="bdshare_js" data="type=tools&amp;mini=1&amp;uid=66616" ></script>
+					<script type="text/javascript" id="bdshell_js"></script>
+					<script type="text/javascript">
+					document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+					</script>
+					
+					<div class="clear"></div>
+				</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<script>
+function cthis(v, countnum)
+{
+	for( i=0; i<countnum; i++ )
+	{
+		if( i == v )
+		{
+			document.getElementById('simg_'+i).className = "this";
+		}
+		else
+		{
+			document.getElementById('simg_'+i).className = "";
+		}	
+	}	
+}
+
+
+			function chg_pro_menu(obj,id)
+			{
+				var arrayli = obj.parentNode.getElementsByTagName("li");
+				var arraytag = document.getElementById(id).getElementsByTagName('ol');
+				for(i=0;i<arraytag.length;i++)
+				{
+					if(obj==arrayli[i])
+					{
+						arrayli[i].className = "this";
+						arraytag[i].className = "";
+					}
+					else
+					{
+						arrayli[i].className = "";
+						arraytag[i].className = "hide";
+					}
+					if(obj==arrayli[0]){
+						arraytag[1].className = "this";
+						arraytag[2].className = "this";
+						arraytag[3].className = "this";
+					}
+				}
+			}
+
+
+</script>
+<div class="abody">
+<div class="clear line15"></div>
+<div class="row7">
+
+<!-- {if $fittings} -->
+	<script type="text/javascript">
+			var goods_price1		= new Array();
+			var goods_price2		= new Array();
+			var goods_id			= {$goods_id};
+			goods_price1[goods_id]	= '{$goods.shop_price}';
+			goods_price2[goods_id]	= '{$goods.shop_price}';
+			
+			<!--{foreach from=$fittings item=goods}-->
+				goods_price1['{$goods.goods_id}']	= '{$goods.shop_price}';
+				goods_price2['{$goods.goods_id}']	= '{$goods.fittings_price}';
+			<!--{/foreach}-->
+								
+			function goods_relate_check()
+			{
+
+				var goods_money1	= parseFloat(goods_price1[goods_id]);
+				var goods_money2	= parseFloat(goods_price2[goods_id]);
+				var save_money		= 0;
+				
+				goods_relate		= document.getElementsByName('comb_id');
+				
+				if( goods_relate.length > 0 )
+				{
+					for( i=0; i<goods_relate.length; i++ )
+					{
+						if( goods_relate[i].checked == true )
+						{
+							goods_money1	= goods_money1 + parseFloat(goods_price1[goods_relate[i].value]);
+							goods_money2	= goods_money2 + parseFloat(goods_price2[goods_relate[i].value]);
+						}	
+					}
+				}
+				else
+				{
+					if( goods_relate.checked == true )
+					{
+						goods_money1	= goods_money1 + parseFloat(goods_price1[goods_relate.value]);
+						goods_money2	= goods_money2 + parseFloat(goods_price2[goods_relate.value]);
+					}	
+				}
+				
+				
+				
+				
+				save_money	= goods_money1	- goods_money2;
+				
+				goods_money2	= parseFloat(goods_money2).toFixed(2);
+				save_money		= parseFloat(save_money).toFixed(2);
+				
+				
+				
+				document.getElementById("goods_price").innerHTML	= '￥' + goods_money2;
+				document.getElementById("save_price").innerHTML		= '￥' + save_money;
+				document.getElementById("goods_price2").innerHTML	= '￥' + goods_money2;
+				document.getElementById("save_price2").innerHTML		= '￥' + save_money;
+		}
+		
+      
+//组合商品加入购物车
+  function batchAddCart(){
+		   		var obj = document.getElementsByName('comb_id');
+				var comb_id = '';
+				
+				for (var i = 0; i < obj.length; i ++){
+					if (obj[i].checked){
+                        comb_id = obj[i].value;
+					}
+				}
+				if (comb_id == ''){
+					alert('请选择最佳组合商品！');
+					return;
+				}
+				var _goods_id = {$goods.goods_id};
+                addToCart(_goods_id);
+				
+				for (var i = 0; i < obj.length; i ++){
+					if (obj[i].checked){
+					    addToCartEx(obj[i].value,_goods_id);
+					}
+				}
+	        
+                location.href = "flow.php?step=cart";
+				
+		   }
+		   
+		   function addToCartEx(goodsId, parentId)
+			{
+			  var goods        = new Object();
+			  var spec_arr     = new Array();
+			  var fittings_arr = new Array();
+			  var number       = 1;
+			  var formBuy      = document.forms['ECS_FORMBUY'];
+			  var quick		   = 0;
+			
+			  goods.quick    = quick;
+			  goods.spec     = spec_arr;
+			  goods.goods_id = goodsId;
+			  goods.number   = number;
+			  goods.parent   = (typeof(parentId) == "undefined") ? 0 : parseInt(parentId);
+			  Ajax.call('flow.php?step=add_to_cart', 'goods=' + objToJSONString(goods), addToCartResponseEx, 'POST', 'JSON');
+			  
+			}
+			
+			function addToCartResponseEx(result)
+			{
+			  if (result.error > 0)
+              {
+                // 如果需要缺货登记，跳转
+                if (result.error == 2)
+                {
+                  if (confirm(result.message))
+                  {
+                    location.href = 'user.php?act=add_booking&id=' + result.goods_id + '&spec=' + result.product_spec;
+                  }
+                }
+                // 没选规格，弹出属性选择框
+                else if (result.error == 6)
+                {
+                  alert('该商品存在规格选择！添加到购物车失败');
+                }
+                else
+                {
+                  alert(result.message);
+                }
+              }
+              else
+              {
+                  //location.href = 'flow.php';
+              }
+			}
+			
+
+			
+		   function clearFittingGoods(){
+		   		var obj = document.getElementsByName('comb_id');
+				var comb_id = '';
+				
+				for (var i = 0; i < obj.length; i ++){
+					obj[i].checked = false;
+				}
+			}	
+		   clearFittingGoods();
+       
+        </script>
+
+
+	<div class="title_h3"><p>推荐搭配</p></div>
+		<div class="prolist_s4">
+			<p>组合特惠价：<strong id="goods_price">￥
+            <!--{if $goods.promote_price neq "" } -->
+        {$goods.promote_price}
+            <!--{else}-->
+        {$goods.shop_price}
+            <!--{/if}-->
+            </strong></p>
+			<p>立省：<strong id="save_price">￥0.00</strong></p>
+			<p><img src="themes/hecha/themes/hechaV2.5/skin/tm6/images/public/buy3.gif" width="98" height="26" onclick="batchAddCart()" style="cursor:hand;"/></p>
+		</div>
+		<div class="prolist_s3">
+        
+        <!--{foreach from=$fittings item=goods}-->
+		<ul>
+			<li class="img"><a href="{$goods.url}"><img src="{$goods.goods_thumb}" align="absmiddle" /></a></li>
+			<li class="txt">
+				<p class="til"><a href="{$goods.url}">{$goods.short_name|escape:html}</a></p>
+				<p><input name="comb_id" id="comb_id" type="checkbox" value="{$goods.goods_id}" onclick="goods_relate_check()" /><strong>搭配价￥{$goods.fittings_price}</strong> 原价<small>￥{$goods.shop_price}</small></p>
+			</li>
+			<div class="clear"></div>
+		</ul>
+        <!--{/foreach}-->
+               
+				</div>
+		<div class="prolist_s4">
+			<p>组合特惠价：<strong id="goods_price2">￥
+            <!--{if $goods.promote_price neq "" } -->
+        {$goods.promote_price}
+            <!--{else}-->
+        {$goods.shop_price}
+            <!--{/if}-->
+            </strong></p>
+			<p>立省：<strong id="save_price2">￥0.00</strong></p>
+			<p><img src="themes/hecha/themes/hechaV2.5/skin/tm6/images/public/buy3.gif" width="98" height="26" onclick="batchAddCart()" style="cursor:hand;"/></p>
+		</div>
+
+	<div class="clear line10"></div>
+<!-- {/if} -->
+    
+	
+	<div class="title_h3">
+	  <p>我浏览过的商品</p>
+	</div>
+	<div class="prolist_s1" id="show_history_goods">
+    
+{insert name='goods_history'} 
+                       
+
+	</div>
+	<div class="clear line10"></div>
+		<!--<div class="title_h3"><p>购买此商品的顾客还购买过</p></div><div class="prolist_s1"  id="buy_this_and_buy_test">
+		
+		</div>	<div class="clear line10"></div> -->
+		
+</div>
+<div class="row5 goods">
+
+<?php
+$GLOBALS['smarty']->assign('promotion', get_promotion_info2($GLOBALS['smarty']->_var['goods']['goods_id']));
+?>
+<!-- {if $promotion} -->
+    	<div class="hotact">
+      <!-- {foreach from=$promotion item=item name=item} 优惠活动-->
+      <!-- {if $item.type eq "favourable"} -->
+            <p>{$smarty.foreach.item.iteration}、{$item.act_name}。</p>
+     <!-- {/if} -->
+      <!-- {/foreach} -->
+	</div>
+    	<div class="clear line10"></div>
+<!-- {/if} -->
+
+	<div class="detail6" id="detail">
+			<div class="title_f4">
+				<ul class="crz" id="show_menu_li">
+					<li class="this"  onclick="chg_pro_menu(this,'detail');">商品详情</li>
+					<li onclick="chg_pro_menu(this,'detail');">售后服务</li>
+					<li onclick="chg_pro_menu(this,'detail');">物流配送</li>
+					<li onclick="chg_pro_menu(this,'detail');">用户评价</li>
+					<li onclick="chg_pro_menu(this,'detail');">相关常识</li>
+									</ul>
+			</div>
+			<ol class="this">
+				{$goods.goods_desc}		
+            </ol>
+			
+			<ol class="this">
+				<img src="themes/hecha/themes//hechaV2.5/skin/tm5/images/detail_b.gif" alt="售后服务" border="0" usemap="#Map2" />
+				<map name="Map2" id="Map2">
+				<area shape="rect" coords="357,420,418,446" href="http://www.hecha.cn/ol/" target="_blank" />
+				</map>
+			</ol>
+			<ol class="this">
+				<img src="themes/hecha/themes//hechaV2.5/skin/tm5/images/detail_c1.jpg" alt="商品的包装与配送" width="750" height="594" border="0" usemap="#Map" />
+				<img src="themes/hecha/themes//hechaV2.5/skin/tm5/images/detail_c2.gif" alt="快递选择与收费标准" border="0" usemap="#Map" />
+				<map name="Map" id="Map">
+				<area shape="rect" coords="458,124,612,153" href="http://www.hecha.cn/ol/" target="_blank" />
+				</map>
+			</ol>
+			<ol class="this">
+				<a name="comment"></a>
+                                <img src="themes/hecha/themes//hechaV2.5/skin/tm5/images/coms.png" align="absmiddle" alt="用户评论" />
+				<div class="line15"></div>
+				<div class="cenbox" id="comment">
+					<div class="commentv5_2">
+						<div class="msgbox">
+							<dl>
+								<dt>
+									<p><strong>顾客对该商品的评价</strong></p>
+									<p class="left"><big>{$goods.comment_rank}</big>分</p>
+									<div class="xstars">
+									<span style="width:60px" class="star{$goods.comment_rank_int}">&nbsp;</span>
+									</div>
+									<div class="clear"></div>
+									<p class="link">共打分<strong>{$goods.comment_count}</strong>次</p>
+								</dt>
+								<dd>
+									<div class="msg1">
+<?php
+$comment_rank=$GLOBALS['smarty']->_var['goods']['comment_rank'];
+$comment_rank_left=$comment_rank/5*400;
+$GLOBALS['smarty']->assign('comment_rank_left', $comment_rank_left);
+?>		
+										<span style="left:{$comment_rank_left}px">{$goods.comment_rank}</span>
+									</div>
+									<div class="msg2">
+										&nbsp;
+									</div>
+								</dd>
+							</dl>
+						</div>
+				<div class="clear line10"></div>
+             
+                <!-- #BeginLibraryItem "/library/comments.lbi" --><!-- #EndLibraryItem -->
+                
+                
+			</div>
+										</div>
+			</ol>
+			<ol class="hide">
+							</ol>
+				</div>	
+</div>
+
+<div class="clear line10"></div>
+
+
+<?php
+$GLOBALS['smarty']->assign('bought_goods', get_also_bought2($GLOBALS['smarty']->_var['goods']['goods_id']));
+?>
+<!-- {if $bought_goods} -->
+	<div class="prolink6">
+        <div class="title_me">买过该商品的人还买过</div>
+		<ul>
+        <!--{foreach from=$bought_goods item=bought_goods_data}-->
+			<li><a href="{$bought_goods_data.url}" target="_blank"><img src="{$bought_goods_data.goods_thumb}" width="220" height="220" align="absmiddle" /></a>
+			<p class="tx"><a href="{$bought_goods_data.url}" target="_blank">{$bought_goods_data.goods_name}</a></p>
+			<p class="px">市场价：<small>￥{$bought_goods_data.market_price}</small> 活动价：<strong>￥
+         <!-- {if $bought_goods_data.promote_price neq 0} -->
+        {$bought_goods_data.formated_promote_price}
+        <!-- {else} -->
+        {$bought_goods_data.shop_price}
+        <!-- {/if} -->
+            </strong></p></li>
+        <!-- {/foreach} -->    
+            	
+        <div class="clear"></div>
+		</ul>
+	</div>
+	<div class="clear line10"></div>
+<!-- {/if} -->
+    
+    
+</div>
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+
+<LINK href="themes/hecha/js/zoomimg/jqzoom.css" type=text/css rel=stylesheet>
+<SCRIPT src="themes/hecha/js/zoomimg/jquery.jqzoom.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+ 	var isH = false;
+	var bigPXoffset;
+	var bigPYoffset;
+	jQuery(document).ready(function(){
+		$(".jqzoom").jqzoom(
+		{                
+				zoomWidth: 360,		
+				zoomHeight: 360
+			
+		});	
+		var imgoffset = $("#showmainimg").offset();
+		bigPXoffset=imgoffset.left+410;
+	
+   });
+$(document).ready(function(){
+                    $('#items').css("left","0px");
+                    $('.rclick').click(function(){
+                        var left = $('#items').css("left");
+                        left = left.replace("px","");
+                        var new_left = left-70;
+                        var li_count = $('#items>li').length;
+                        var all_length = (li_count-5)*(-70);
+                        if(new_left >= all_length){
+                            $('#items').animate({"left":new_left+'px'});
+                        }else{
+                            $('#items').css("left","0px");
+                            $('.rclick').addClass("disabled");
+                        }
+                    });
+                    $('.lclick').click(function(){
+                        left = $('#items').css("left");
+                        left = left.replace("px","");
+                        new_left = left-(-70);
+                        if(new_left <= 0){
+                             $('#items').animate({"left":new_left+'px'});
+                        }else{
+                            $('.lclick').addClass("disabled");
+                        }
+                    });
+                });
+      
+   
+</SCRIPT>
+</body>
+<script type="text/javascript">
+var goods_id = {$goods_id};
+var goodsattr_style = {$cfg.goodsattr_style|default:1};
+var gmt_end_time = {$promote_end_time|default:0};
+{foreach from=$lang.goods_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var goodsId = {$goods_id};
+var now_time = {$now_time};
+
+<!-- {literal} -->
+onload = function(){
+  changePrice();
+  //fixpng();
+  try { onload_leftTime(); }
+  catch (e) {}
+}
+
+/**
+ * 点选可选属性或改变数量时修改商品价格的函数
+ */
+function changePrice()
+{
+  var attr = getSelectedAttributes(document.forms['ECS_FORMBUY']);
+  var qty = document.forms['ECS_FORMBUY'].elements['number'].value;
+
+  Ajax.call('goods.php', 'act=price&id=' + goodsId + '&attr=' + attr + '&number=' + qty, changePriceResponse, 'GET', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function changePriceResponse(res)
+{
+  if (res.err_msg.length > 0)
+  {
+    alert(res.err_msg);
+  }
+  else
+  {
+    document.forms['ECS_FORMBUY'].elements['number'].value = res.qty;
+
+    if (document.getElementById('ECS_GOODS_AMOUNT'))
+      document.getElementById('ECS_GOODS_AMOUNT').innerHTML = res.result;
+  }
+}
+<!-- {/literal} -->
+</script>
+</html>

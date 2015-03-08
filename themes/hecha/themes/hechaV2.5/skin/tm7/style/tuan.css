@@ -1,0 +1,391 @@
+@charset "utf-8";/* 
+Name: tuan.css
+For : http://www.hecha.cn/
+Date: 2013128  Sincol
+*/
+body {
+	background-color: #FF7689;
+	background-repeat: no-repeat;
+	background-position: center 150px;
+}
+.tuangou {
+	background-image: url(../images/tuan/body_bg.png);
+	background-repeat: no-repeat;
+	background-position: center -300px;
+	padding-top: 15px;
+	_background-image:none;
+	zoom:1;
+	_background-color:#99c33e;
+}
+
+.tuanbox{
+	margin: 0 auto;
+	width: 1200px;
+	background-color: #f2f2f2;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+.tgbg1 {
+	background-image: url(../images/tuan/bg1.png);
+	background-repeat: repeat-y;
+	background-position: center top;
+	_background-image:none;
+}
+.bgbg2  {
+	background-image: url(../images/tuan/bg2.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 1210px;
+	height: 6px;
+	margin-right: auto;
+	margin-left: auto;
+	_background-image:none;
+	font-size: 0px;
+	line-height: 0px;
+}
+.bgbg3  {
+	background-image: url(../images/tuan/bg6.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 1210px;
+	height: 6px;
+	margin-right: auto;
+	margin-left: auto;
+	_background-image:none;
+	font-size: 0px;
+	line-height: 0px;
+}
+.path_tuan {
+	padding-top: 15px;
+	font-family: \5FAE\8F6F\96C5\9ED1, \9ED1\4F53;
+	color: #666666;
+	font-size: 12px;
+	line-height: 24px;
+	height: 30px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #c7c7c7;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+.path_tuan a {
+	background-image: url(../images/tuan/path.png);
+	background-repeat: no-repeat;
+	padding-left: 15px;
+	background-position: left center;
+	padding-right: 8px;
+}
+.path_tuan a.home {
+	background-image: none;
+	padding-left: 0px;
+}
+
+.tuan_title {
+	line-height: 40px;
+	height: 40px;
+	position: relative;
+	clear: both;
+	margin-top: 15px;
+	font-family: \5FAE\8F6F\96C5\9ED1, \9ED1\4F53;
+	background-color: #e2e2e2;
+	margin-right: 25px;
+}
+.tuan_title strong {
+	background-color: #ff4560;
+	height: 40px;
+	width: 110px;
+	display: block;
+	position: absolute;
+	z-index: 99;
+	left: -10px;
+	top: 0px;
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+}
+.tuan_title big {
+	padding-left: 115px;
+	width: 16px;
+	color: #397900;
+	font-size: 20px;
+	font-weight: bold;
+}
+.tuan_title small {
+	font-size: 10px;
+	font-family: arial;
+	color: #FF7689;
+	padding-left: 5px;
+}
+.tuan_title span {
+	font-size: 0px;
+	line-height: 0px;
+	background-image: url(../images/tuan/bg_title_arrow.png);
+	position: absolute;
+	z-index: 9;
+	left: -10px;
+	bottom: -6px;
+	display: block;
+	height: 6px;
+	width: 10px;
+}
+.tuan_title.x2 strong {
+	background-color: #79341c;
+}
+.tuan_title.x2 big {
+	color: #79341c;
+}
+.tuan_title.x2 small {
+	color: #754737;
+}
+
+
+.tuan1 {
+	border: 1px solid #dbdbdb;
+	margin-right: 24px;
+	margin-left: 25px;
+	background-color: #f7f7f7;
+	zoom: 1;
+}
+.tuan1:hover {
+	border: 1px solid ##7d9f32;
+}
+
+.tuan1 ol {
+	border: 1px solid #ffffff;
+}
+.tuan1 .tx {
+	font-family: \5FAE\8F6F\96C5\9ED1, \9ED1\4F53;
+	padding: 15px;
+	font-size: 16px;
+	line-height: 22px;
+}
+.tuan1 .rimg {
+	height: 330px;
+	width: 660px;
+	float: left;
+	margin-left: 10px;
+}
+.tuan1 .info  {
+	background-image: url(../images/tuan/bg5.png);
+	background-repeat: no-repeat;
+	height: 330px;
+	float: right;
+	border-left-width: 1px;
+	border-left-style: dashed;
+	border-left-color: #c3c4c8;
+	width: 218px;
+	background-position: center 0px;
+}
+.tuan1 .info .tx1 {
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 5px;
+}
+.tuan1 .info .tx2 {
+	font-size: 12px;
+	line-height: 25px;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+.tuan1 .info .share {
+	font-size: 12px;
+	padding-left: 12px;
+}
+
+
+
+.tuan1 .ltxt {
+	position: relative;
+	clip: rect(auto,auto,auto,-2px);
+	float: left;
+	width: 250px;
+	margin-left: -2px;
+}
+.tuan1 .ltxt .prix{
+	height: 330px;
+	color: #ffffff;
+	background-color: #ff4560;
+	text-align: center;
+}
+.tuan1 .ltxt span{
+	background-image: url(../images/tuan/bg3.png);
+	background-repeat: repeat-y;
+	background-position: left top;
+	height: 330px;
+	width: 5px;
+	right: -5px;
+	top: 0px;
+	display: block;
+	position: absolute;
+}
+.tuan1 .ltxt .px1 {
+	padding-top: 30px;
+	line-height: 60px;
+	font-size: 60px;
+	height: 60px;
+	padding-bottom: 10px;
+}
+
+.tuan1 .ltxt .px2 {
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+}
+.tuan1 .ltxt .px2 strong {
+	font-size: 16px;
+}
+.tuan1 .ltxt .px3 {
+	padding-top: 10px;
+	line-height: 22px;
+	height: 22px;
+}
+
+
+.tuan2 {
+	margin-left: 25px;
+}
+.tuan2 ul {
+}
+.tuan2 ul li{
+	float: left;
+	border: 1px solid #dbdbdb;
+	background-color: #ffffff;
+	padding: 11px;
+	margin-right: 14px;
+	margin-bottom: 14px;
+	width: 350px;
+	display: inline;
+}
+.tuan2 ul li p.img img{
+	height: 175px;
+	width: 350px;
+}
+.tuan2 ul li p.time {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #dbdbdb;
+	line-height: 30px;
+	height: 30px;
+	background-image: url(../images/tuan/time.gif);
+	background-repeat: no-repeat;
+	background-position: 7px 7px;
+	padding-left: 30px;
+	color: #666666;
+	background-color: #f7f7f7;
+	font-family: \5FAE\8F6F\96C5\9ED1, \9ED1\4F53;
+}
+.tuan2 ul li p.time span {
+	font-family: Arial;
+	font-size: 14px;
+	padding-right: 3px;
+	padding-left: 0px;
+}
+
+
+.tuan2 ul li p.txt {
+	font-family: \5FAE\8F6F\96C5\9ED1, \9ED1\4F53;
+	font-size: 14px;
+	line-height: 35px;
+	height: 35px;
+	overflow: hidden;
+}
+.tuan2 ul li p.pri {
+	background-color: #884933;
+	margin-top: 10px;
+	line-height: 50px;
+	height: 50px;
+	color: #ffffff;
+}
+.tuan2 ul li p.pri strong{
+	font-size: 35px;
+	width: 120px;
+	line-height: 50px;
+	float: left;
+	padding-left: 12px;
+	font-weight: normal;
+}
+.tuan2 ul li p.pri small {
+	font-size: 14px;
+	text-decoration: line-through;
+	padding-top: 20px;
+	line-height: 30px;
+	float: left;
+	height: 30px;
+	display: block;
+}
+.tuan2 ul li p.pri small.x2 {
+	padding-top: 0px;
+	font-size: 14px;
+	line-height: 20px;
+	height: auto;
+	text-decoration: none;
+}
+
+.tuan2 ul li p.pri span {
+	display: block;
+	line-height: 20px;
+	height: 20px;
+	padding-top: 5px;
+	text-decoration: line-through;
+}
+.tuan2 ul li p.pri em {
+	padding-top: 10px;
+	padding-right: 10px;
+	float: right;
+}
+.tuan2 ul li:hover {
+	border: 1px solid #FF7689;
+}
+
+
+
+
+
+
+
+
+
+
+
+.line1 {
+	font-size: 0px;
+	line-height: 0px;
+	height: 5px;
+	margin-right: 25px;
+	margin-left: 25px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e3e3e3;
+}
+.hchstw2 .tuanbox{
+	width: 920px;
+}
+.hchstw2 .bgbg2{
+	display: none;
+}
+.hchstw2 .bgbg3{
+	display: none;
+}
+.hchstw2 .tgbg1 {
+	background-image: none;
+}
+.hchstw2 .tuan1 .info{
+	display: none;
+}
+.hchstw2 .tuan1 .ltxt{
+	width: 198px;
+}
+.hchstw2 .tuan2 ul li{
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding-top: 20px;
+	padding-right: 38px;
+	padding-bottom: 20px;
+	padding-left: 38px;
+}
+.hchstw2 .tuanbox{}
+.hchstw2 .tuanbox{}
+.hchstw2 .tuanbox{}
+.hchstw2 .tuanbox{}
+.hchstw2 .tuanbox{}

@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+
+<link href="themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/user6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/public6.css" rel="stylesheet" type="text/css" />
+
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/user6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/public6.css" rel="stylesheet" type="text/css" />
+
+<script type=text/javascript src="themes/hecha/themes/hechaV2.5/skin/green/js/common.js"></script>
+<script type="text/javascript" src="themes/hecha/themes/hechaV2.5/skin/tm6/js/jquery.libs-1.2.6pack.js"></script>
+<script type="text/javascript" src="themes/hecha/themes/hechaV2.5/skin/tm6/js/lightbox_me.js"></script>
+<script src="js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+ 
+<body>
+ 
+<!-- #BeginLibraryItem "/library/page_header2.lbi" --><!-- #EndLibraryItem -->
+
+<div class="ebody">
+	<div class="mypath">
+		<p><!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem --></p>
+	</div>
+	<div class="clear line10"></div>
+</div>
+<div class="ebody">
+	<div class="lnav2">
+    
+    
+                <div class="uinfo2">
+			<p><img src="themes/hecha/themes/hechaV2.5/skin/tm6/images/member/ustitle1.jpg" width="196" height="52" /></p>
+             <ul>
+				{insert name='cart_info'}
+				<div class="clear"></div>
+			</ul>
+
+           
+		</div>
+<div class="clear line5"></div>
+
+<?php
+$GLOBALS['smarty']->assign('hot_goods', get_exchange_recommend_goods2('hot'));
+?>
+		<div class="title_h3"><p><strong>积分排行榜</strong></p></div>
+		<div class="prolist_s1">
+        <!--{foreach from=$hot_goods item=goods name=hot_goods}-->   
+                    			<ul>
+                            <li class="img"><a href="{$goods.url}"><img src="{$goods.thumb}" /></a></li>
+                            <li class="txt">
+                                    <p class="til"><a href="{$goods.url}" title="{$goods.name}">{$goods.name}</a></p>
+                                    <p>市场价：<small>￥{$goods.market_price}</small></p>
+                                    <p class="pri">
+                <!-- {if $goods.promote_price neq ""} -->
+                本店价：￥{$goods.promote_price}
+                <!-- {else}-->
+                本店价：￥{$goods.shop_price}
+                <!--{/if}-->  
+                                    </p>
+                            </li>
+                            
+                            <div class="clear"></div>
+                        </ul>
+         <!--{/foreach}-->
+                        
+                    			<!--<ul>
+                            <li class="img"><a href="http://www.hecha.cn/sgoods-2584.html"><img src="http://www.hecha.cn/images/list_goods_images/small/NYB-1C1003.jpg" /></a></li>
+                            <li class="txt">
+                                    <p class="til"><a target="_blank" href="http://www.hecha.cn/sgoods-2584.html">【易贝】胎菊王菊花茶罐装50g</a></p>
+                                    <p>市价：<small>￥56.00</small></p>
+                                    <p class="pri">和茶价：￥19.80</p>
+                            </li>
+                            
+                            <div class="clear"></div>
+                        </ul>-->
+                        
+                        
+                    		</div>
+	</div>
+ 
+	<div class="rubox2">
+            <div class="ban1">
+<!-- TemplateBeginEditable name="积分商城页_banner" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+            </div>
+            
+      
+
+<div class="popbox_x1" id="sign_up_res" style="display:none;">
+	<div class="title"><em class="close">x</em>提示</div>
+	<div class="content" style="text-align:center;">
+		<div class="txt1" id="sign_up_res_p">
+			<p></p>
+		</div>
+		<div class="txt1" style="padding-left:130px;">
+			<a class="inpx6" id="sign_up_res_get">领取奖品</a>
+			<a class="inpx6 close" id="sign_up_res_next">下次领取</a>
+			<div class="clear"></div>
+		</div>
+		
+		<div class="but1"></div>
+	</div>
+	<div class="clear line15"></div>
+</div>
+ 
+<div class="popbox_x1" id="sign_up_tip" style="display:none">
+	<div class="title"><em class="close">x</em>提示</div>
+	<div class="content">
+		<div class="txt1">
+			<p id="sign_up_tip_p"></p>
+		</div>
+		<div class="txt1" style="padding-left:150px;">
+			<a href="javascript:;" class="inpx6 close" id="sign_up_tip_sure">确定</a>
+			<a href="javascript:;" class="inpx6 close" id="sign_up_tip_cancel">取消</a>
+			<div class="clear"></div>
+		</div>
+		<div class="but1"></div>
+	</div>
+	<div class="clear line15"></div>
+</div>
+ 
+<div class="popbox_x1" id="sign_up_jifen" style="display:none">
+	<div class="title"><em class="close">x</em>提示</div>
+	<div class="content">
+		<div class="txt1">
+			<p id="sign_up_jifen_p"></p>
+		</div>
+		<div class="txt1" style="padding-left:190px;">
+			<a href="javascript:;" class="inpx6 close" id="">确定</a>
+			<div class="clear"></div>
+		</div>
+		<div class="but1"></div>
+	</div>
+	<div class="clear line15"></div>
+</div>
+ 
+		<div class="clear line5"></div>
+        
+  
+		<div class="prolist_s2">
+
+
+                <!--{foreach from=$goods_list item=goods}-->
+                   <!-- {if $goods.goods_id} -->			                        
+                      
+                        <ul>
+				<li class="img"><a href="{$goods.gurl}" target="_blank" title="{$goods.name}"><img src="{$goods.goods_thumb}" alt="{$goods.name}" /></a></li>
+				<li class="txt"><a href="{$goods.gurl}" target="_blank" title="{$goods.name}">{$goods.name}<span style="color:red; font-weight:900;"></span></a></li>
+				<li class="pri2"><em>
+                <!-- {if $goods.promote_price neq ""} -->
+                本店价：￥{$goods.promote_price}
+                <!-- {else}-->
+                本店价：￥{$goods.shop_price}
+                <!--{/if}--> 
+                </em><strong>{$goods.exchange_integral}积分</strong></li>
+                                <li class="buy"><a href="exchange.php?act=buy&goods_id={$goods.goods_id}" class="la">我要兑换</a><a href="{$goods.gurl}" class="lb">我要购买</a></li>
+			</ul>
+            
+                  <!--{/if}-->
+               <!--{/foreach}-->     
+            
+
+                   <div class="clear"></div>
+                   
+			<div class="pages6" style="padding-right:10px;">
+            
+				<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+            
+			<div class="clear line10"></div>
+		</div>
+                <div class="clear"></div>
+                <div class="tx2" style="margin-left:10px;margin-right:10px; padding: 5px 5px; background-color: #F5F5F5;">
+                <p><strong>兑换说明：</strong></p>
+                <p>1. 根据兑换积分兑换商品；</p>
+                <p>2. 兑换的商品会跟随您购物订单邮寄（本次购物订单如未发货，可跟随本次购物订单发出，若本次购物订单已发出，将重下订单为您配送，邮费自付；还可以选择下次领取，下次购物时随您的订单一同发出）；</p>
+                <p>3. 本抽奖活动解释权归和茶网所有。</p>
+                </div>
+                <div class="clear line10"></div>
+		</div>
+                
+	</div>
+ 
+	<div class="clear line10"></div>
+</div>
+
+<!-- #BeginLibraryItem "/library/page_footer2.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

@@ -1,0 +1,47 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="footer7">
+	<div class="abody">
+	<div class="kfbox7 crz">
+  <!-- {foreach from=$helps item=help_cat name=help_cat} -->  
+		<ul class="s{$smarty.foreach.help_cat.iteration}">
+			<li class="t1 im{$smarty.foreach.help_cat.iteration}">{$help_cat.cat_name}</li>
+            <!-- {foreach from=$help_cat.article item=item} -->
+			<li><a href="{$item.url}" target="_blank" rel="nofollow">{$item.short_title}</a></li>
+            <!-- {/foreach} --> 
+
+		</ul>
+  <!-- {/foreach} -->
+              
+		<ul class="s6">
+			<li class="t1 im6">联系客服</li>
+			<li>订购热线</li>
+			<li class="t2">{$service_phone}</li>
+			<li>在线客服</li>
+			<li class="t3"><a href="#" target="_blank" rel="nofollow">点击这里进入</a></li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+	<ul class="service">
+		<li class="t1" title="支付宝特约商家"><a href="#" target="_blank" rel="nofollow">支付宝特约商家</a></li>
+		<li class="t2" title="7天退换货保障"><a href="#" target="_blank" rel="nofollow">正品保障 100%原产地</a></li>
+		<li class="t3" title="满200元免费配送"><a href="#" target="_blank" rel="nofollow">天退换货保障</a></li>
+		<li class="t4" title="400城市送货上市货到付款"><a href="#" target="_blank" rel="nofollow">满200元免费配送</a></li>
+		<li class="t5" title="400城市送货上市货到付款"><a href="#" target="_blank" rel="nofollow">400城市送货上市货到付款</a></li>
+	<div class="clear"></div>
+	</ul>
+	<div class="line15"></div>
+	<p class="link">
+   <!-- {if $navigator_list.bottom} -->
+      <!-- {foreach name=nav_bottom_list from=$navigator_list.bottom item=nav} -->
+    <a href="{$nav.url}" target="_blank">{$nav.name}</a> | 
+      <!-- {/foreach} -->
+   <!-- {/if} -->
+   
+    <a href="#">回顶部</a>
+    </p>
+        <p>Copyright © 2007-2013 Hecha. All Rights Reserved.  闽ICP证：闽<a href="http://www.miibeian.gov.cn/" target="_blank">10202223-1</a>号</p>
+	<p> 福建和茶网络科技有限公司 版权所有 并保留所有权利</p><p>技术支持：<a title="Ecshop模板网" target="_blank" href="http://www.ecshoptemplate.com/">Ecshop模板网</a></p>
+	<div class="line10"></div>
+	<p><span><img src="themes/hecha/themes/hechaV2.5/skin/tm6/images/public/fot_img1.gif" alt="国家级信息化示范试点项目" /></span></p>
+	</div>
+</div>

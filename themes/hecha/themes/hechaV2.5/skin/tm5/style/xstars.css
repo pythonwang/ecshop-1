@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* 
+Name: xstars.css
+For : http://www.hecha.cn/
+Date: 20110518  Sincol
+*/
+.xstars {
+	float: left;
+	display: block;
+	width: 65px;
+	zoom:1;
+	height: 15px;
+	overflow: hidden;
+}.xstars span{
+	height: 15px;
+	width: 65px;
+	background-image: url(../images/stars.png);
+	background-repeat: no-repeat;
+	display: block;
+}.xstars span.star0{background-position: 0px -160px;}.xstars span.star1{background-position: 0px -144px;}.xstars span.star2{background-position: 0px -128px;}.xstars span.star3{background-position: 0px -112px;}.xstars span.star4{background-position: 0px -96px;}.xstars span.star5{background-position: 0px -80px;}.xstars span.star6{background-position: 0px -64px;}.xstars span.star7{background-position: 0px -48px;}.xstars span.star8{background-position: 0px -32px;}.xstars span.star9{background-position: 0px -16px;}.xstars span.star10{background-position: 0px 0px;}.xstars.bg {
+	background-image: url(../images/stars.png);
+	background-position: 0px -163px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+
+<link href="themes/hechaV2.5/style/style_new.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/style/promain.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+
+<link href="themes/hecha/themes/hechaV2.5/style/style_new.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/style/promain.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/goods6.css" rel="stylesheet" type="text/css" />
+
+<script type=text/javascript src="themes/hecha/themes/hechaV2.5/skin/green/js/common.js"></script>
+<script type="text/javascript" src="themes/hecha/themes/hechaV2.5/skin/tm6/js/jquery.libs-1.2.6pack.js"></script>
+<script type="text/javascript" src="themes/hecha/themes/hechaV2.5/skin/tm6/js/effect_commonv3.js"></script>
+<script type="text/javascript" src="js/index_url.js"></script>
+</head>
+<body>
+
+<!-- #BeginLibraryItem "/library/page_header2.lbi" --><!-- #EndLibraryItem -->
+
+<?php
+
+$GLOBALS['smarty']->assign('helps', get_shop_help2());
+?>
+
+<div class="cbody">
+<div class="helpleft">
+
+<!-- {if $article_categories} -->
+					<div class="columnbd">
+						<h1 class="ctitle els" >文章分类</h1>
+<ul class="helptree">
+
+<!--{foreach from=$article_categories item=cat}-->
+<li class="tree2"><span style="cursor:pointer" ><a href="{$cat.url}">{$cat.name|escape:html}</a></span></li>
+
+
+  <!--{foreach from=$cat.children item=child}-->
+<li class="tree3"><a href="{$child.url}">{$child.name|escape:html}</a></li>
+  <!-- {/foreach} -->
+
+<!-- {/foreach} -->
+
+</ul>
+					</div>
+<!-- {/if} -->
+                    
+					<div class="columnbd">
+						<h1 class="ctitle els" >客服中心</h1>
+						<div class="contactbox">
+						    <a href="tencent://message/?V=1&Uin=739149164&Exe=QQ&Site=和茶客服-1&Menu=N"  class="emailus">联系在线客服</a><Br />
+							<a href="mailto:hecha@vip.sina.com" class="emailus">电子邮件联系我们</a>
+							<p> 客服电话：<br />
+                              0591-83312008
+							  </p>
+							<p>
+								客服传真：<br />
+								0591-83362061
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="helpright">
+					<h3 class="h_title" style="margin-bottom:28px; margin-right:0;">
+						文章列表
+				  </h3>
+<style>
+.artlist table th{ background-color:#79b812; padding:5px; color:#ffffff;}
+.artlist table td{ padding:5px;}
+</style>
+<div class="artlist">											
+      <table width="100%" border="0" cellspacing="1" bgcolor="#9ccb3b">
+      <tr>
+        <th>{$lang.article_title}</th>
+          <th>{$lang.article_author}</th>
+          <th>{$lang.article_add_time}</th>
+        </tr>
+      <!-- {foreach from=$artciles_list item=article} -->
+      <tr>
+        <td bgcolor="#ffffff"><a href="{$article.url2}" title="{$article.title|escape:html}" class="f6">{$article.short_title}</a></td>
+          <td bgcolor="#ffffff">{$article.author}</td>
+          <td bgcolor="#ffffff" align="center">{$article.add_time}</td>
+        </tr>
+      <!-- {/foreach} -->
+    </table>	
+</div>																
+<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+  </div>
+				
+			<div class="clear"></div>
+			<div class="line8"></div>
+	</div>
+    
+<!-- #BeginLibraryItem "/library/page_footer2.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

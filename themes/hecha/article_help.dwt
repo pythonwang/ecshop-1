@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+
+<link href="themes/hechaV2.5/style/style_new.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/style/promain.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+
+<link href="themes/hecha/themes/hechaV2.5/style/style_new.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/style/promain.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+
+<script type=text/javascript src="themes/hecha/themes/hechaV2.5/skin/green/js/common.js"></script>
+<script type="text/javascript" src="themes/hecha/themes/hechaV2.5/skin/tm6/js/jquery.libs-1.2.6pack.js"></script>
+<script type="text/javascript" src="themes/hecha/themes/hechaV2.5/skin/tm6/js/effect_commonv3.js"></script>
+<script type="text/javascript" src="js/index_url.js"></script>
+</head>
+<body>
+
+<!-- #BeginLibraryItem "/library/page_header2.lbi" --><!-- #EndLibraryItem -->
+
+<?php
+
+$GLOBALS['smarty']->assign('helps', get_shop_help2());
+?>
+
+<div class="cbody">
+<div class="helpleft">
+
+					<div class="columnbd">
+						<h1 class="ctitle els" >帮助中心目录</h1>
+<ul class="helptree">
+
+<!-- {foreach from=$helps item=help_cat} -->
+<li id="fc{$help_cat.cat_id2}" {if $help_cat.cat_id2 == $article.cat_id}class="tree4"{else}class="tree2"{/if} onclick="if( document.getElementById('sc{$help_cat.cat_id2}').style.display=='none' ){document.getElementById('fc{$help_cat.cat_id2}').className='tree4';document.getElementById('sc{$help_cat.cat_id2}').style.display='block'}else{document.getElementById('fc{$help_cat.cat_id2}').className='tree2';document.getElementById('sc{$help_cat.cat_id2}').style.display='none'}"><span style="cursor:pointer" >{$help_cat.cat_name}</span></li>
+
+<span id="sc{$help_cat.cat_id2}" {if $article.cat_id != $help_cat.cat_id2}style="display:none"{/if}>
+
+  <!-- {foreach from=$help_cat.article item=item} -->
+<li class="tree3"><a href="{$item.url}" {if $item.article_id == $article.article_id}class="selnode"{/if}>{$item.short_title}</a></li>
+  <!-- {/foreach} -->
+
+</span>
+<!-- {/foreach} -->
+
+</ul>
+					</div>
+					<div class="columnbd">
+						<h1 class="ctitle els" >客服中心</h1>
+						<div class="contactbox">
+						    <a href="tencent://message/?V=1&Uin=739149164&Exe=QQ&Site=和茶客服-1&Menu=N"  class="emailus">联系在线客服</a><Br />
+							<a href="mailto:hecha@vip.sina.com" class="emailus">电子邮件联系我们</a>
+							<p> 客服电话：<br />
+                              0591-83312008
+							  </p>
+							<p>
+								客服传真：<br />
+								0591-83362061
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="helpright">
+					<h3 class="h_title" style="margin-bottom:28px; margin-right:0;">
+						帮助中心
+					</h3>
+					<h1 class="h_title1" style="font-size:14px;">{$article.title|escape:html}</h1>
+					<div class="helpcon">
+											
+{$article.content}																			
+            		 </div>
+				</div>
+				
+			<div class="clear"></div>
+			<div class="line8"></div>
+	</div>
+    
+<!-- #BeginLibraryItem "/library/page_footer2.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

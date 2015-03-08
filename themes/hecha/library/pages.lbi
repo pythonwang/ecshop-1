@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <div class="pages6">
+			<!-- {if $pager.page_first} --><p><a href="{$pager.page_first}">首页</a></p><!-- {/if} -->
+			<!-- {if $pager.page_prev} --><p class="pr"><a href="{$pager.page_prev}">上一页</a></p><!-- {/if} -->
+            
+            <!-- {if $pager.page_count neq 1} -->
+              <!--{foreach from=$pager.page_number key=key item=item}-->
+			<p {if $pager.page eq $key}class="this"{/if}><a href="{$item}">{$key}</a></p>
+              <!--{/foreach}-->
+            <!-- {/if} -->
+  				
+            <!-- {if $pager.page_next} --><p class="nx"><a href="{$pager.page_next}">下一页</a></p><!-- {/if} -->
+			<!-- {if $pager.page_last} --><p><a href="{$pager.page_last}">尾页</a></p><!-- {/if} -->
+	 </div>

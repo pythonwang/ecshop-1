@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* 兼容样式 */body {
+	background-image: none;
+}
+.abody {
+	width: 980px;
+}
+.cbody {
+	width: 980px;
+}
+.row4 {
+	width: 750px;
+}
+.description {
+	width: 380px;
+}
+.prolist2 {
+}
+.prolist2 ul li{
+	width: 183px;
+}
+.title_f3 {
+	background-image: url(http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/buyico2.gif);
+	background-repeat: repeat-x;
+	height: 32px;
+}
+.title_f3 ul {
+
+}
+.title_f3 li {
+	float: left;
+	color: #606060;
+	background-image: url(http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/buyico2.gif);
+	background-repeat: no-repeat;
+	background-position: 0px -65px;
+	text-align: center;
+	width: 106px;
+	margin-right: 2px;
+	cursor: pointer;
+	line-height: 30px;
+	height: 30px;
+	padding-top: 2px;
+}
+.title_f3 li.this {
+	color: #fff;
+	background-image: url(http://www.hecha.cn/themes/hechaV2.5/skin/tm5/images/buyico2.gif);
+	background-repeat: no-repeat;
+	background-position: 0px -32px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.title_f3 li.this a {
+	color: #ffffff;
+}
+.pplist .ppbox{
+	border-top-style: none;
+}
+.pplist .ppbox ol li{
+	margin-right: 6px;
+	margin-left: 6px;
+
+}
+#wrapper {
+	width: 980px;
+}.artTag {
+}
+.artTag h2 {
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: normal;
+	display: inline;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+.lbox1 .box1 .txt1 span {
+	display: none;
+}.con_image_sty {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}

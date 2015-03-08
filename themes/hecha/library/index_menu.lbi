@@ -1,0 +1,25 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="menu7">
+	<div class="abody">
+	<div class="mxal">
+		<p class="til">所有商品分类</p>
+	</div>
+	<div class="mxnx">
+	<ul>
+    
+		<li {if $navigator_list.config.index eq 1}class="this"{/if}><a href="index.php"><span title="{$lang.home}">{$lang.home}</span></a></li>
+ <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->       
+		<li {if $nav.active eq 1}class="this"{/if}><a href="{$nav.url}"><span title="{$nav.name}">{$nav.name}</span></a></li>
+<!-- {/foreach} -->
+
+        
+		<div class="clear"></div>
+		<!--<div class="new1"></div>-->
+	</ul>
+	</div>
+	<div class="rbox">
+		<p class="p1"><a href="group_buy.php">今日团购</a></p>
+	</div>
+	<div class="clear"></div>
+	</div>
+</div>

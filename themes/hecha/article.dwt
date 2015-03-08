@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+
+<link href="themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+<link href="style/css/home_pr.css" rel="stylesheet" type="text/css">
+
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/style/css/home_pr.css" rel="stylesheet" type="text/css">
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/commentv5.2.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="themes/hecha/style/js/ad.js"></script>
+<script type="text/javascript" src="js/transport.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+{insert_scripts files='utils.js'}
+</head>
+<body youdao="bind">
+<!-- #BeginLibraryItem "/library/page_header2.lbi" --><!-- #EndLibraryItem -->
+
+<div class="body3">
+  <div class="show1" style="margin:8px 0px 8px 0px;">
+<!-- TemplateBeginEditable name="文章内容页_banner" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+  </div>
+</div>
+
+<div class="cbody">
+	<div class="lbox1">
+		<div class="line">
+		<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+		</div>
+		<div class="box1">
+			<div class="title1"><h1>{$article.title|escape:html}</h1></div>
+			<div class="info">
+				发布时间：{$article.add_time}&nbsp;&nbsp;
+				来源：{$article.author|escape:html}&nbsp;&nbsp;
+			</div>
+			<div class="txt1">
+			<div id="con_image_sty" class="con_image_sty">
+<!-- TemplateBeginEditable name="文章内容页_content" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+            </div>
+            
+            {$article.content}
+            
+			<div class="arc_sc_1"><script type="text/javascript">sc_1();</script></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="txt2">
+        {if $prev_article}
+        上一篇：<a href='{$prev_article.url}'>{$prev_article.title}</a>
+        {/if}
+        &nbsp;&nbsp;下一篇：<a href='{$next_article.url}'>{$next_article.title}</a> 
+        
+		</div>
+			
+	
+		<div class="box3">
+        <!-- #BeginLibraryItem "/library/comments.lbi" -->
+		<!-- #EndLibraryItem -->
+        
+		</div>
+        
+	</div>
+	
+	<div class="rbox1">
+
+	<DIV id=middle_flash  class="flashCnt" style="height:305px;">
+		<DIV id="middle_flash_bor"  style="width: 301px; height: 305px;">
+			<div id="img_right1">
+<!-- TemplateBeginEditable name="文章内容页_右侧广告" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+            </div>
+		</DIV>
+	</DIV>
+    
+	  <!--<div class="title1"> 您可能感兴趣的文章 </div>
+	  <div class="li1">
+		<dl class="dl1">
+			<dt><a href="/info/9/show_27528.html" target="_blank" title="老人可以喝大红袍吗"><img src="http://hcseo.hecha.cn/ydjk/130424/2-1304241G103938.jpg" width="89" height="89" align="absmiddle" /></a>
+			</dt>
+
+			<dd>
+			<p><a href="/info/2013/show_17892.html" target="_blank">金银花搭配菊花茶 有稳定血压的</a></p>
+<p><a href="/info/2013/show_17934.html" target="_blank">柠檬茶的功效作用</a></p>
+<p><a href="/info/2013/show_17840.html" target="_blank">苦丁茶的微量元素保健功效</a></p>
+<p><a href="/info/2013/show_17897.html" target="_blank">常饮杜仲雄花茶有哪些保健作用</a></p>
+
+			</dd>
+			<div class="clear"></div>
+		</dl>
+		<div class="clear"></div>
+		<dl class="dl1">
+			<dt><a href="/info/2013/show_17564.html" target="_blank" title="最有效的美容茶"><img src="http://hcseo.hecha.cn/ydjk/130418/2-13041Q01302423.jpg" width="89" height="89" align="absmiddle" /></a>
+			</dt>
+
+			<dd>
+			<p><a href="/info/46/show_139570.html" target="_blank">蜂蜜奶茶的功效以及如何制作</a></p>
+<p><a href="/info/2013/show_17875.html" target="_blank">喝太烫的茶水会对咽喉不利</a></p>
+<p><a href="/info/2013/show_17526.html" target="_blank">哪些花草茶即好喝又养生呢?</a></p>
+<p><a href="/info/2013/show_17869.html" target="_blank">用绿茶茶叶洗澡有助于爽肤除痱</a></p>
+
+			</dd>
+			<div class="clear"></div>
+		</dl>
+		<div class="clear"></div>
+		<div class="clear"></div>
+		<div id="img_right2"></div>
+		<div id="img_right3"></div>
+	  </div>-->
+      
+      
+	      <div class="title1">名茶导购</div>
+      <div class="li1">
+        <div class="box1">
+<!-- {foreach from=get_cat_brands(0,'category',12) item=brand name=brand} -->       
+			<p><a href="search.php?brand={$brand.brand_id}">{$brand.brand_name}</a></p>
+<!--{/foreach}-->
+                       
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+<?php
+$GLOBALS['smarty']->assign('get_new_articles', get_new_articles());
+?>      
+	  <div class="title1">热点资讯</div>
+	  <div class="li3">
+		<div class="dl2">
+			<dl>
+				<dt>
+<!--{foreach from=$get_new_articles item=new_articles name=new_articles}-->        
+  <!-- {if $smarty.foreach.new_articles.index==0}-->          
+                <a href="{$new_articles.url}" title="{$new_articles.title}"><img src="{$new_articles.file_url}" width="89" height="89" align="absmiddle" /></a>
+					<p><a href="{$new_articles.url}" title="{$new_articles.title}">{$new_articles.title}</a></p>
+  <!--{/if}-->
+ <!--{/foreach}-->               
+				</dt>
+
+<dd>
+<!--{foreach from=$get_new_articles item=new_articles name=new_articles}-->        
+  <!-- {if $smarty.foreach.new_articles.index>1 && $smarty.foreach.new_articles.index<20 && $smarty.foreach.new_articles.index mod 2 eq 0}-->               
+<p><a href="{$new_articles.url}" title="{$new_articles.title}">{$new_articles.title}</a></p>
+  <!--{/if}-->
+ <!--{/foreach}--> 
+
+
+				</dd>
+			</dl>
+            
+			<dl>
+				<dt>
+<!--{foreach from=$get_new_articles item=new_articles name=new_articles}-->        
+  <!-- {if $smarty.foreach.new_articles.index==1}-->          
+                <a href="{$new_articles.url}" title="{$new_articles.title}"><img src="{$new_articles.file_url}" width="89" height="89" align="absmiddle" /></a>
+					<p><a href="{$new_articles.url}" title="{$new_articles.title}">{$new_articles.title}</a></p>
+  <!--{/if}-->
+ <!--{/foreach}-->
+				</dt>
+
+				<dd>
+<!--{foreach from=$get_new_articles item=new_articles name=new_articles}-->        
+  <!-- {if $smarty.foreach.new_articles.index>1 && $smarty.foreach.new_articles.index<20 && $smarty.foreach.new_articles.index mod 2 eq 1}-->                    
+<p><a href="{$new_articles.url}" title="{$new_articles.title}">{$new_articles.title}</a></p>
+  <!--{/if}-->
+ <!--{/foreach}--> 
+
+				</dd>
+			</dl>
+            
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	  </div>
+      
+      
+	</div>
+</div>
+<div class="clear"></div>
+
+<!-- #BeginLibraryItem "/library/page_footer2.lbi" --><!-- #EndLibraryItem -->
+
+
+<div style="display:none;"><script type="text/javascript">tj();</script></div>
+<script type="text/javascript">scRight();</script>
+<script type=text/javascript src="http://www.hecha.cn/themes/hechaV2.5/skin/green/js/jquery.libs-1.2.6pack.js"></script>
+<script language="javascript">
+jQuery.post("/img/get_ad.php",{id:"0"}, function(data){	
+	img_array	= new Array();
+	img_array	= data.split('|||');
+	jQuery("#con_image_sty").html(img_array[0]);
+	jQuery("#img_right1").html(img_array[1]);
+	jQuery("#img_right2").html(img_array[2]);
+	jQuery("#img_right3").html(img_array[3]);
+});
+</script>
+
+</body>
+</html>

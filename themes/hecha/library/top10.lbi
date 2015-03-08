@@ -1,0 +1,28 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<?php
+$GLOBALS['smarty']->assign('get_hotsell_goods', get_hotsell_goods($cat_id));
+?>
+	<div class="title_h3"><p>{$cat.cat_name}热销TOP5</p></div><div class="prolist_s1">
+
+<!-- {foreach from=$get_hotsell_goods item=goods name=top_goods}-->    
+  <!-- {if $smarty.foreach.top_goods.index<5}-->  
+        <ul>
+			<li class="img"><a href="{$goods.url}"><img alt="{$goods.goods_name}" src="{$goods.thumb}" /></a></li>
+			<li class="txt">
+				<p class="til"><a href="{$goods.url}">{$goods.short_name}</a></p>
+				<p>市场价：<small>￥{$goods.market_price}</small></p>
+				<p class="pri">本店价：￥
+                <!-- {if $goods.promote_price neq ""} -->
+                {$goods.promote_price}
+                <!-- {else}-->
+                {$goods.price}
+                <!--{/if}-->  
+                </p>
+			</li>
+			<div class="clear"></div>
+		</ul>
+  <!--{/if}-->
+<!-- {/foreach} -->
+        
+       
+        </div>   

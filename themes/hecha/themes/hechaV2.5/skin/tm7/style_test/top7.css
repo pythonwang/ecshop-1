@@ -1,0 +1,184 @@
+@charset "utf-8";/* 
+Name: top7.css
+For : http://www.hecha.cn/
+Date: 20121119  Sincol
+*/
+.top7{
+	line-height: 27px;
+	height: 27px;
+	background-color: #f4f4f4;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eaeaea;
+}
+.top7 .la {
+	padding-left: 6px;
+}
+
+.top7 .la a{
+	color: #FF7689;
+	text-decoration: none;
+}
+.top7 .la a:hover {
+	color: #cf140a;
+	text-decoration: underline;
+}
+
+
+.top7 small{
+	color: #bfbfbf;
+	font-family: simsun;
+	padding-top: 0;
+	padding-right: 6px;
+	padding-bottom: 0;
+	padding-left: 6px;
+	font-size: 12px;
+}
+.top7 .rlink {
+	float: right;
+}
+.top7 table {border-collapse:collapse; margin:-1px -10px; 0 0; width:0; height:0;}
+.top7 dl{
+	float: right;
+	height: 27px;
+	width: 120px;
+}
+.top7 dt{
+	height: 27px;
+	position: relative;
+	z-index: 999999999;
+	line-height: 27px;
+	cursor: pointer;
+	_width: 55px;
+	width: 120px;
+}
+.top7 dt strong {
+	color: #cf140a;
+	padding-right: 3px;
+	padding-left: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.top7 dt a {
+	display: block;
+	height: 27px;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 80px;
+	background-image: url(../images/header/top_bg2.gif);
+	padding-left: 30px;
+	line-height: 27px;
+	padding-right: 10px;
+}
+.top7 dt a:hover {
+	white-space: nowrap;
+	position: relative;
+	z-index: 99;
+	background-position: 0px -27px;
+	margin-right: 0px;
+	margin-left: 0px;
+	text-decoration: none;
+}
+.top7 dt:hover > a {
+	text-decoration: none;
+	position: relative;
+	z-index: 99;
+	display: block;
+	margin-right: 0px;
+	margin-left: 0px;
+	color: #cf140a;
+	background-position: 0px -27px;
+}
+.top7 dt ul {
+	left: 0px;
+	width: 260px;
+	z-index: 995;
+	overflow:!important auto;
+	zoom: 1;
+	top: -9999px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #cccccc;
+	border-bottom-color: #cccccc;
+	border-left-color: #cccccc;
+	position: absolute;
+	padding-bottom: 6px;
+	background-color: #fff;
+	padding-top: 6px;
+	background-image: url(../images/header/top_bg3.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.top7 dt :hover ul,.top7 dt:hover ul {
+	top: 27px;
+	display: block;
+	background-color: #fff;
+	z-index: 999;
+	left: 0px;
+}
+.top7 dt ul li {
+	background-color: #ffffff;
+	zoom:1;
+	float: none;
+	padding-left: 8px;
+	line-height: 22px;
+	clear: both;
+	/*background-image: url(../images/sico/ico.gif);*/
+	background-repeat: no-repeat;
+	background-position: 8px 2px;
+	padding-right: 8px;
+	color: #333333;
+	text-decoration: none;
+	cursor: default;
+	height: 22px;
+	overflow: hidden;
+}
+.top7 dt ul li a {
+	background-image: none;
+	margin: 0px;
+	padding: 0px;
+	color: #333333;
+	display: inline;
+	width: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	float: none;
+}
+.top7 dt ul li a:hover {
+	color: #cf140a;
+	text-decoration: underline;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	cursor: poiner;
+	white-space: normal;
+}
+.top7 dt ul li.tr {
+	margin-top: 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e0e0e0;
+	padding-top: 6px;
+	text-align: right;
+	margin-right: 8px;
+	margin-left: 8px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.top7 dt ul li em {
+	color: #cd0606;
+}
+
+
+.top7 dd{display: none;}

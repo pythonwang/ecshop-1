@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+
+            <link href="themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+            <link href="themes/hechaV2.5/skin/tm5/style/goods_list.css" rel="stylesheet" type="text/css" />
+            <link href="themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+
+            <link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+            <link href="themes/hecha/themes/hechaV2.5/skin/tm5/style/goods_list.css" rel="stylesheet" type="text/css" />
+            <link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+            <link href="themes/hecha/themes/hechaV2.5/skin/tm5/style/sitemap.css" rel="stylesheet" type="text/css" />
+
+            <script type="text/javascript" src="themes/hecha/themes/hechaV2.5/skin/tm5/js/jquery.libs-1.2.6pack.js"></script>
+            <script type="text/javascript" src="themes/hecha/themes/hechaV2.5/skin/tm5/js/effect_commonv3.js"></script>
+            <script type="text/javascript" src="js/index_url.js"></script>
+            <script type="text/javascript" src="themes/hecha/themes/hechaV2.5/skin/tm5/js/common.js"></script>
+
+    </head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    
+<!-- #BeginLibraryItem "/library/page_header2.lbi" --><!-- #EndLibraryItem -->      
+
+<div class="abody">
+            <div class="path">
+                <p><!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem --></p>
+            </div>
+        </div>
+        <div class="abody">
+            <div class="line10"></div>
+            <div class="sitemap">
+                <div class="left">
+                    <div class="title ico1"><strong><a href="http://www.hecha.cn/">商品分类</a></strong></div>
+                    
+                    <!--{foreach from=get_categories_tree() item=cat name=cat}-->
+                    <dl>
+                        <dt><a href="http://www.hecha.cn/lvcha_list.html">{$cat.name|escape:html}</a></dt>
+                        <dd>
+                        <!--{foreach from=$cat.cat_id item=child name=child}-->
+                            <a href="{$child.url}">{$child.name|escape:html}</a>
+                            <!--{if !$smarty.foreach.child.last} -->
+                              | 
+                            <!--{/if} -->
+                        <!--{/foreach}-->
+                            
+                            <!--<a href="http://www.hecha.cn/houkui_list.html">太平猴魁</a>  |  
+                            <a href="http://www.hecha.cn/maofeng_list.html">黄山毛峰</a>  |  
+                            <a href="http://www.hecha.cn/guapian_list.html">六安瓜片</a>-->
+                        </dd>
+                        <div class="clear"></div>
+                    </dl>                   
+                    <!--{/foreach}-->
+                    
+                    <div class="fbox"></div>
+                </div>
+                
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+<!-- #BeginLibraryItem "/library/page_footer2.lbi" --><!-- #EndLibraryItem -->
+
+</body>
+</html>

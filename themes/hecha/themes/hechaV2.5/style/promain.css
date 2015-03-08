@@ -1,0 +1,633 @@
+/* CSS Document */
+/*新闻列表*/
+.input{border:1px solid #7E9DB9; height:20px; line-height:20px;}
+.newlists{ border:1px solid #B1D7E4; padding-left:19px; padding-right:17px; padding-top:14px;}
+.squareul li{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/square.gif) no-repeat left center; padding-left:16px;}
+.newlists .squareul li{ line-height:25px; border-bottom:1px dashed #cccccc; clear:both; padding-right:30px;font-size:13px;}
+.newlists .listpage{height:26px; padding-top:38px;}
+.newlists span.fright{ font-family: "Times New Roman", Times, serif; color:#000;}
+/*赠品*/
+.giftad{ width:979px; height:368px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/giftad.jpg) no-repeat; position:relative; border:1px solid #85B513;}
+.giftad .adinfo{width:494px; position:absolute; left:192px; bottom:33px; font-size:14px; line-height:25px;} 
+.gifttit{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/gifttit.gif) no-repeat 31px top;  text-align:right; width:100%; margin-top:10px; border-bottom:1px solid #85B81B; padding-top:15px; margin-bottom:33px;}
+ .pagebars{ float:right; border-left:1px dashed #333; padding-left:10px; padding-bottom:1px;}
+ 
+.loginbox{ width:322px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/logonbg1.gif) repeat-y; float:left; margin-top:12px; margin-bottom:12px; }
+.log_title{ font-size:14px; color:#050505; height:33px; line-height:33px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/logonbg.gif) 0 0; padding-left:19px;}
+.log_con{ height:254px; padding:16px 19px;}
+.log_foot{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/logonbg.gif) no-repeat 0 -46px; height:15px;}
+/*
+.labinput{ margin-left:44px; margin-bottom:14px; font-size:14px; font-weight:bold;}
+.labinput input{ border:1px solid #7F9DB9; margin-left:13px; height:17px; line-height:17px; width:164px;}*/
+.labinput{ clear:both; margin-bottom:14px;font-size:14px; font-weight:bold;}
+.labinput span{ float:left; width:85px; text-align:right; padding-right:14px;}
+.labinput input{ border:1px solid #7F9DB9; height:17px; line-height:17px; width:164px;}
+
+.log_con .fortip{ margin-left:102px; margin-bottom:15px;}
+.log_con .btndiv{ border-bottom:1px dashed #999999; margin-left:22px; margin-right:22px; text-align:right; padding-bottom:27px; margin-bottom:24px;}
+.log_con .btndiv1{ text-align:right; margin-right:22px; margin-top:27px;}
+.log_con h3{ margin-bottom:23px;}
+
+.greenbtn,.greenbtn1{ border:none; height:28px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/logonbg.gif) no-repeat; border:none; line-height:28px; cursor:pointer;}
+.greenbtn{ background-position: 0 -72px;width:73px;}
+.greenbtn1{ background-position:0 -109px;  width:91px; }
+
+.logcontain{ width:664px; margin:auto;}
+.rlog{margin-left:20px;}
+.rlog h3{margin-bottom:5px;}
+.rlog h3.fontblue{ margin-bottom:10px;}
+.logcontain .tip{ border:1px solid #B1D7E4;padding:11px 10px 11px 40px; clear:both; background:url(http://www.hecha.cn/themes/hechaV2.5/images/icongt.gif) no-repeat 14px 12px; color:#0A0A0A; line-height:20px;}
+.logul li{ line-height:27px; list-style: inside disc; }
+
+.regcontain{ width:838px; margin:auto; margin-top:35px;}
+.regcontain h3{ margin-bottom:10px;}
+.regtable{ border-collapse:collapse; border:1px solid #DADADA; table-layout:fixed;}
+.regtable td{ border-bottom:1px solid #DADADA; padding:0 10px; }
+.regtable .regtd{ text-align:right; height:52px; background-color:#E9F5DF; width:225px; padding-right:0;border-right:1px solid #DADADA; font-size:14px;}
+.regtable input.long{ width:227px; height:20px; border:1px solid #BDBDBD;}
+.readdiv{ margin:25px 0 15px 220px;}
+
+.regad{width:981px; height:151px; margin:auto; background:url(http://www.hecha.cn/themes/hechaV2.5/images/logtbg.jpg) no-repeat 0 top; text-indent:-9999px;}
+
+.comleft{ width:611px; float:left;}
+.comright{width:370px; float:left; overflow:hidden;}
+.comtitle{ color:#316ac5; font-size:14px; font-weight:bold;  padding-bottom:5px; margin-top:12px;border-bottom:1px solid #B1D7E4; margin-right:23px; margin-bottom:35px; letter-spacing:1px;}
+.comtitle span{ color:#000; font-weight:normal;}
+.comrow{ margin-bottom:55px; zoom:1; height:auto;}
+.crowleft{ width:157px; padding-right:13px; text-align:center; float:left; padding-top:3px;}
+.crowright{ width:417px; float:left;}
+.comimg{ width:88px; height:108px; border:1px solid #9C9C9C; overflow:hidden; margin:0 auto;}
+.comimg img{width:88px; height:108px;}
+.comstar{ height:15px; padding-top:7px;}
+.comstar img{ height:12px;}
+.crowright h3{ padding-bottom:6px;}
+.bluename{ color:#316ac5; font-size:14px; line-height:22px;}
+.crowright  .time{ font-size:12px; font-family: Arial, Helvetica, sans-serif; color:#6E6E6E; margin-left:10px;}
+.crowright p{ line-height:20px; margin-top:5px;}
+.comleft .tomore{ margin-right:34px; text-align:right; margin-bottom:10px;}
+
+.comrtop,.comrbottom{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/cominteg.gif) no-repeat;}
+.comrtop{ height:8px; font-size:0;  background-position:center 0;}
+.comrbottom{ background-position:center -21px;height:7px; font-size:0; margin-bottom:14px;}
+.comrmid{ border-left:1px solid #B1D7E4;border-right:1px solid #B1D7E4; padding:5px 10px;}
+.toptit,.comright .toptit{ color:#008596; font-size:14px; margin-bottom:22px;}
+.comright .toptit span{ font-size:12px;}
+.comright .toptit a.moreintro{ margin-left:8px; font-size:12px; font-weight:normal;}
+
+.com_btn{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/cominteg.gif) no-repeat 0 -46px; width:68px; height:22px; border:none;}
+.comimg_1{ width:70px; height:86px; overflow:hidden; border:1px solid #939393; margin:0 auto; margin-bottom:2px;}
+.com_lists{ width:100%; zoom:1; clear:both; }
+.com_lists li{ width:116px; float:left; text-align:center; padding-bottom:36px;}
+.com_lists li .com_btn{ margin-top:2px;}
+.comright .tomore{ text-align:right; margin-bottom:13px;}
+.comright .bluetxt1{font-family: Arial, Helvetica, sans-serif;}
+.com_lists1{ margin:10px; margin-bottom:31px;}
+.com_list{ border-bottom:1px solid #cccccc; clear:both; padding-top:8px; height:29px;}
+.com_list .list_1{ width:171px; float:left; background:url(http://www.hecha.cn/themes/hechaV2.5/images/cominteg.gif) no-repeat 10px -86px; padding-left:29px; }
+.com_list .list_2{ width:63px; float:left;}
+.com_list .list_3{ width:64px; float:left; color:#333;}
+.com_list .list_3.normal{ color:#333;}
+.com_lists1 .heads .list_1,.com_lists1 .heads .list_2,.com_lists1 .heads .list_3{  color:#989898; font-weight:bold; background:none;}
+.com_lists1 .heads .list_1{ padding-left:5px; width:195px;}
+
+#wrapper .comrid_1{ padding-left:13px; border-left:1px solid #B1D7E4; border-right:1px solid #B1D7E4;}
+.comrtop_1,.comrbottom_1,.comrtop_1 div,.comrbottom_1 div{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/cominteg1.gif) no-repeat;}
+.comrtop_1,.comrtop_1 div{ background-position:0 0; height:8px; font-size:0;}
+.comrtop_1 div{ background-position:966px -71px;}
+.comrbottom_1,.comrbottom_1 div{ background-position:0 -28px; height:7px; font-size:0;}
+.comrbottom_1 div{ background-position:964px -113px;}
+.comrid_1 .crowleft{ width:179px;}
+.comrid_1 .crowright{ width:738px;}
+.comrid_1 .toptit{ margin-bottom:40px;}
+.comrid_1 .listpage_1{ padding-top:10px; padding-bottom:23px;font-family: Arial, Helvetica, sans-serif; font-stretch:semi-condensed}
+/*帐户中心*/
+.m_left{
+	width:152px;
+	float:left;
+	margin-right:7px;
+	margin-top:6px
+}
+.m_right{ width:792px; float:right; margin-top:6px; overflow:hidden;}
+/*add 2009-7-2*/
+.m_infobox{ border:1px solid #B0D7E6; background:#DFF6CC; margin-bottom:13px; padding:14px 2px 20px 8px;}
+.m_memname{ margin-bottom:8px;}
+.headpic{ float:left; border:1px solid #A8ADB1; width:37px; height:37px; margin-top:5px;}
+.m_meminfo{ margin-left:45px;}
+.m_meminfo li{ padding:3px 0;}
+/*----*/
+.m_box{
+	border:1px solid #9ccb3b;
+	background:url(http://www.hecha.cn/themes/hechaV2.5/images/m_tit.jpg) no-repeat 1px 1px;
+	_background-position:2px 2px;
+	margin-bottom:13px;
+}
+*+html .m_box{ background-position:2px 2px;}
+.m_head{ color:#fff; font-weight:bold; height:36px; line-height:36px; padding-left:36px;}
+.m_cols{ margin:4px 8px;}
+.m_cols li{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/dot6.gif) no-repeat 18px center; height:24px; line-height:24px; border-bottom:1px dashed #DCDCDC;padding-left:30px;}
+.m_cols li a:link,.m_cols li a:visited{ color:#3E3E3E;}
+.m_cols li a:hover{ color:#000;}
+.m_box .nobd{ border-bottom:none;}
+.m_box a.select{ font-weight:bold;}
+.m_right .m_box,#wrap1 .m_box{
+	border:1px solid #9ccb3b;
+	background:url(http://www.hecha.cn/themes/hechaV2.5/images/m_rbg.gif) repeat-x;
+	padding-bottom:20px;
+	padding-top:1px;
+	min-height:413px;
+	_height:413px;
+}
+.m_right  h3.m_title,#wrap1 h3.m_title{background:url(http://www.hecha.cn/themes/hechaV2.5/images/m_intebg.gif) no-repeat; height:26px; padding-top:9px; padding-left:69px; color:#040507; font-size:14px;}
+.mbtn,.mbtn_1,.mbtn_3,.mbtn_4,.mbtn_5,.mbtn_6,.m_title1,.m_title2,.m_tips1,.mbtn_7,.mbtn_8{background:url(http://www.hecha.cn/themes/hechaV2.5/images/m_intebg.gif) no-repeat;}
+.mbtn{ background-position:0 -178px; height:26px; width:85px; color:#656565; line-height:26px; cursor:pointer; border:none;}
+input.mbtn_1,.mbtn_3,.mbtn_4,.mbtn_6,.mbtn_7,.mbtn_8{ background-position:0 -70px; height:32px; width:90px; color:#fff;  line-height:32px; cursor:pointer;border:none; font-size:14px; font-weight:bold;}
+.mbtn_2{ border-right:1px solid #898989; border-bottom:1px solid #898989; background-color:#E8E8E8; height:23px; width:57px;}
+.mbtn_3{background-position:-105px -71px; }
+.mbtn_4{ background-position:0 -397px; width:147px;}
+.mbtn_5{ background-position:0 -465px; width:67px; height:24px; line-height:24px; border:none; cursor:pointer; color:#fff; }
+.mbtn_6{ background-position:-49px -397px; width:98px}
+.mbtn_7{ background-position:-42px -397px; width:105px;}
+.mbtn_8{ background-position:0 -518px; width:105px;}
+
+.mbtnbar{ margin:23px 0 21px 0;}
+.mtable{ border:1px solid #ccc; border-top-width:2px; width:743px; margin:0 auto; border-collapse:collapse; text-align:center;}
+.mtable th{ border:1px solid #ccc; height:26px; background:#EFEFEF; }
+.mtable td{ height:44px; word-break:break-all;border:1px solid #ccc;}
+.m_right .m_title1{ border:1px solid #B1D7E4; height:30px; line-height:30px; background-position:7px -131px; padding-left:25px; margin-top:22px; font-size:14px; font-weight:bold; margin-bottom:12px; background-color:#F5FBF1;}
+.m_boxbody{ margin-left:20px; margin-right:25px;}
+.addtbl{ color:#333; margin-top:15px;}
+.addtbl td{ padding-bottom:14px;}
+.addtbl input,.addtbl select{ border:1px solid #7E9DB9; margin-bottom:4px;height:20px;}
+.addtbl p{ padding-bottom:10px;}
+.addtbl input.normal{  width:155px;}
+.addtbl input.long{ width:395px;}
+.addtbl input.short{  width:53px;}
+.addtbl input.mbtn_1{ height:32px; border:none; font-size:14px; font-weight:bold;}
+
+.pswtbl{ margin-left:145px; margin-top:48px;}
+.pswtbl td{ height:37px;} 
+.pswtbl input.normal{ width:165px;border:1px solid #7E9DB9; height:20px;}
+.pswtbl .mbtn_1{ margin-left:77px; margin-top:15px;}
+
+.msgtbl{ margin-top:29px;}
+.msgtbl tfoot td{ text-align:center;}
+.msgtbl td{ border:none; border-bottom:1px solid #EEEEEE; height:26px; text-align:left; padding-left:6px;}
+.msgtbl .listpage_1{ margin-top:25px; margin-bottom:10px;}
+.msgtbl a.msgbt{ font-weight:bold; color:#008598;}
+.msgtbl a.fontgray{ color:#6E706F;}
+.msgtbl .time{ font-family:Arial, Helvetica, sans-serif;}
+.m_title2{ background-position:15px -234px; padding-left:39px; padding-bottom:5px; margin:17px 12px 16px 12px; border-bottom:2px solid #A3A3A3; color:#038198; font-weight:bold; font-size:14px;}
+.mbtnbar_1{ float:right; padding-right:22px; margin-top:9px; height:24px;}
+.m_infocon{ margin-left:19px; line-height:24px; position:relative; padding-bottom:10px; }
+.m_infocon .p{ width:399px; font-size:14px; color:#3D3D3D; line-height:24px; margin-bottom:40px;}
+.m_infocon h3{color:#3D3D3D;line-height:26px; }
+.lq{height:186px; width:230px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/m_lqbg.jpg) no-repeat; padding-right:87px; text-align:right; overflow:hidden; }
+.lq p{ line-height:28px; width:220px;padding:31px 0 30px 26px; font-size:14px; text-align:left;  }
+.lq a.moreintro{  color:#308317!important;font-size:14px;}
+.m_infocon .lq{ position:absolute; top:9px; right:50px;  }
+.lqtips{  background: url(http://www.hecha.cn/themes/hechaV2.5/images/m_lq.gif) no-repeat 123px 230px;}
+.lqtips li{font-size:14px; color:#3D3D3D; line-height:24px;}
+.lqtips .buydiv{ text-align:right; margin-right:87px; margin-top:26px;}
+.m_infocon .pro_item{ padding-left:32px; padding-right:32px; margin-top:20px;}
+.tjlists{ padding-left:18px;}
+.lqcon{ margin-left:23px; margin-right:21px;}
+.lqcon .lq{ margin:23px 0 19px 41px; }
+.lqcon .mtable{ border-top-width:1px;}
+.lqcon .mtable td{ padding:10px 0;}
+.lqnew{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/lq_new.gif) no-repeat; display:inline-block; padding:22px 0 22px 22px; }
+.lqnewcnt{text-align:left; margin-left:12px;}
+.lqnewcnt strong{ margin-top:3px; display:block;}
+.lqnewcnt a{ text-decoration:underline; color:#005BE4;}
+.m_greet{ font-size:14px; color:#3E3E3E; line-height:25px; text-indent:2em; margin:4px 10px 0 0;}
+.awards li{ float:left; width:182px;  text-align:center; padding-top:14px;}
+.awards img{ border:1px solid #FF0101; width:118px; height:163px;}
+.awards  p{line-height:30px;}
+.m_msg{ text-indent:2em; line-height:25px;color:#3E3E3E; font-size:14px; margin-right:20px;}
+
+.bluetxt2{ color:#0304E8}
+/*.lq a.moreintro{color:#0304E8}*/
+
+.m_tips{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/m_intebg.gif) no-repeat 0 -279px; color:#7D7D7D;text-indent:24px; margin:39px 43px 16px 47px; font-size:13px;}
+.favortb{ width:685px; border-top-width:1px;	}
+.favortb th{ color:#7D7D7D;}
+.favortb  img{ width:48px; height:59px; border:1px solid #8F8F8F; margin:1px;}
+.favortb .market{ font-size:15px; color:#7D7D7D; font-weight:bolder;  text-decoration:line-through;}
+.favortb .hcprice{ font-size:15px; color:#316ac5; font-weight:bold;}
+.mbuy{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/m_intebg.gif) no-repeat 0 -330px;  width:69px; height:25px; border:none; cursor:pointer;}
+.favortb .mbuy{ margin-bottom:3px;}
+.favortb  a.del,fontgray1,a.fontgray1,a.fontgray1:link,a.fontgray1:visited{ color:#3D3D3D; }
+.favortb tfoot td{ height:24px;}
+.favortb .listpage,.orderstbl .listpage,.orderstbl .noinfo{ color:#7D7D7D;}
+.m_tips1{ border:1px solid #B1D7E4; height:44px; line-height:44px; background-position:20px -124px; background-color:#F5FBF1; padding-left:40px; margin:47px 23px 15px 22px; font-size:14px; font-weight:bold;}
+
+.infotbl{ margin-bottom:15px;}
+.infotbl td{ padding-bottom:14px;}
+.infotbl input.normal{ border:1px solid #7E9DB9; width:155px; height:20px; margin:6px 5px;}
+.infotbl select{border:1px solid #7E9DB9; height:20px;}
+.infotbl span{ margin-left:3px; margin-right:5px; color:#7D7D7D;}
+.judgecon{ line-height:27px; margin-left:36px; margin-top:26px;}
+.judgecon table{ margin-top:32px;}
+.judgecon td{ padding-bottom:13px;}
+.judgecon td .pad{ margin-left:12px;}
+.judgecon .bt{ width:336px; height:18px; border:1px solid #606060;}
+.judgecon textarea{ width:542px; height:252px; border:1px solid #606060;}
+.judgecon .wordc{ float:right; color:#A0AAB4;}
+.judgecon .wordc1{ color:#AEA89A;}
+
+.judgecon a.tk,a.tk:link,a.tk:visited{ text-decoration:underline; color:#003398;}
+.mtip{ color:#676767; margin:11px 0 30px 27px;}
+.mimg{ height:59px; width:48px; border:1px solid #959595; margin:5px 10px 5px 20px;}
+.mimg1{ height:71px; width:59px;border:1px solid #959595;}
+.jubtbl{ border-top-width:1px; margin-top:62px;}
+.jubtbl td.norbd{ border-right:1px solid #fff;}
+.jubtbl .coment{ text-align:left; text-indent:2em; margin-top:15px; padding:0 8px;}
+.jubtbl .ctime{ color:#6E6E6E; text-align:right; margin-right:8px; margin-bottom:5px;}
+.jubtbl .mbtn_1{ margin-left:35px;}
+.carcon{ margin:26px 6px 20px 6px;}
+.ctip{ margin:44px 0 12px 5px; }
+
+.cartbl{ width:100%;border:1px solid #D9D9D9; border-collapse:collapse; text-align:center; }
+.cartbl td{ padding:15px 0; vertical-align: top; border-bottom:1px solid #D9D9D9;}
+.cartbl th{ font-size:14px; background:#E9FADA; border-bottom:1px solid #D9D9D9; height:37px; font-weight:normal;}
+.cartbl .n{ width:24px; height:19px; border:1px solid #7E9DB9; text-align:center;}
+.cartbl tfoot td{ font-weight:bold; text-align:right; padding-right:12px; background-color:#FCFFF8; height:41px;}
+.cartbl td.price_new{ text-align:left; padding-left:8px;}
+.cartbl td.price_new strong{ font-size:15px;}
+.cartbl .price_new,.cartbl .cut{ font-family:"Times New Roman", Times, serif; line-height:22px;}
+.cartbl .count{ font-family:"Times New Roman", Times, serif; color:#4C4C4C;}
+.cartbl a.moreintro{ line-height:26px;}
+.cartbl tfoot td{ padding:0; height:41px; line-height:41px; font-size:14px;}
+.cartbl tfoot span{ margin-right:30px;}
+.cartli1 td {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #808e6d;
+}
+
+.jsbar{ text-align:right; margin-right:8px; margin-top:14px;}
+.jsbar .free{ padding-right:30px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/m_intebg.gif) no-repeat -60px -357px; margin-right:15px;}
+.ctips{ border:1px solid #9DA0A7; padding:10px  95px 9px 138px; line-height:21px; clear:both;}
+.ctips .fleft{ margin-left:-129px;}
+.ctips1{ float:right; width:391px; height:40px; line-height:40px; text-align:center; border-top:1px dashed #9EA1A8; border-bottom:1px dashed #9EA1A8; margin-top:27px; margin-bottom:20px; color:#4A4A4A;}
+.ctips1 a:link,.ctips1 a:visited{color:#4A4A4A;}
+.lqcon .caption{ text-align:center; margin-top:32px; margin-bottom:20px;}
+.lqcon .cinfo{ color:#7D7D7D; line-height:24px; margin-left:22px; margin-top:30px;}
+.lqcon .none{ color:#316ac5; font-size:14px; text-align:center; height:65px; font-weight:bold;}
+
+.m_right.all{
+	width:952px;
+	clear:both;
+	float:none;
+	margin-right: auto;
+	margin-left: auto;
+}
+.propaths{ font-size:14px; margin:0 0 40px 14px; font-family:"宋体"}
+.propaths .price_new{ color:#F36600;}
+.psbox{ width:595px; border:1px solid #D9D7D8; margin-left:161px;font-family:"宋体"; margin-bottom:45px; border-top:none;}
+.psbox *{ font-family:inherit;}
+.pstit,.pstit1{ height:37px; line-height:37px; padding-left:17px; font-size:14px; font-weight:bold; background-color:#E9FADA; margin-bottom:20px; border-bottom:1px solid #DCDCDC;border-top:1px solid #DCDCDC; }
+.pstit1{  height:39px; line-height:39px;  background-color:#FCFFF8; }
+.pstit span{ font-weight:normal;}
+.pstit1 span{ font-weight:normal; font-size:12px;}
+.pstbl td{ padding-right:10px; vertical-align:top;}
+.pstbl td input,.pstbl td select{ border:1px solid #7E9DB9; height:20px; margin-bottom:10px;}
+.pstbl td p{ margin-bottom:10px;}
+.psbody{ margin-left:27px; margin-bottom:29px;}
+.pstime{ margin-left:34px; line-height:29px; }
+.psbody .sm{ margin-top:15px; margin-bottom:30px;}
+.psbody .sm input{ width:334px; border:1px solid #7E9DB9; height:20px; vertical-align:middle; line-height:20px;}
+.psbody .mbtn_4{ margin-left:60px; margin-bottom:10px;}
+.psbody .mbtns{ padding-left:14px;}
+.psbody .mbtns .mbtn_4{ margin-left:21px; margin-right:21px;}
+.m_boxbody1{ margin-left:13px; margin-top:17px; }
+.m_boxbody2{ margin-left:26px; margin-right:35px; margin-top:17px;}
+.adrlists{ width:908px; margin-left:24px; border-bottom:1px solid #B1D7E4; padding-bottom:14px;}
+.adrlist .n_1{ width:29px; height:24px; line-height:24px; float:left; background-color:#B1D7E4; color:#fff; font-weight:bold; text-align:center; margin:5px 29px 5px 26px; display: inline; font-size:14px; }
+.adrlist{ padding-top:16px; width:434px; float:left;}
+.adrrow{ width:100%; clear:left; }
+.adrrow .alable{ width:151px; float:left; text-align:right; color:#838383; padding-right:5px;line-height:20px;}
+.adrrow .ainfo{ width:276px; float:left;line-height:20px;}
+.adrhead{ padding-bottom:12px;}
+.adrbar{ margin-left:86px; clear:both; padding-top:12px;}
+.line_1{ height:15px; line-height:15px; border-bottom:1px solid #B1D7E4; width:908px; margin-left:24px; font-size:12px; clear:both;}
+.m_boxbody1 .h3{ margin-top:18px; margin-bottom:8px;}
+.bindbuy{ border:1px solid #9DA0A7; width:176px; float:left; padding-top:29px; margin-top:12px; padding-left:11px; height:214px; overflow:hidden;}
+.bindbuy .imgzh{ margin-bottom:11px; height:84px; overflow:hidden; }
+.bindbuy .mbtn_1{ margin:5px auto 5px; auto;}
+.bindbuy .priceall{ font-size:15px; text-decoration:line-through; font-weight:bold; color:#4C4747;}
+.carright{ float:right; width:726px;}
+.carright .jsbar{ margin-top:35px;margin-right:50px; }
+.carright .ctips1{ margin-right:50px; margin-top:0; display:inline}
+.carright .lqad{ color:#F2711E; font-size:14px; font-weight:bold; margin-right:81px; text-align:right; height:54px; line-height:54px;}
+ .ctips{ padding-left:131px; padding-right:10px; width:567px; float:right;	}
+ .ctips .fleft{ margin-left:-113px;}
+
+.m_left1{ width:725px; float:left; margin-left:12px; padding-top:17px; padding-bottom:20px;}
+.m_right1{ width:213px; float:right; margin-right:4px; display:inline; padding-top:33px;}
+h3.gtips{ margin-left:15px; color:#C00000; font-weight:bold; font-family:"宋体"}
+.m_left1 .gifttit{padding-top:20px; margin-top:37px; background-position:1px 0;}
+.m_left1 .pinput{ width:18px; height:18px; border:1px solid #1C5180; margin-left:15px; text-align:center; font-weight:bold;_margin-bottom:2px; }
+.m_left1 .xgbar{ font-size:14px; font-weight:bold; color:#F56E1D; line-height:24px; height:24px;}
+.p_box{ border:1px solid #D9D9D9; margin-top:8px; }
+.m_right1 .js{ text-align:right; margin-right:7px;}
+.p_box h3{ height:29px; line-height:29px; padding-left:17px; border-bottom:1px solid #D9D9D9; background-color:#E9FADA; color:#018699;}
+.p_boxbody{ padding:9px; padding-bottom:13px;}
+.p_boxbody *{ line-height:20px;}
+.p_row{ clear:both; width:100%;}
+.p_lable{ float:left; padding-left:4px; }
+.p_price{ float:right; font-family: "Times New Roman", Times, serif; padding-right:3px;}
+.p_pay{ font-size:14px; font-weight:bold; color:#FF6D00; text-align:center; width:186px; border-top:1px solid #000; padding-top:5px;margin-left:4px;}
+.p_row1{ padding-left:23px; width:167px;}
+.p_row1 .n_2{ float:left; margin-left:-23px; height:15px; line-height:15px; width:15px; background-color:#ACD3E2; font-weight:bold; text-align:center;color:#Fff; margin-top:3px; font-size:11px;}
+.p_boxbody .linedot{ margin:8px 0; font-size:0; margin-right:0;}
+.p_boxbody .indent{ margin-top:10px;}
+.psbody_1{ padding:8px 0 15px 17px;}
+.psbody_1 *{ line-height:20px;}
+a.hota,a.hota:link,a.hota:visited{ color:#316ac5; text-decoration:underline;}
+.pstype a.hota{ width:400px; float:right;}
+.psbody_1 .pstype{ margin-left:35px;}
+.psbody_1 .pstype li{line-height:26px; }
+.pstble{ text-align:center; width:95%; line-height:24px; margin-top:25px;}
+.pstble .fright{ width:109px;}
+.pstble input{ margin-right:10px;}
+.mbrnbar{ margin-left:37px; margin-top:20px; margin-bottom:15px;}
+.orderbox{ padding-left:37px; margin-right:50px; font-family:"宋体"}
+#oo_box,#oo_box .oo_head div,.oderbtn,#oo_box .oo_foot,#oo_box .oo_foot div,.oo_box,.oo_box .oo_head div,.oo_box .oo_foot,.oo_box .oo_foot div,.li_line,.fhicon{background:url(http://www.hecha.cn/themes/hechaV2.5/images/orderinteg.gif) no-repeat}
+#oo_box,.oo_box{ background-color:#B1D7E4; background-position: -97px -54px; margin-top:15px;}
+#oo_box .oo_head,.oo_box .oo_head{ height:44px; line-height:44px; }
+#oo_box .oo_head div,.oo_box .oo_head div{background-position: 858px -102px; text-align:right; }
+#oo_box .oo_head div span{font-size:14px;margin-left:159px;	margin-top:1px;	float:left;	display:inline;	font-weight:bold;font-family:"宋体";	line-height: 38px;}
+#oo_box .oo_foot,.oo_box .oo_foot{ background-position:0 -147px; height:48px; margin-bottom:64px; text-align:right}
+#oo_box .oo_foot div,.oo_box .oo_foot div{background-position: 862px -205px; height:48px;}
+.oo_box .oo_short,.oo_box .oo_short div{ height:33px; line-height:33px;}
+.oo_box .oo_head div{padding-left:21px; text-align:left; font-size:14px; font-weight:bold;}
+.fhicon{ background-position:0 -267px; padding-left:19px;}
+.li_line{ background-position:0 -288px; padding-left:14px; }
+
+.oderbtn{ background-position:0 0; width:119px; height:31px; border:none; margin-top:8px; margin-right:56px;}
+.oo_body{ border:1px solid #B1D7E4; background-color:#fff; padding:6px 15px 6px 17px; zoom:1;}
+.oo_body1{ border:4px solid #B1D7E4; border-top:none;background-color:#fff; padding-left:34px; padding-top:23px; padding-bottom:20px;}
+.oo_body2{border:4px solid #B1D7E4; border-top:none;background-color:#fff; zoom:1; }
+#oo_box .fleft{ width:597px; float:left; }
+#oo_box .fright{ float:right; width:213px;}
+#oo_box .oo{ border:1px solid #DCDCDC; margin-bottom:5px;}
+#oo_box .oo_body h3{ height:29px; line-height:29px; background-color:#E9FADA; padding-left:17px; border-bottom:1px solid #DCDCDC;}
+#oo_box .oo_body div.fright h3{ height:24px; line-height:24px; font-size:12px;}
+#oo_box .psbody_1{ padding:15px 22px 5px 12px; text-indent:4px;}
+#oo_box .psbody_1 .bd{border-bottom:1px dashed #666666; border-top:1px dashed #666666; padding:5px 0; margin:5px 0;}
+#oo_box .h_3{ border-top:1px solid #DCDCDC;}
+#oo_box .h_3 .fright{ font-size:12px; font-weight:normal; padding-right:20px; width:auto;}
+.n_3{ height:23px; width:23px; font-size:14px; line-height:23px; background-color:#ACD3E2; color:#fff; font-weight:bold; text-align:center;}
+
+#oo_box .oo table,table.o_ptble{ width:100%;}
+#oo_box .oo table td,table.o_ptble td{ border-bottom:1px solid #DBDBDB; height:44px;}
+#oo_box .name,table.o_ptble .name{ font-size:14px; color:#316ac5; font-weight:bold;}
+#oo_box .name .yellow_2,table.o_ptble .yellow_2{ color:#EF8E09;}
+#oo_box table tr.hover td,table.o_ptble tr.hover{ background-color:#FCFFF8;}
+table.o_ptble{ border:1px solid #DBDBDB; border-bottom:none;}
+.fp{ margin:4px 0 5px 3px;}
+.fpdiv{padding:6px; padding-bottom:12px}
+.fpdiv input.input{border:1px solid #7E9DB9; height:20px; width:123px; margin-bottom:5px;}
+.fpdiv select{border:1px solid #7E9DB9; width:125px; height:20px; height:20px;}
+.pathdiv_1{color:#6E706F;}
+.pathdiv_1 a:link,.pathdiv_1 a:visited{ color:#316ac5;  font-size:12px; font-family:"宋体";} 
+
+.suc_info{ font-size:14px; line-height:24px;}
+.Roman{ font-family:"Times New Roman", Times, serif}
+.Arial{ font-family:Arial, Helvetica, sans-serif;}
+.sucpay{ margin-top:20px; margin-bottom:15px;}
+.sucpay img{ margin-left:12px;}
+.paysm{ margin-left:110px; width:480px;}
+.failul{ width:426px; clear:both;}
+.failul li{ width:213px; float:left; line-height:26px; font-size:14px;}
+.failul input.input{ width:195px; }
+.btndiv2{ padding-top:22px; margin-bottom:10px; clear:both;}
+.btndiv2 input{ margin-right:10px; }
+.orderstbl{ margin:69px 20px 20px 20px; text-align:center; width:750px;}
+.orderstbl td{ height:24px;}
+.m_right table a.moreintro{ text-decoration:underline;}
+.fororder{margin-left:50px; margin-right:50px; margin-top:30px;}
+.line_2{ width:189px; border-bottom:1px dashed #D5D6B4; height:1px; font-size:0; margin:18px 0;}
+.oo_body1 .span{ font-weight:normal; color:#000;}
+.lis{  padding-bottom:5px;}
+.lis li{ float:left; width:332px;}
+.lis li.bdright{ border-left:1px solid #CCDDEF;  padding-left:8px;width:460px; zoom:1}
+#wrapper .key{ color:#986633; text-decoration:underline;}
+#wrapper .key_1{ color:#FF6D00; text-decoration:underline;}
+.oo_left{ width:202px; border-right:5px solid #B1D7E4; height:100%; padding:12px 0 35px 7px; float:left; font-size:14px;line-height:24px;}
+.oo_right{ width:657px; float:left;}
+.oo_left h3{ margin-left:13px; padding-top:18px;}
+.oo_right .oo_rtop{ padding:18px 21px 12px 30px; border-bottom:5px solid #B1D7E4;}
+.o_stats{font-size:28px;  color:#F56D1F; font-family:宋体; font-weight:bold; margin-top:5px; margin-bottom:8px;}
+.oo_rbottom{ padding:21px 37px 25px 23px;}
+
+.oo_right .h_3{height:32px; line-height:32px;background-color:#E9FADA; padding-left:17px;border:1px solid #DCDCDC; border-bottom:none;}
+.oo_right .p_boxbody{ float:right; width:198px; padding-right:30px;}
+.fororder .oo_body2{ background:#fff url(http://www.hecha.cn/themes/hechaV2.5/images/fgbg.gif) repeat-y 209px ; }
+
+.tips{ font-size:14px; font-weight:bold; color:#FF1030; margin-left:70px; margin-bottom:27px;}
+.tips_1{ margin-left:27px; margin-top:-20px; line-height:24px; font-size:14px; font-weight:bold; margin-bottom:28px;}
+.wjbody{ padding-top:12px; margin-left:49px;}
+.wjbody h3{ color:#343434; margin-bottom:15px; }
+.forwj{padding:0; padding-top:25px; margin-bottom:32px; padding-bottom:5px;}
+input.shur{ border:none; border-bottom:1px solid #333333; width:75px;}
+.tea_lists{ margin-bottom:10px;}
+.tea_lists li{ width:160px; float:left; padding-bottom:30px; font-size:14px; color:#333333;}
+.nextbar{ text-align:center; font-size:14px; font-weight:bold; margin-right:17%; color:#252525; line-height:35px; margin-bottom:30px; }
+.forwj .pro_item{ width:120px; padding:10px 27px; padding-top:0; margin-bottom:25px}
+.forwj .pro_item .pro_imgnormal,.forwj .pro_item .pro_imgnormal img{ width:97px; height:120px;}
+.shur_2{ height:28px;line-height:28px;  width:28px; text-align:center; border:1px solid #040404; margin:0 5px; vertical-align:middle;}
+/*黄色14号字体*/ 
+.fontyb{ font-size:14px; font-weight:bold; color:#F4701E;}
+
+
+.regtitle{ background:url(images/logonbg.gif) no-repeat;height:30px; line-height:30px; text-indent:19px; font-size:17px; font-weight:bold; color:#040605; background-position:818px -140px; width:100%;}
+.khinfo{ font-size:14px; font-weight:bold; color:#02849A; line-height:30px; margin-top:25px; margin-left:15px; margin-bottom:64px;}
+.kh{ background: url(http://www.hecha.cn/themes/hechaV2.5/images/cx.gif) no-repeat right 30px; margin-left:7px; height:102px; margin-top:5px; width:646px;}
+.kh a.tosee{ float:right; text-decoration:underline; color:#0812ED; margin-top:70px; padding-right:15px; }
+.psw_txt{ text-indent:2em; font-family:"宋体";}
+.psw_input,.psw_txt1{  padding:23px 0 23px 88px; margin-right: 155px; border-bottom:1px solid #AAA; margin-bottom:24px;}
+.psw_txt1{ padding-bottom:38px; padding-left:2em; font-size:14px; font-weight:bold;}
+.psw_txt2{ margin-left:58px; margin-bottom:10px;}
+.psw_txt3{ margin-left:40px; width:687px; text-align:center; padding-bottom:47px; padding-top:15px; margin-bottom:56px; border-bottom:1px solid #AAAAAA;}
+.psw_input .mbtn_7{ margin-left:26px;}
+.psw_step1,.psw_step2,.psw_step3,.psw_step4{ height:50px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/step_1.gif) no-repeat 133px top; margin-top:53px;}
+.psw_step2{ background-image: url(http://www.hecha.cn/themes/hechaV2.5/images/step_2.gif);}
+.psw_step3{ background-image: url(http://www.hecha.cn/themes/hechaV2.5/images/step_3.gif);}
+.psw_step4{ background-image: url(http://www.hecha.cn/themes/hechaV2.5/images/step_4.gif);}
+.forpsw{margin-left:50px; margin-right:50px; margin-top:30px; margin-bottom:97px; width:auto;background:#CCECAB url(images/logonbg.gif) no-repeat -632px 0;}
+.forpsw .regtitle{ background-position:859px -140px; font-size:14px;}
+.forpsw .oo_body1{ height:182px; border-color:#CCECAB}
+.forpsw .regrow{ padding:15px 0;}
+.forpsw .reglable1{ padding-left:74px; width:63px; text-align:left; float:left; padding-top:2px;}
+.forpsw .regfield1{ width:190px; float:left;}
+.forpsw .rettips1{ float:left; color:#555555; width:287px; padding-top:2px;}
+.forpsw .regfield1 input{ width:173px;  border:1px solid #7E9DB9; height:20px; line-height:20px;}
+.psw_btn{ margin-left:137px; margin-top:6px;}
+
+.psw_links{ margin-left:50px;}
+.psw_links a.moreintro{ margin-right:74px; font-family:"宋体";}
+/*团购*/
+.tg_top{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tg_bg1.gif) repeat-x; height:269px; padding-top:40px; padding-left:44px; padding-right:74px;}
+.regards{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tg_bg.gif) no-repeat right 13px; font-size:14px; line-height:24px; padding-bottom:64px;}
+.regards dd{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tg_integ.gif) no-repeat 0 -29px; padding-left:18px; margin-left:10px;}
+.tg_hot{ color:#FA8D16;}
+.tg_intro{ margin-left:152px; color:#404040;}
+.tg_ul{margin-left:68px;}
+.tg_ul li{ float:left; width:271px;  background:url(http://www.hecha.cn/themes/hechaV2.5/images/tg_integ.gif) no-repeat 0 0; padding-left:21px; }
+.tg_bottom{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tg_bgbom.jpg) no-repeat; height:407px; position:relative;}
+.tg_forms{ background:#fff url(http://www.hecha.cn/themes/hechaV2.5/images/tg_yy.gif) no-repeat  center bottom; width:575px; position:absolute; top: -35px; left:194px; padding-bottom:5px;}
+.tg_outer{ border:1px solid #A1A1A1; width:565px; height:420px; padding:4px;background:#fff;}
+.tg_inner{ border:5px solid #EFEFEF; padding:6px 7px; height:398px;}
+.tg_tel{ background:#DEF6F6; padding:5px 12px; line-height:22px; margin-bottom:30px;}
+.tg_tel p{ font-weight:bold; color: #316ac5; font-family:"宋体";}
+.tips_3{ font-weight:bold; color:#404040; text-indent:1em; border-bottom:1px dashed #A5A5A5; padding-bottom:3px; margin-bottom:10px;}
+.tgtable td{ padding:5px 0;color:#414141; font-family:"宋体";* padding:4px 0;}
+.tgtable td textarea{ width:405px; height:87px; border:1px solid #7E9DB9;}
+.tgtable td input{ border:1px solid #7E9DB9; height:17px; width:102px;}
+.tgtable .td_1{ width:108px; text-align:right;}
+.tgtable .td_2{ width:162px}
+.tgtable td .zs{ color:#878787; text-align:right; margin-right:30px;}
+.tips_4{ color:#316ac5; margin-left:10px;}
+.tg_submit{ padding-left:108px;border-top:1px dashed #A5A5A5; margin-top:10px; padding-top:14px;}
+
+#wrap1{ width:751px; margin:0 auto; }
+#wrap1 .m_box{ border:none;}
+#wrap1 .gifttit1{background:url(http://www.hecha.cn/themes/hechaV2.5/images/gifttit.gif) no-repeat 14px top; height:55px; margin-top:25px; text-indent:-9999px;}
+#wrap1 .m_left1{ float:left; width:520px; margin-left:5px; display:inline; padding-top:0;}
+#wrap1 .giftbox{width:493px; height:825px;border:1px solid #ADD5D7;overflow:auto; padding-left:20px; padding-top:30px;}
+#wrap1 .pro_item.fourcolum { padding:0 25px; margin-bottom:28px;}
+#wrap1 .linedot{ margin-right:20px;}
+#wrap1 .m_right1{ padding-top:29px;}
+#wrap1 .gzul{ margin-top:3px; margin-right:2px; margin-left:5px; font-family:"宋体"}
+
+/*购物车*/
+.m_carbody{ margin:24px 13px 0 16px;}
+.m_rectbl{ border:1px solid #D2D2D0; padding-bottom:5px; margin-bottom:24px;}
+.m_reccap{ background-color:#E7F1F2; height:21px; line-height:21px; border-bottom:1px solid #D2D2D0; padding-left:31px; }
+.m_recul{ margin-top:5px; display:table; zoom:1; background:url(http://www.hecha.cn/themes/hechaV2.5/images/dot_v.gif) repeat-y center;}
+.m_recul li{ width:440px; float:left; height:30px; line-height:30px; padding-left:29px;}
+.m_recul li span{ float:left;}
+.m_recul .mcname{ width:231px; color:#404040;}
+.m_recul .mcname a,.m_cartbl .bluetxt{color:#316AC5!important; cursor:pointer}
+.m_recul .price{ width:67px;}
+.m_recul .price_red{width:67px;}
+.m_recul .buyto{ margin-top:4px;}
+.m_cartbl{ border:2px solid #808E6D; width:100%; text-align:center; margin-top:5px;}
+.m_cartbl thead{ background-color:#E9FADA; height:26px; line-height:26px;}
+.m_cartbl tbody td{ height:30px; line-height:30px;}
+.m_cartbl tfoot td{border-top:2px solid #808E6D; padding:10px 0 5px 20px; }
+.cellone{ padding-left:20px; text-align:left;}
+.mlinkto{width:98px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/dot_v.gif) repeat-y right;}
+.mjs{ border-right:1px solid #666666; padding-right:10px; float:right; }
+.mcarjs{ font-weight:bold; font-size:14px; float:right; margin:8px 12px 0 12px;}
+.m_carbody .ctips{ margin:20px 0;}
+/*我的和茶*/
+.m_partcon{ width:492px; border:1px solid #D3D3D3; margin-bottom:10px;}
+.m_partcon_r{ float:right; width:268px;}
+.m_partcon h2{ font-weight:normal; background:#E9FADA; height:26px; line-height:26px; font-size:12px; padding-left:15px; }
+.m_partcon .m_pbody{ margin:12px 8px; border-top:1px solid #D3D3D3; padding:10px 0 5px 12px; color:#414141;line-height:24px;}
+.m_partcon .m_pbody *{ line-height:22px;}
+.ordleft{ float:left; width:314px; }
+.m_pbody a.moreintro{ color:#0061FD!important;}
+.pimg_1{ width:80px; height:105px; border:1px solid #C7C7C7; display:block; margin:0 auto 5px auto; }
+.m_partcon .m_recpbody{ padding:8px 5px; height:352px; overflow:hidden;}
+.product{ width:108px; float:left; padding:5px 6px 0 6px; height:175px; }
+.product *{ line-height:18px!important;}
+.ord_tbl{ width:700px; margin:18px 0 0 60px; color:#3F4140;}
+.cart_infos {
+	height: 55px;
+}
+.cart_infos li{
+	float: left;
+	width: 120px;
+	padding-top: 12px;
+	padding-left: 10px;
+	text-align: center;
+}
+.cart_infos li.t3{
+	float: right;
+	width: 120px;
+	padding-right: 15px;
+	padding-left: 0px;
+}
+.cart_infos li.t2{
+	float: right;
+	width: 220px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 15px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.cart_infos li.t1{
+	height: 39px;
+	float: right;
+	width: 150px;
+	padding-left: 0px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #666666;
+	margin-top: 7px;
+	padding-top: 0px;
+	text-align: left;
+}
+.cartcom {
+	padding-left: 10px;
+	zoom:1;
+}
+.cartcom li img{
+	height: 160px;
+	width: 160px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #adadad;
+	overflow: hidden;
+	display: block;
+}
+.cartcom li p {
+	line-height: 22px;
+	text-align: center;
+	height: 22px;
+	width: 162px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}
+.cartcom li p span {
+	color: #838383;
+}
+.cartcom li p small {
+	text-decoration: line-through;
+}
+.cartcom li p big {
+	font-size: 12px;
+	font-weight: bold;
+	color: #fd5612;
+	padding-left: 5px;
+}
+
+
+.cartcom li {
+	float: left;
+	height: 215px;
+	width: 180px;
+	padding-top: 15px;
+}
+
+
+.m_tabs,.m_tabs1{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/m_tablibg.gif) repeat-x left bottom; height:24px; padding-left:23px;}
+.m_tabs li span,.m_tabs1 li span{background:url(http://www.hecha.cn/themes/hechaV2.5/images/mtabinteg.gif) no-repeat 0 -24px; display:block; height:24px; line-height:24px; cursor:pointer; text-align:center;}
+.m_tabs li,.m_tabs1 li{ padding-right:2px; width:157px; float:left; height:24px; overflow:hidden }
+.m_tabs span.sel{ background-position:0 0; font-weight:bold;}
+.m_tabs1 li span{ background-position:0 -74px;}
+.m_tabs1 li{ width:110px;}
+.m_tabs1 span.sel{ background-position:0 -50px; font-weight:bold;}
+.motable{ border:1px solid #869497; width:100%; border-top:none; text-align:center; margin-bottom:15px;}
+.motable td{ height:30px;}
+.motable thead{ background:#E9FADA; height:23px; text-align:center;}
+.motable thead td{ border-right:1px solid #869497; border-bottom:1px solid #869497; height:24px;}
+.motable tbody td{ border-bottom:1px solid #DADADA;}
+.motable a.moreintro{ color:#3F4140;}
+.motable .nobdr{ border-right:none;}
+.m_jfinfo{margin:10px 0; line-height:20px;}

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+
+<link href="themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/goods6.css" rel="stylesheet" type="text/css" />
+
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/goods6.css" rel="stylesheet" type="text/css" />
+
+<script type=text/javascript src="themes/hecha/themes/hechaV2.5/skin/tm5/js/jquery.libs-1.2.6pack.js"></script>
+<script type=text/javascript src="themes/hecha/themes/hechaV2.5/skin/tm5/js/effect_commonv1.1.js"></script>
+<script type=text/javascript src="themes/hecha/themes/hechaV2.5/skin/tm5/js/common.js"></script>
+<script type="text/javascript" src="js/generalt.js"></script>
+
+<script type="text/javascript" src="js/transport.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+
+<body>
+
+<!-- #BeginLibraryItem "/library/page_header2.lbi" --><!-- #EndLibraryItem -->
+
+
+<div class="ebody">
+	<div class="lbox_s1">
+    
+	<div class="lnav6">
+
+        <!--{foreach from=get_categories_tree() item=cat name=cat}-->   
+		<dl {if $smarty.foreach.cat.index == 0}class="ot"{/if}>
+			<dt><a href="{$cat.url}"><big>{$cat.name|escape:html}</big><!--[if gte IE 7]><!--></a><!--<![endif]-->
+                                <!--[if lte IE 6]><table><tr><td><![endif]-->
+					<ul>
+						<li class="tx"><strong><a href="{$cat.url}">{$cat.name|escape:html}</a></strong><em>&nbsp;</em></li>
+						<li class="txt">
+                        <!--{foreach from=$cat.cat_id item=child}-->
+							<a href="{$child.url}">{$child.name|escape:html}</a>
+                         <!--{/foreach}-->  
+                            
+							<div class="clear"></div>
+						</li>
+						<li class="def">
+                        <!--{foreach from=$cat.cat_id item=child name=child}-->
+                          <!--{if $smarty.foreach.child.index < 2}-->
+                        <a href="{$child.url}">{$child.name|escape:html}</a> 
+                          <!--{/if}-->
+                        <!--{/foreach}-->
+                        
+                        </li>
+					</ul>
+					<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                        </dt>
+			<dd>
+            <!--{foreach from=$cat.cat_id item=child name=child}-->
+             <!--{if $smarty.foreach.child.index < 2}-->
+            <a href="{$child.url}">{$child.name|escape:html}</a>
+             <!--{/if}-->
+            <!--{/foreach}-->
+            
+            </dd>
+		</dl>
+		<!--{/foreach}-->		
+
+			<div class="clear"></div>
+			<div id="navtitle" class="title"><a href="catalog.php" title="点击查看全部分类">热门分类</a></div>
+	</div>	
+    
+    <div class="clear line15"></div>
+    
+<!-- #BeginLibraryItem "/library/top10.lbi" --><!-- #EndLibraryItem --> 
+        
+        <div class="clear line10"></div>
+	<div class="title_h3"><p>我浏览过的商品</p></div>
+	<div class="prolist_s1" id="show_history_goods">
+    
+{insert name='goods_history'} 
+
+	</div>
+
+	</div>
+	<div class="rbox_s1">
+		<div class="path_s1"><!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem --></div>
+		<a name="order" id="order"></a>
+		<div class="clear line10"></div>
+		<div class="ordbar">
+ <form action="search.php" method="post" name="listform" id="form">
+	<script language="javascript">
+function display_order(sort, order){
+	document.listform.sort.value = sort;
+	document.listform.order.value = order;
+	document.listform.submit();
+}
+
+</script>
+			<div class="box">
+			<ol>
+				<li class="tx">排序方式</li>
+				<li class="lx">
+                
+					<p {if $pager.search.sort == 'shop_price' && $pager.search.order == 'DESC'}class="asc"{elseif $pager.search.sort == 'shop_price' && $pager.search.order == 'ASC'}class="desc"{/if}>
+<a href="javascript:display_order('shop_price', '<!-- {if $pager.search.sort == 'shop_price' && $pager.search.order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->');">价格</a>
+                    </p>
+                    
+					<p {if $pager.search.sort == 'sell_number' && $pager.search.order == 'DESC'}class="asc"{elseif $pager.search.sort == 'sell_number' && $pager.search.order == 'ASC'}class="desc"{/if}>
+<a href="javascript:display_order('sell_number', '<!-- {if $pager.search.sort == 'sell_number' && $pager.search.order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->');">销量</a>
+					</p>
+                                            
+					<p {if $pager.search.sort == 'goods_id' && $pager.search.order == 'DESC'}class="asc"{elseif $pager.search.sort == 'goods_id' && $pager.search.order == 'ASC'}class="desc"{/if}>
+<a href="javascript:display_order('goods_id', '<!-- {if $pager.search.sort == 'goods_id' && $pager.search.order == 'ASC'} -->DESC<!-- {else} -->ASC<!-- {/if} -->');">上架时间</a>
+					</p>
+                    
+					<div class="clear"></div>
+				</li>
+				<li class="rx">
+                <!-- {if $pager.page_next} -->
+					<p class="next"><a href="{$pager.page_next}">下一页</a></p>
+                <!-- {/if} -->
+                <!-- {if $pager.page_prev} -->
+                    <p class="prev"><a href="{$pager.page_prev}">上一页</a></p>
+                <!-- {/if} -->   
+                    <p class="info">{$pager.page}/{$pager.page_count}</p>
+				</li>
+				<div class="clear"></div>
+			</ol>
+			</div>
+            
+<input type="hidden" name="page" value="{$pager.page}" />
+              <!--{foreach from=$pager.search key=key item=item}-->
+             
+                {if $key eq 'keywords'}
+                  <input type="hidden" name="{$key}" value="{$item|escape:decode_url}" />
+                {else}
+                  <input type="hidden" name="{$key}" value="{$item}" />
+                {/if}
+             
+              <!--{/foreach}-->
+</form>
+            
+		</div>
+
+		<div class="clear line10"></div>
+        
+		<!-- #BeginLibraryItem "/library/goods_list.lbi" --><!-- #EndLibraryItem -->
+        
+		<div class="clear line15"></div>
+        
+		<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+                    
+	</div>
+	<div class="clear line15"></div>
+</div>
+
+<!-- #BeginLibraryItem "/library/page_footer2.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

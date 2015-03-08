@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="homebrand">
+	<div class="brbg">
+	<div class="title">
+	<em><a href="brand.php" target="_blank">更多品牌</a></em><img src="themes/hecha/themes/hechaV2.5/skin/tm7/images/public/brand_tx1.gif" align="absmiddle" /></div>
+	<div class="brandbox">
+		<span class="brand_left" id="brand_left" title="向左滚动"></span>
+		<div class="brandlist">
+		<ul id="brandlist">
+        <!-- {foreach from=$brand_list item=brand name="brand_foreach"} -->
+          <!-- {if $brand.brand_logo} -->
+                    <li><a href="search.php?brand={$brand.brand_id}" target="_blank" title="{$brand.brand_name|escape:html}"><img class="brandlist_img" src="data/brandlogo/{$brand.brand_logo}" alt="{$brand.brand_name|escape:html}"/></a></li>
+          <!-- {/if} -->
+        <!-- {/foreach} -->
+		</ul>
+		</div>
+		<span class="brand_right" id="brand_right" title="向右滚动"></span>
+	</div>
+    <script type="text/javascript">jQuery(".brandbox").slide({effect:"leftLoop",mainCell:".brandlist ul",delayTime:1000,interTime:5000,autoPlay:true,prevCell:".brand_left",nextCell:".brand_right",scroll:5,vis:6,easing:"easeOutCirc"});</script> 
+	</div>
+</div>

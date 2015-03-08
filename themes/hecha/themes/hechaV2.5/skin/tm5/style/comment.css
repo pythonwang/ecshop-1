@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* 
+Name: comment.css
+For : http://www.hecha.cn/
+Date: 20110328  Sincol
+*/
+
+.comment {
+}
+.comment dl {
+	background-color: #f4f4f4;
+	zoom:1;
+}
+.comment dl dt {
+	float: left;
+	width: 370px;
+	background-image: url(../images/comment/star.gif);
+	background-repeat: no-repeat;
+	background-position: right -400px;
+	height: 110px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.comment dl dt p {
+	clear: both;
+	height: 30px;
+	line-height: 30px;
+}
+.comment dl dt span {
+	float: left;
+	padding-right: 5px;
+	padding-left: 5px;
+	line-height: 28px;
+	height: 28px;
+	padding-top: 2px;
+}
+.comment dl dt span a {
+	float: left;
+	background-image: url(../images/comment/star.gif);
+	background-repeat: no-repeat;
+	background-position: right -341px;
+	padding-right: 15px;
+	color: #999999;
+	line-height: 28px;
+}
+
+.comment dl dt big {
+	float: left;
+	height: 30px;
+	width: 150px;
+	background-image: url(../images/comment/star.gif);
+	background-position: 0px -116px;
+	text-indent: -999em;
+}
+.comment dl dt big.star0 {background-position: 0px 0px;}
+.comment dl dt big.star1 {background-position: 0px -30px;}
+.comment dl dt big.star2 {background-position: 0px -60px;}
+.comment dl dt big.star3 {background-position: 0px -90px;}
+.comment dl dt big.star4 {background-position: 0px -120px;}
+.comment dl dt big.star5 {background-position: 0px -150px;}
+.comment dl dt big.star6 {background-position: 0px -180px;}
+.comment dl dt big.star7 {background-position: 0px -210px;}
+.comment dl dt big.star8 {background-position: 0px -240px;}
+.comment dl dt big.star9 {background-position: 0px -270px;}
+.comment dl dt big.star10 {background-position: 0px -300px;}
+.comment dl dd {
+	width: 250px;
+	padding-top: 32px;
+	float: right;
+	text-align: center;
+}
+.comment dl dd p {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+
+.comment .title  a{
+	color: #669d36;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.comment .title a:hover {
+	text-decoration: underline;
+}
+
+.comment .title {
+	border-top-width: 2px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #999999;
+	border-bottom-color: #e2e2e2;
+	line-height: 24px;
+	background-image: url(../images/comment/star.gif);
+	background-repeat: repeat-x;
+	height: 24px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background-position: 0px -615px;
+}
+.comment .title em {
+	color: #666666;
+}
+.comment ul {
+	overflow:!important auto;
+	zoom:1;
+}
+.comment ul li {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e2e2e2;
+	padding: 15px;
+	overflow:!important auto;
+	zoom:1;
+}
+.comment ul li span {
+	float: left;
+	width: 200px;
+}
+.comment ul li p {
+	margin-left: 200px;
+}
+.comment ul li.t2 p {
+	color: #6e9e45;
+}
+.comment ul li small {
+	font-size: 12px;
+	color: #7f7f7f;
+}
+.comment .page {
+	line-height: 22px;
+	text-align: right;
+	height: 22px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	clear: both;
+}
+.comment .page a {
+	color: #666666;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+.comment .page strong {
+	font-weight: bold;
+	color: #ff5414;
+}
+.comment .addcom {
+	position: relative;
+	clear: both;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.comment .addcom .form {
+	background-color: #fcfcfc;
+	border: 2px solid #999999;
+	position: absolute;
+	width: 610px;
+	left: 0px;
+	top: 0px;
+	padding-top: 10px;
+	padding-right: 23px;
+	padding-bottom: 10px;
+	padding-left: 23px;
+}
+.comment .addcom p {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	clear: both;
+}
+.comment .addcom p span {
+	float: left;
+	line-height: 25px;
+	height: 25px;
+	width: 80px;
+	text-align: center;
+	padding-right: 10px;
+}

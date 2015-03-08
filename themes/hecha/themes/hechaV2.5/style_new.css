@@ -1,0 +1,888 @@
+body {
+	margin:0 auto;
+	padding:0;
+	font-size:12px;
+	font-family:Arial;
+	/*color:Black;*/
+}
+*{
+padding:0;
+margin:0;
+}
+img {border: 0px;}
+form {
+margin: 0px;
+padding: 0px;
+}
+/*
+div, td, p {
+line-height: 150%;
+}*/
+h1{ font-size:16px; display:block;}
+h3{ font-size:14px; display:block;}
+input, select, textarea {
+font: 12px "Courier New";
+}
+/*
+input, select{ vertical-align:middle;}
+a:visited, a:link {
+color: #000000;
+text-decoration: none;
+}
+a:hover {
+color: #316ac5;
+}
+a.txtlink:visited, a.txtlink:link {
+color: #316ac5;
+text-decoration: underline;
+}
+.clear {
+clear: both;
+font-size:0px;
+line-height:0px;
+height:0;
+}
+ul,li{
+list-style:none;
+}*/
+#globalWrapper {
+width: 981px;
+margin: 0 auto;
+overflow:hidden;
+position:relative;
+}
+#wrapper {
+	width: 952px;
+	overflow: hidden;
+}
+.fright{float:right;}
+.fleft{ float:left;}
+/*头部样式*/
+.head-top{ height:90px; overflow:hidden; padding-left:21px; position:relative;}
+/*.logo{ float:left; margin-top:9px; margin-right:56px; display:block;}*/
+.passport{ color:#868686; margin:9px 0 10px 0; height:18px;}
+.bigfont{font-size:32px; font-family:黑体; color:#121212; margin-top:-4px; font-weight:bold;}
+.navgate{ height:28px; position:absolute; left:225px; bottom:0;}
+.navgate li{ float:left; padding-right:2px; width:78px; }
+.navgate li.lilong{ width:95px;}
+.navgate li a{ display:block;height:22px; padding-top:6px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/navbg.gif) no-repeat 0 -28px; text-align:center; font-size:14px;}
+.navgate li.lilong a{ background-position:0 0; width:95px;}
+.navgate li a:hover,.navgate li a.sel{ background-position:0 -56px; color:#fff; font-weight:bold;}
+.navgate li.lilong a:hover,.navgate li.lilong a.sel{ background-position:0 -84px;}
+.formbar{ width:981px; margin-bottom:6px; background:#E9F5DF url(http://www.hecha.cn/themes/hechaV2.5/images/formbarbg.gif) no-repeat; border-bottom:2px solid #589C07; position:relative; height:66px;}
+.fl,.fr{ position:absolute; top:0;background:url(http://www.hecha.cn/themes/hechaV2.5/images/formbarbg.gif) no-repeat; width:3px; height:68px;}
+.fl{ left:0;}
+.fr{ right:0;background-position:0 -72px;_right:-1px;}
+.tabbar{  height:34px; line-height:34px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/htablibg.gif) repeat-x; color:#fff; padding:0 14px 0 27px;}
+.tabbar a:link,.tabbar a:visited{ color:#fff; margin-right:5px;}
+.subnav{ height:34px; line-height:34px;}
+.em{margin-left:2em; color:#FEF37D;}
+.cart{background: url(http://www.hecha.cn/themes/hechaV2.5/images/tabinpubg.gif) no-repeat; padding-left:34px; float:right; height:23px; line-height:23px; width:145px; color:#000; margin-top:6px; position:relative;}
+.cart p{height:23px; line-height:23px;}
+.carfloat{position:absolute; display:none; top:22px; width:155px; left:-1px; border:1px solid #8D8D8D; line-height:20px; background:white; padding-left:24px;}
+.searchbtn{ width:43px;height:22px; border:none; background:url(http://www.hecha.cn/themes/hechaV2.5/images/seachbtnbg.gif) no-repeat left center; margin-left:8px; cursor:pointer; float:left; margin-top:-1px;}
+.cata_select{ height:20px; width:80px;border:none; border:1px solid #949494; float:left; margin-right:5px;}
+.brand_select{width:272px; float:left;}
+.inputtxt,.inputtxt_s{height:18px; line-height:18px; margin-left:-1px; border:none; border:1px solid #949494; float:left; width:268px; color:#7E7E80; padding-left:5px;}
+.inputtxt_s{width:125px; border-right:1px solid #959595;}
+.benefitcs{left:225px; top:30px; position:absolute; height:20px;line-height:20px; overflow:hidden; color:#868686;}
+.benefitcs div{ height:20px; line-height:20px; margin-left:12px;}
+.benefitcs a{ color:#868686!important;}
+.benefitcs strong{ color:#ff0000; font-weight:normal}
+.cf-hsearch-block{position:absolute; color:#666666; padding:3px; top:149px; left:169px; z-index:90; width:267px; background:#fff; border:1px solid #000;}
+.cf-hsearch-block .fright{color:#316AC5; font-size:10px}
+/* 广告样式*/
+.ad_through{ margin-bottom:10px;}
+.ad_through image{width:981px; height:63px;}
+/* 中间样式*/
+.spaceem1{letter-spacing:14px;}
+.con_left{ width:159px; padding-left:2px; float:left; margin-right:13px; overflow:hidden;}
+.con_middle{ width:490px; float:left;overflow:hidden;}
+.con_right{ width:304px; float:left; margin-left:12px;overflow:hidden;}
+.con_right2{ padding-left:3px; position:relative; width:802px; float:left;}
+
+.columnbd{
+	border:1px solid #9ccb3b;
+	margin-bottom:15px;
+}
+.catalogs{ height:890px;}
+.adleft{ height:105px; width:157px; overflow:hidden;}
+.adleft img{ height:105px; width:157px;}
+.ctitle{ margin:1px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/column_titbg.gif);font-size:14px; font-weight:normal; padding-left:12px; line-height:22px; color:#fff; padding-right:5px;}
+.columnbd .ctitle a{color:#fff; font-size:12px; float:right;}
+.columnbd .ctitle.els{ padding-left:11px; color:#fff; font-size:14px;}
+/*.catalog h2{ color:#36A308; font-weight:normal; font-size:12px; height:20px; line-height:20px; margin-bottom:5px; margin-left:13px; margin-top:26px;}
+.catalist{ margin-left:8px; width:141px; overflow:hidden;}
+.catalist li{ list-style:none; float:left; border-bottom:1px dashed #DDDDDD; width:70px; height:26px; line-height:26px; overflow:hidden;}
+.catalist li a{ font-size:12px; line-height:14px; float:left; diplay:block; padding-left:5px; margin-top:8px; }
+.catalist li.cspace{ width:71px;}
+.catalist .line{width:141px;}
+.catalist li.cspace a{ border-left:1px solid #000; }
+.catalist li.cspace a:hover{ color:#316ac5;}
+.catalist li a:hover{ color:#316ac5;}*/
+ul.spaceem1 li.cspace a{ padding-left:15px;}
+
+.columnbd .ctitle2,.title2,.title3,.persontitle{background: url(http://www.hecha.cn/themes/hechaV2.5/images/index_tbg.gif) repeat-x left 1px;}
+
+.columnbd .ctitle2{padding-left:13px; padding-top:9px; height:24px;color:#04A524; font-size:14px;position:relative;}
+/*.columnbd .ctitle2{ color:#04A524; font-size:14px; margin-left:13px; margin-top:10px; margin-bottom:5px; position:relative;}*/
+.columnbd .ctitle2 a{ color:#0C0C0C; font-weight:normal; font-size:12px; position:absolute;right:5px; top:8px;}
+
+.sccolumn{ height:357px;}
+.sccolumn1{ height:571px;}
+.txtlist{ margin:10px 0 10px 10px; line-height:20px; margin-bottom:10px; }
+.txtlist a:link,.txtlist a:visited{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/li_square.gif) no-repeat left center; padding-left:10px; color:#000000;}
+.txtlist a:hover{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/li_square.gif) no-repeat left center; color:#316ac5;}
+
+/*.switchtab{ margin-left:4px;overflow:hidden; height:17px;}
+.switchtab a{ float:left; display:block; background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabbg_unsel.gif) repeat-x left top; margin-right:2px; width:45px; height:17px; text-align:center;}
+.switchtab a:hover,.switchtab a.sel{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabbg_sel.gif) repeat-x;}
+.switchtab a.sel:link,.switchtab a.sel:visited,.switchtab a:link,.switchtab a:visited{ color:#fff;}*/
+
+.flashad{width:483px; height:360px; border:3px solid #B1D7E4; overflow:hidden;}
+.flashad img{width:483px; height:360px;}
+.flashul{text-align:right; padding-top:5px; margin-bottom:16px; height:20px; overflow:hidden;}
+
+.protitle{ border-bottom:2px solid #B1D7E4; height:30px;}
+.titleft{ color:#03A422; font-size:14px; font-weight:bold; float:left; border-bottom:2px solid #888888; padding:0 7px; position:relative; top:2px; line-height:2;}
+.titright{ color:#0D0D0D; margin-right:14px; float:right;padding-top:7px;}
+.recpro{margin-top:8px;}
+.recpro li{float:left; width:157px; margin-right:3px; margin-left:3px; display:inline; padding-bottom:5px;}
+.recpro li img{ height:195px; width:157px;}
+.pintro{ padding-top:2px;}
+.pintro p{ text-align:center; line-height:20px;}
+.linkart{ color:#000000;}
+a.linkart{ color:#000000;}
+a.linkart:link,a.linkart:visited{color:#000000;}
+.price{color:#6A6A6A;text-decoration:line-through;font-family: "宋体"}
+.price_new,a.price_new,a.price_new:link,a.price_new:visited,.price_lq{color:#FF6D00; font-weight: 600; font-family:"宋体"}
+.price1{ color:#000000; text-decoration:line-through;}
+.price2,.bcontdiv .price2 a:link,.bcontdiv .price2 a:visited{ color:#316ac5;}
+.price_new1{ color:#E71350;}
+.gray{color:#656565;}
+.pricered{ color:#FF6D00;}
+a.pricered:link,a.pricered:visited{color:#FF6D00;}
+.price_lq{ font-size:14px; font-weight:bold}
+.cut{ text-decoration:line-through; font-family:"宋体"}
+
+.proman{clear:both;zoom:1; width:487px; margin-top:20px; margin-bottom:13px;}
+li.lady{ width:233px;float:left; overflow:hidden; padding-right:19px; background: url(http://www.hecha.cn/themes/hechaV2.5/images/line.gif) no-repeat 243px 42px;}
+li.man{ width:233px;float:left; overflow:hidden;}
+.persontitle{ height:35px; line-height:33px; padding-left:13px; padding-right:14px; color:#03A422; font-size:14px; font-weight:bold; }
+/*.persontitle img{ margin-top:10px;}*/
+.proimage{ margin:0 auto; width:213px; margin-top:12px; zoom:1; }
+.proimage img{ height:166px; width:211px; }
+.txtli{ margin-left:13px; margin-top:9px;}
+.txtli li{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/listyle.gif) no-repeat left center; padding-left:17px; line-height:20px;}
+.txtli li a:link,.txtli li a:visited{ color:#666666;}
+.txtli li a:hover{ color:#316ac5}
+
+
+.title2{ height:24px;  padding-top:4px;}
+.imgdiv{ background: url(http://www.hecha.cn/themes/hechaV2.5/images/imgbg.gif) repeat-x; border:1px solid #E4E4E4; width:250px; height:152px;}
+.imgdiv .fright{width:120px; float:right; text-align:right; padding-right:3px;}
+.txtlist2{border:1px solid #CFCFCF; padding:14px; margin-left:0; height:60px; margin-top:0;}
+.txtlist2 li{ float:left; width:200px; overflow:hidden}
+.bulletin{ width:140px; float:left;}
+.ad_right{ margin-bottom:8px;width:298px; height:100px; overflow:hidden; border:1px solid #B1D7E4;}
+.ad_right img{ width:298px; height:100px;}
+.title3{ padding-top:8px; margin-bottom:10px; zoom:1;}
+.title4,.title4 a:link,.title4 a:visited{ font-size:12px; font-weight:normal; color:#00A522; }
+.prointro{ line-height:20px; margin-top:10px;}
+a.moreintro,a.moreintro:link,a.moreintro:visited,.sub_path a:link,.sub_path a:visited{ color:#316ac5;}
+.sub_path a:link,.sub_path a:visited{ color:#000000;}
+.sub_path a:hover{ color:#316ac5;}
+.img{width:110px; padding-left:10px; padding-top:5px;}
+.img2{width:107px; padding-left:9px; padding-top:5px; height:118px; overflow:hidden;}
+.img img{ width:100px; height:100px;}
+.img2 img{ width:90px; height:118px;}
+.con{width:168px; padding-top:6px;}
+.msg_index{width:298px; margin-bottom:7px; height:146px;}
+.brand_index{margin-top:23px;zoom:1; height:614px; width:298px; overflow:hidden;}
+.top_index{ padding:4px;width:290px; padding-top:0px; height:727px; overflow:hidden}
+.top_index  .ctitle{margin:1px -3px 10px -3px;}
+/*.top_index .title3{ padding-top:4px; margin-left:-4px; margin-right:-4px;}*/
+
+
+.switchtab1{ height:22px; padding:0;}
+.switchtab1 li{ float:left; background:url(http://www.hecha.cn/themes/hechaV2.5/images/tablibg.gif) repeat-x left bottom; padding-bottom:5px; height:17px; width:51px; }
+.switchtab1 li span{float:right; display:block; background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabbg_unsel.gif) repeat-x left center; width:48px; height:17px; text-align:center; color:white; line-height:17px;}
+.switchtab1 li.sel,.switchtab1 li.sel_long{  height:22px; padding-bottom:0;}
+.switchtab1 li.sel span{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabselbg.gif) no-repeat right bottom; height:22px;}
+.switchtab1 li.sel_long span{background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabselbgl.gif) no-repeat right bottom; height:22px; width:55px;}
+.hotlist{ padding-top:8px; clear:left;}
+.hotlist p{ line-height:20px;}
+.hotcont{border:1px solid #B6D8E4; border-top:none; zoom:1; padding-bottom:5px; height:667px; overflow:hidden; width:288px;}
+.authen{ text-align:center; margin-top:15px}
+.authen img{ margin-right:8px;}
+.authen div img{ margin-right:25px; margin-top:12px;}
+.hotpricebar{ margin-top:8px; font-family:"宋体";}
+.gift_left{ width:203px; height:253px;}
+.gift_left img{width:203px; height:253px;}
+/*版尾*/
+#footer{ margin:20px auto; width:981px; margin-bottom:5px; clear:both; text-align:left;}
+#footer .fo_links{ border:1px solid #AED1E4; background:#fff url(http://www.hecha.cn/themes/hechaV2.5/images/foot_bg.gif) repeat-x; min-height:150px;_height:150px;}
+.fo_1,.fo_2,.fo_3,.fo_4,.fo_5{ float:left;  width:186px;  background:url(http://www.hecha.cn/themes/hechaV2.5/images/foot_fg_n.gif) no-repeat right 10px; height:148px; }
+.fo_1{ width:208px;}
+.fo_5{ background:none;}
+.fo_links ul{padding-left:41px; padding-top:58px;background:url(http://www.hecha.cn/themes/hechaV2.5/images/foot_1_n.jpg) no-repeat 41px 28px;}
+.fo_2 ul{ background-image:url(http://www.hecha.cn/themes/hechaV2.5/images/foot_2_n.jpg);}
+.fo_3 ul{ background-image:url(http://www.hecha.cn/themes/hechaV2.5/images/foot_3_n.jpg);}
+.fo_4 ul{ background-image:url(http://www.hecha.cn/themes/hechaV2.5/images/foot_4_n.jpg);}
+.fo_5 ul{ background-image:url(http://www.hecha.cn/themes/hechaV2.5/images/foot_5_n.jpg);}
+#footer .friends{border:1px solid #AED1E4; margin-top:6px; padding:10px 3px 10px 12px;}
+#footer .friends h3{ font-size:12px; color:#212121;}
+#footer .flinks a{ margin-right:5px}
+#footer .hech{ color:#DCDCDC; text-align:center; margin-top:12px; }
+#footer .hech a{ color:#000; padding-left:18px; padding-right:19px; border-right:1px dashed #DDDDDD;}
+#copyright{ color:#010101; margin-top:8px; text-align:center; margin-bottom:18px;}
+#showmusic{ float:right; width:350px; height:64px;} /*播放器样式*/
+.hechaauth{ text-align:center; margin-top:26px;}
+.hechaauth img{ margin-right:15px;}
+.hecha_zz{ text-align:center; margin-top:13px;}
+.hecha_zz img{ margin-right:5px; }
+/*热门评论*/
+.comentul{ margin:18px 8px 10px 8px;}
+.comentul li{ border-bottom:1px dashed #DDDDDD; padding:5px 0;}
+.comentul li a:link,.comentul li a:visited{ text-indent:9px; display:block;}
+.comentul li a:hover{ color:#316ac5;}
+/*页面路径*/
+.pathcone{ margin-left:8px; border-bottom:1px solid #ACD3E4; zoom:1; margin-top:22px;}
+.pathdiv{ font-size:13px; margin-bottom:15px; color:#6E706F;}
+.pathcone .pathdiv{ margin-bottom:5px;}
+.pathcone .pagebar{ padding-bottom:1px;}
+.pathdiv a:link,.pathdiv a:visited{ color:#316ac5;}
+.pathdiv .special{ color:#6E706F;}
+
+.ad_div{ position:absolute; width:485px; padding-bottom:5px; right:5px; top:0; text-align:right; color:#000;}
+.emphisis{ font-size:14px; color:#D50000; font-weight:bold; top:18px; right:0;}
+.con_title{ padding-left:10px;height:34px; border-bottom:1px solid #B3DF86; background:url(http://www.hecha.cn/themes/hechaV2.5/images/con_title2.gif) no-repeat left top; margin-bottom:6px;}
+.cont_titletxt{ font-size:19px;background:url(http://www.hecha.cn/themes/hechaV2.5/images/con_title.gif) no-repeat right top; padding-right:24px; padding-left:14px; color:#fff; font-weight:bold;height:34px; line-height:34px; display:block; float:left; }
+
+.product{ padding:7px; padding-bottom:0; zoom:1; margin-bottom:5px;}
+.pro_left{ float:left; width:351px;}
+.pro_left .fleft{ width:215px; overflow:hidden; height:72px;}
+.pro_left .fright,.pro_left .fleft{margin-top:10px; padding-left:8px; }
+.pro_left .fright{ margin-top:16px;}
+.pro_left .fright p{ line-height:18px;}
+.pro_left .fontbig{ margin-bottom:6px; letter-spacing:2px;}
+.pro_left .fontbig2{margin-right:5px;}
+.pro_left  .font14{ font-weight:bold;}
+.pro_left .pricepre{ color:#000000;}
+.pro_imgbig {width:351px; height:313px; position:relative; overflow:hidden; margin-bottom:2px;}
+.pro_imgbig img{ width:351px; height:313px;}
+.pro_price{ position:absolute; right:12px; bottom:4px; text-align:right; font-size:14px; font-family:"宋体"}
+.price_new2{ color:#FC9802;}
+
+.pro_mid{ float:left; padding: 0 12px;}
+.pro_right{ float:left; width:280px; padding-left:5px;}
+.pro_imgsmall{ border:1px solid #888888; width:119px; height:80px; overflow:hidden;}
+.pro_imgsmall img{width:119px; height:80px;}
+.center{ text-align:center;}
+.pro_mid p.center{ padding-bottom:3px; color:#353535;}
+.pro_info{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/dot.gif) repeat-x left bottom;height:211px; overflow:hidden;}
+.pro_info,.pro_info p{line-height:20px; width:100%;}
+.pro_info strong{float:left;}
+.pro_info span{ float:left; width:234px;}
+.pro_info .shortcut{ margin-bottom:5px; margin-top:2px;}
+.linkimg img{ margin-right:12px; margin-bottom:15px;}
+
+/*产品名称字体*/
+.fontbig,.fontbig2,.fontbig3{ font-weight:bold; font-family:黑体;color:#313131;}
+.fontbig a,.fontbig a:link,.fontbig a:visited{color:#313131;}
+.fontbig{  font-size:19px;}
+.fontbig2{  font-size:23px; color:#316ac5;}
+.fontbig3{ font-size:17px; line-height:30px;}
+.font14{ font-size:14px;}
+.font12{ font-size:12px;}
+.font15{ font-size:15px;}
+.fontgray{ color:#6E706F;}
+.fontred,.fontred1,.fontred2{ color:#FF6D00;}
+.bluetxt,.bluetxt1{ color:#316ac5;}
+.gtxt{ color:#36A308;}
+.lightgtxt{ color:#59B02D;}
+.gbigtxt{font-weight:bold; color:#36A308; font-size:14px;}
+.fontblue,a.fontblue,a.fontblue:link,a.fontblue:visited{ color:#316ac5; clear:left;}
+.lilist{ margin-left:7px; margin-bottom:3px;}
+.lilist li a{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/li_square2.gif) no-repeat left center; padding-left:8px; color:#444;}
+.lilist li a:hover{color:#316ac5;}
+.pro_hotdiv{ float:left; background:#FFFFF5; padding:6px; zoom:1; width:186px;}
+
+.buy_btn,.zx_btn{ border:none;cursor:pointer;}
+.buy_btn{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/buypro.gif) no-repeat; height:28px; width:80px; }
+.zx_btn{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/zixun.gif) no-repeat;height:29px; width:81px;}
+.product .zx_btn{ margin-bottom:10px;}
+
+.pagerbar{text-align:right; color:#666; height:30px}
+.selecttype{border:none;width:106px; height:20px; line-height:20px; border:1px solid #7E9DB9; margin-right:15px;}
+.pro_imgnormal{ border:1px solid #8F8F91; width:134px; height:166px; margin-bottom:3px; overflow:hidden;}
+.pro_imgnormal img{width:134px; height:166px; }
+.pro_item{ float:left; width:181px; padding:0 43px 22px 43px;}
+.pro_item.fourcolum{ width:185px; padding:0 20px 22px 20px;}
+.linedot{background:url(http://www.hecha.cn/themes/hechaV2.5/images/dot2.gif) repeat-x center; clear:both; height:5px; margin-bottom:30px; margin-right:45px;}
+.pro_item *{ line-height:20px;}
+.pro_item .pro_imgnormal{ clear:left;}
+
+.brandbanner{ width:981px; height:103px; overflow:hidden;}
+.brandbanner img{width:981px; height:103px;}
+.brand_head{ height:156px; background:#943B33; margin-top:4px; color:#FFFFFF;}
+.brand_head h2{ font-size:13px; line-height:22px;}
+.brand_head .fleft{width:310px; border-right:2px solid #fff; height:144px; padding-top:10px; padding-left:12px;}
+.brand_head .fright{ height:156px; line-height:156px; vertical-align:middle;display: table-cell; width:640px; padding-left:15px;}
+.brand_head .fright img{ vertical-align:middle;_margin-top: expression((156-this.height)/2); margin:0 3px; }
+.slidediv{ margin-top:10px; margin-bottom:5px;}
+
+.dotul li a{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/li_square3.gif) no-repeat 5px 6px; padding-left:15px;}
+.dotul li span{ font-size:12px;}
+.giftslist{ margin:10px 7px 27px 7px;}
+.giftslist li{ margin-top:9px; padding-bottom:9px; border-bottom:1px dashed #DDDDDD;}
+.giftslist li.last,.giftsul li.last{ border-bottom:none;}
+.newimgdiv{ margin-top:16px; margin-bottom:10px; text-align:center;}
+.newimgdiv img{ width:108px; height:108px;}
+.newinfodiv{ margin-left:5px; letter-spacing:2px; margin-right:8px; margin-bottom:25px; line-height:22px;}
+.historyul{ margin:20px 20px 5px 15px;}
+.historyul li{ margin-bottom:20px;}
+.historyul div.center{ margin-bottom:5px;}
+
+.prodetail{ margin-top:55px;}
+.prodetail li{ float:left;}
+.prodetail li.li_1{ width:250px; padding-right:17px;}
+.prodetail li.li_2{ width:340px; }
+.prodetail li.li_3{ float:right; width:192px;}
+.prodetail li.li_1 .image{ width:249px; height:327px; overflow:hidden;}
+.prodetail li.li_1 .image img{width:249px; height:327px;}
+.prodetail li.li_2 h1{ border-bottom:1px dashed #CDCDCD; width:248px;letter-spacing:3px; color:#050505; padding-top:5px; font-size:20px; line-height:30px;}
+.biggerbutn{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/bigerbtn.gif) no-repeat; height:21px; line-height:21px; width:81px; padding-left:18px; display:block; margin:5px auto;}
+.pricecone{margin-top:10px; margin-bottom:10px; }
+.pricecone *{ line-height:26px;}
+.status{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/cart.gif) no-repeat; padding-left:33px; margin-bottom:12px;}
+
+.buyerbtn,.favbtn{ width:123px; height:43px; background-repeat:no-repeat; cursor:pointer; border:none; background:url(http://www.hecha.cn/themes/hechaV2.5/images/buyerbtn.gif);}
+.favbtn{  background-image:url(http://www.hecha.cn/themes/hechaV2.5/images/fav.gif); margin-left:5px;}
+.btnbar_pro{ margin-top:33px; margin-left:22px; margin-bottom:17px; }
+.onlinsv{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/qq.gif) no-repeat; padding-top:10px; padding-bottom:10px; padding-left:46px; line-height:30px;}
+.hotphone{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/telbg.gif) no-repeat; line-height:30px;  padding-top:6px; padding-bottom:15px; padding-right:15px; padding-left:18px; margin-left:10px; margin-top:4px;}
+
+.rectitle{border:1px solid #BEE499; background: url(http://www.hecha.cn/themes/hechaV2.5/images/titbg.gif) repeat-x; height:24px; line-height:24px; padding-left:18px; width:171px;}
+.reccon{width:179px; margin-top:6px; padding:5px;}
+.reccon h3{ color:#41A004; margin-bottom:12px;}
+.recdiv{ padding-bottom:18px; padding-left:5px; zoom:1;}
+.recimg{ float:left; margin-right:8px; width:72px; height:64px;}
+.recdiv .recbody{ float:right; width:91px;}
+.linkcone{border-top:1px dashed #999; margin:0 10px; text-align:right; padding:15px 0;}
+.moreintro_arr,a.moreintro_arr:link,a.moreintro_arr:visited{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/arrright.gif) no-repeat left center; padding-left:12px; color:#316ac5;}
+.grayarr{ background-image:url(http://www.hecha.cn/themes/hechaV2.5/images/arr2.gif); font-weight:bold;}
+
+.prolinks{ padding-bottom:10px; padding-top:6px; border-bottom:1px dashed #9A9A9A; margin-right:47px; zoom:1;}
+.prolinks img{width:54px; height:68px; float:left; margin-right:3px;}
+
+.detail_head{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/protitbg.gif) no-repeat; height:30px; line-height:34px; padding-left:25px; color:#111111; margin-top:30px; margin-bottom:15px;}
+.detail_con{ padding:8px;zoom:1;}
+.detail_con p{ letter-spacing:1px; line-height:24px;}
+.conwidth{ width:758px;}
+.argsul li{float:left; width:49%; line-height:25px; }
+.detail_con .pro_info{ width:430px; float:left; background:none; height:auto;}
+.imgconbd{ border:1px solid #838383; width:141px; height:95px; margin-left:10px; overflow:hidden;}
+.imgconbd img{ width:141px; height:95px;}
+.pzul{ float:right;width:310px; }
+.pzul li{ float:left; width:49.5%;}
+.pzul .center{ margin-bottom:5px;}
+.indent{ text-indent:2em;}
+
+
+.floatul li{ float:left;}
+
+.detail_con .rzul{float:left;}
+.detail_con .rzul li{ float:left;width:141px; padding:0 4px;}
+.detail_con .rzul li .imgs{ width:141px; height:141px; border:1px solid #878787}
+.detail_con .rzul li .imgs img{ width:141px; height:141px;}
+.detail_con .rzul p{ padding:3px 5px; line-height:18px;}
+.txtul{padding-top:15px;zoom:1;}
+.txtul li{ float:left; width:180px; line-height:24px;}
+.txtul li a:link,.txtul li a:visited{ color:#316ac5; background: url(http://www.hecha.cn/themes/hechaV2.5/images/li_square4.gif) no-repeat left center; padding-left:10px;}
+.bigfont1{ font-size:20px; font-weight:bold; margin-bottom:10px;}
+.buyerdiv{ height:43px;}
+
+.yellow_1{color:#316ac5;}
+.yellow_2{ color:#316ac5;}
+.fontgreen{ color:#04A524;}
+.underline{ text-decoration:underline;}
+
+.bdtop{ border-top:1px dashed #999999; padding-top:10px; margin-bottom:12px;}
+.bdtop .dotul a:link,.bdtop .dotul a:visited{color:#000000;}
+.bdtop .dotul a:hover{color:#316ac5;}
+.bdtop h3{ margin-bottom:8px;}
+
+.pdem{ padding-left:12px;}
+
+.perimg{ float:left; width:80px; }
+.perimg img{height:48px; width:48px; border:1px solid #B8B8B8;}
+.commentli{padding-bottom:30px;zoom:1;}
+.comentdiv{ float:left;}
+.comentdiv .fontgray{ line-height:22px;}
+
+.anbg{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/an.gif) no-repeat left top; padding-top:8px; padding-bottom:3px; padding-left:22px;}
+.coment_txt{ padding:10px 0; }
+.hh2{ margin-top:20px;color:#316ac5; margin-bottom:10px;}
+.fgdiv{ border-bottom:1px dashed #999; padding-bottom:16px; margin-bottom:12px;}
+.tit_thou{ background: url(http://www.hecha.cn/themes/hechaV2.5/images/tbg.gif) no-repeat; height:37px; padding-top:6px; padding-left:15px; position:relative; margin-top:30px;}
+.tit_thou .moreintro{ position:absolute; right:5px; top:5px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/gotop.gif) no-repeat right; padding-right:18px;
+font-weight:normal; font-size:12px; }
+
+.subtitl{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/eho.gif) no-repeat; padding-left:22px; margin-bottom:15px; margin-left:15px;}
+
+.questiondiv{ width:894px; border:1px solid #EAEAEA; background-color:#FAFAFA; padding:5px 27px; padding-top:5px; margin-top:35px; margin-bottom:20px;}
+.questiondiv .q_head{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/dot3.gif) repeat-x bottom; }
+.questiondiv .floatul li{ width:49.5%; margin-top:15px;}
+.questiondiv .floatul p{ padding-right:50px;}
+.commonblock{background:url(http://www.hecha.cn/themes/hechaV2.5/images/xin.gif) #f5fff1 no-repeat 10px 10px; border:1px solid #abdc97; padding:10px 10px 10px 70px; margin:10px 0}
+.stars img{ border:none; padding:0; margin-left:-1px!important; margin-right:-3px;_margin-left:-3px;}
+*+html .stars img{margin-left:-3px;}
+.colorout{ width:60px; height:13px; background:#EEEECC; margin-right:3px;}
+.colorin{ background:#FFCC66;height:13px;}
+.scores li *{ float:left;}
+/*品牌*/
+.brand_left{ width:283px; text-align:center; height:832px; overflow:hidden; padding-top:13px; float:left;}
+.brand_right{ width:687px; float:right;overflow:hidden;height:845px; background-color:#FFFCF5;}
+#wrapper .tablong1{ margin-top:5px; margin-left:0;}
+
+.brand_left img{width:255px; height:122px; border:1px solid #918D8A; margin:0 auto; margin-bottom:15px; display:block;}
+.bannerdiv{ text-align:center; height:136px; margin-top:5px; overflow:hidden;}
+.bannerdiv .bimng{ width:679px; height:136px;}
+.brand_right a.linka{ font-size:14px; color:#316ac5; font-weight:bold; text-decoration:underline; font-family:"宋体"; float:right; margin-top:3px; margin-right:6px;}
+.brandbox{ margin:30px 16px 0 21px; color:#5B5403;}
+.brandtit{ color:#AF951C;font-family:"宋体"; margin-bottom:10px;}
+.brandp{ text-indent:2em;  line-height:24px; font-size:14px; }
+.dot8bg{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/dot8.gif) repeat-x bottom; padding-bottom:12px; margin-bottom:15px;}
+.aptitudes{ margin-top:12px; height:118px; margin-bottom:22px; }
+.aptitudes li,.honors li{ float:left; width:162px; text-align:center;}
+.aptitudes img{ width:124px; height:90px; border:1px solid #B3B6AF;}
+.honors{ margin-top:15px;}
+.honors li{ height:115px;}
+.honors img{ width:116px; height:83px;}
+/*新品牌页面样式*/
+.brandcon{ border:1px solid #AED1E4; width:959px; padding:8px 0 20px 20px;}
+a.banimg{ border:1px solid #8C8C8C; float:left; width:219px; height:104px; margin-right:12px; margin-top:12px; padding:2px;}
+a.banimg:hover{border:3px solid #FF6D00; padding:0;}
+a.banimg img{width:219px; height:104px;border:none;}
+.btip{ text-align:right;margin-right:17px; margin-top:8px;}
+.brand_left1{ float:left; width:199px;}
+.brand_right1{ float:left; width:778px;}
+.b_colum{ width:164px; border:1px solid #D5E9F0; background-color:#E9F5DF; padding:7px 8px; margin-bottom:12px;}
+.b_columin{ background-color:#F4FAF0;}
+.ctitle3{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tea_order.gif) no-repeat 1px -165px; padding:9px 0 4px 16px; border-bottom:1px solid #BABCB7; color:#505050; margin:0 6px;}
+.coban{ display:block; margin:22px auto;}
+.company{ text-indent:2em; line-height:24px; padding:0x 5px 25px 10px;}
+.b_zz{ padding:25px 0;}
+.b_zz li{ text-align:center; margin-bottom:8px;}
+.b_zz img{ width:129px; height:90px;}
+.b_zz p{ margin:0 12px;}
+.ctitle4{background:url(http://www.hecha.cn/themes/hechaV2.5/images/tea_order.gif) no-repeat 3px -172px; padding-left:16px; color:#149401; margin-top:12px; float:left}
+.b_lists{ border:1px solid #D5E9F0; padding-left:35px; width:741px; padding-top:28px;}
+.branitem{ margin-left:45px; padding-right:0px; overflow:hidden; width:180px; float:left; display:inline; padding-bottom:40px;}
+.b_lists .linedot{ margin-bottom:40px;}
+
+#pfooter{ margin-bottom:10px;}
+#pfooter a{
+	font-family:宋体;
+	font-size:12px;
+	color:#0041d1;
+	border-right:1px dashed #DCDCDC;
+}
+
+.searchul{ margin-left:13px; line-height:25px; margin-top:10px;}
+.pricein{ width:36px; border:1px solid #7E9EB7; height:14px; margin-bottom:2px;}
+.ul_shi{ margin:12px 5px 15px 13px; line-height:20px;}
+.ul_shi li a{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/li_shi.gif) no-repeat left center; padding-left:12px;line-height:14px;}
+.skey_bar{  border-bottom:1px solid #61A20A; padding-bottom:8px; padding-top:6px;}
+.skey_bar strong{ margin:0 5px;font-weight:bold; color:#61A20A; font-size:14px; }
+
+/*帮助中心*/
+.helpleft{
+	width:220px;
+	padding-left:2px;
+	float:left;
+}
+.helpright{
+	width:716px;
+	float:right;
+}
+.searchbtn1{ background: url(http://www.hecha.cn/themes/hechaV2.5/images/seachbig.gif) no-repeat left center; padding-left:14px; color:#7C7C7C; cursor:pointer;}
+.helpleft .h_search{ margin-top:18px; margin-bottom:22px; padding-left:14px;}
+.helpleft .h_search input{ border:1px solid #7E9DB9; height:14px; width:128px; }
+.h_hotques{ margin-left:12px; margin-top:10px; margin-bottom:10px;}
+.h_hotques li{background:url(http://www.hecha.cn/themes/hechaV2.5/images/li_square5.gif) no-repeat left center; padding-left:8px; height:24px; line-height:24px;}
+.helpleft a:link,.helpleft a:visited,.h_items a:link,.h_items a:visited{ color:#7C7C7C;}
+.helpleft a:hover,.h_items a:hover{ color:#316ac5;}
+.h_more{ text-align:right; margin-right:26px; margin-bottom:14px;}
+.contactbox{ margin-left:12px; margin-top:15px; margin-bottom:15px;}
+.contactbox *{ line-height:24px;}
+.contactbox a.emailus:link ,.contactbox a.emailus:visited{ color:#316ac5; text-decoration:underline;}
+
+h3.h_title{ color:#3D3D3D; padding-bottom:6px; border-bottom:3px solid #CECECE; margin-right:25px; margin-bottom:22px;}
+h1.h_title1{ font-size:17px; margin-bottom:25px;}
+.h_items{ margin-bottom:22px;color:#7C7C7C; margin-right:20px; text-indent:-2px;}
+.h_items a{ line-height:24px;text-align:left;padding-right:2px; padding-left:2px;}
+.h_itemtit{ display:block; line-height:24px;}
+.helpcon{ width:716px; overflow:hidden; line-height:25px;}
+.helptree{margin:14px 5px 25px 12px;  }
+.helptree li{ height:30px; line-height:30px; font-size:14px;}
+.helptree  span{ cursor:pointer;}
+.helptree li a{ color:#000000;}
+.helptree li a.selnode{color:#316ac5;}
+.helptree .tree1{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tree_1.gif) no-repeat left center; padding-left:16px;}
+.helptree .tree2{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tree_2.gif) no-repeat left center; padding-left:16px; font-weight:bold;}
+.helptree .tree3{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tree_3.gif) no-repeat left center; padding-left:32px;}
+.helptree .tree4{background:url(http://www.hecha.cn/themes/hechaV2.5/images/tree_4.gif) no-repeat left center; padding-left:16px;}
+
+
+/*文章详细*/
+.art_path{ background-color:#ECFDDB; padding-left:10px; height:30px; line-height:30px;}
+.art_path a:link,.art_path a:visited{ color:#000000}
+.art_path a:hover{ text-decoration:underline; color:#000000;}
+.art_title{ font-weight:bold; padding-top:10px; line-height:35px; font-size:18px; text-align:center;}
+.art_subtit{ text-align:center; background:#ECFDDB; height:30px; line-height:30px;}
+.art_body{ line-height:25px; padding:20px 25px;}
+.art_lists{ padding-top:10px;}
+.art_lists table{ margin:0 auto 10px auto ;}
+.art_lists td{ padding:3px;}
+.art_lists .art_page{ padding:3px 12px; text-align:right; background-color:#ECFDDB; }
+.tjdiv{ margin-top:15px;}
+.tjdiv li{ width:24.5%; float:left;}
+.tjdiv li .tjimg{ width:90px; height:115px; overflow:hidden;}
+.tjdiv li .tjimg img{width:90px; height:115px;}
+.tjdiv .con{ width:95px; padding-left:3px;}
+.tjdiv h3{ margin-bottom:10px;}
+
+/*新闻*/
+.newsbanner{ width:981px; height:112px; overflow:hidden; margin-bottom:5px; display:none;}
+.newsbanner img{width:981px; height:112px;}
+.pathdiv.new{ padding-left:5px;}
+.newleft{ width:666px; float:left;}
+.newright{ padding-left:7px; width:308px; float:left; border-top:1px solid #B1D7E4;}
+.newsbox{ background:#FCFFF8;}
+.news_caption{ color:#316ac5; font-size:22px;  text-align:center; padding-top:15px; padding-left:14px; font-weight:bold;}
+.news_subcap{ text-align:center; padding-top:10px; margin-bottom:32px; font-size:14px; font-family:宋体;}
+.news_subcap strong{ color:#316ac5; font-weight:normal; margin-right:30px;}
+.news_txtimg{ text-align:center; margin-bottom:30px;}
+.news_p{ padding-left:21px; padding-right:24px; line-height:23px; width:619px; overflow:hidden;}
+.news_p *{font-size:14px; line-height:180%;}
+.newspath{margin-bottom:2px;}
+.newspath1{ margin-bottom:7px;}
+
+.n_pagebar{ margin-top:27px; height:25px; margin-left:35%;}
+.n_pagebar a{ float:left;text-align:center; margin-right:2px; height:23px; line-height:23px;}
+.pprev,.pnext{width:53px;}
+a.pprev,a.pprev:link,a.pprev:visited{border:1px solid #DEDEDE; color:#999;}
+a.pnext,a.pnext:link,a.pnext:visited{border:1px solid #B4D9E9; color:#316ac5;}
+a.pnum,a.pnum:link,a.pnum:visited{ border:1px solid #B2D8E3; color:#316ac5; width:22px;}
+.pnum.sel{ background-color:#B1D7E4;}
+.tocoment{ text-align:right; margin-top:38px; margin-bottom:24px;}
+.tocoment *{ cursor:pointer; text-decoration:underline;}
+.tocoment a{ text-decoration:underline; padding-right:22px;}
+.tocoment a:link,.tocoment a:visited{text-decoration:underline;} /*ie6*/
+.linknews{ text-align:center; color:#316ac5; margin-bottom:13px;}
+.linknews a:link,.linknews a:visited{ color:#316ac5;}
+.linknews .spaeing{ margin-right:29px;}
+.searchbtn2{ background: url(http://www.hecha.cn/themes/hechaV2.5/images/searchbtn.gif) no-repeat; width:70px; height:23px; border:none; text-indent:-9999px; cursor:pointer;}
+.news_formsear{ border:1px solid #B9DBE7; height:45px; line-height:45px; text-align:right; padding-left:20px; position:relative; padding-right:17px;}
+.news_formsear .stxt{ border:1px solid #B8DAE6; height:16px; width:130px; position:relative; top:-2px;}
+.news_formsear .lfomr{ position:absolute;top:11px; left:21px; display:block;}
+.pagelink{ margin-left:25px;}
+.pagelink a{ margin-left:-3px; margin-right:-3px;}
+.news_title2{ border:1px solid #BDDDE8; height:39px; line-height:39px; margin-top:8px; margin-bottom:8px; padding-left:17px; font-size:14px; font-weight:bold;}
+.news_title2 strong{color:#316ac5;}
+.news_llists{ padding:10px 13px; border:1px solid #B2D8E3;}
+.news_llists a{ font-size:14px; line-height:24px;}
+.ad_cone{ width:308px; height:105px; overflow:hidden; margin-top:7px; margin-bottom:8px;}
+.ad_cone img{ width:308px; height:105px;}
+.nbox{ border:1px solid #B0D4E2; border-bottom:none; padding:1px; padding-bottom:7px;}
+.nboxtit{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/titbg1.gif) repeat-x; height:22px; line-height:22px; padding-left:9px; font-size:14px; font-weight:bold;}
+.gdotul{ margin-left:9px; margin-top:10px;}
+.gdotul a{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/li_square6.gif) no-repeat left center; line-height:24px;  padding-left:8px;}
+.gdotul a:link,.gdotul a:visited{color:#316ac5;}
+.zxlist li{ width:145px; float:left;}
+.zxlist{zoom:1; }
+.zxlist a.li_img,.zxlist a.li_img1{ background:none; padding-left:0;}
+.zxlist a.li_img img{ border:none; height:164px; width:137px;}
+.zxlist a.li_img1{ float:left; height:86px; width:137px; padding-bottom:8px;}
+.zxlist a.li_img1 img{ border:none; height:86px; width:137px; }
+.zxlist .spac{ margin-left:6px;}
+a.aright{ float:right; color:#666px;}
+a.aright:link,a.aright:visited{color:#666; background:none;}
+.nbox .hotlist{ padding-top:9px;}
+.nbox .hotlist .img2{ padding-left:10px; padding-top:5px; height:100px; width:100px;overflow:hidden;}
+.nbox .hotlist .con{ width:180px;}
+.nbox.lbox{border-bottom:1px solid #B0D4E2; padding-bottom:16px; overflow:hidden; width:304px;}
+.hottlist{margin-top:14px; margin-bottom:8px;}
+/*新闻三列*/
+.news_lil{ width:364px; float:left; margin-right:8px;}
+.news_lim{ width:345px; float:left; }
+.news_lir{ width:256px; float:right; margin-left:8px;}
+.news_lil2{ width:318px; float:left; margin-right:11px;}
+.news_lim2{ width:369px; float:left;}
+.news_lir2{ width:273px; float:right; margin-left:10px;}
+
+.part_a{ height:363px;}
+.newsflash{height:219px; border:1px solid #ACD1E1;  margin-bottom:4px; overflow:hidden;}
+.newsflash img{width:362px; height:219px;}
+.boxmz{ border:1px solid #ACD1E1; height:265px; overflow:hidden;}
+.boxmz .nboxtit{ padding-left:13px; margin:1px; color:#020204;}
+.boxmz .nboxtit a{float:right; margin-right:13px; display:inline; font-weight:normal; font-size:12px;}
+.boxbody{ padding:7px 6px;}
+.mzimg{ width:125px; height:160px; margin-right:13px;_margin-right:10px;}
+.mzimg img{width:125px; height:160px;}
+.mzintro h3{ margin-top:6px; margin-bottom:16px; height:1;}
+.mzintro p{ text-indent:2em; line-height:24px;}
+.boxmz .gdotul{ margin-top:4px;}
+.news_lim .boxmz{ height:490px; overflow:hidden; margin-bottom:17px;}
+.hotnew,.hotnew a:link,.hotnew a:visited{ text-align:center; font-size:16px; font-weight:bold; color:#316ac5; padding-top:18px; padding-bottom:8px;}
+#wrapper .hotlinks{ text-align:center; line-height:24px;}
+#wrapper .hotlinks a{ margin-right:5px;}
+.news_lim .dotul{ margin-left:9px; margin-right:6px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/dot4.gif) repeat-x top; padding-top:11px; margin-top:6px; line-height:24px; font-size:14px; margin-bottom:3px;}
+.zxhot{ height:224px; overflow:hidden; border-bottom:none;}
+.zhzx{ height:265px;}
+.zhzx .gdotul{ margin-top:0px;}
+.zhzx h3{ padding-left:13px; margin-top:5px;}
+.news_lir .gdotul{ margin-left:11px;}
+.news_lir .nboxtit{ padding-left:19px;}
+.zs_ad{ height:93px; width:242px;margin-top:5px; padding-left:6px; overflow:hidden;}
+.zs_ad img{ height:93px; width:242px; overflow:hidden;}
+#news_listss .left{ width:484px; float:left; height:670px; border:1px solid #ACD3E2; margin-bottom:15px}
+#news_listss .right{ width:485px; float:right; height:670px; border:1px solid #ACD3E2; margin-bottom:15px;}
+#news_listss .nboxtit{ padding-left:14px; margin:1px; color:#020204;}
+.lists{ margin:8px 8px 20px 12px;;}
+.lists li{ border-bottom:1px dashed #CCCCCC; height:25px; line-height:25px; padding-right:15px;}
+.lists li a{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/li_square3.gif) no-repeat 3px 5px; padding-left:13px; font-size:13px;}
+.lists li span{ float:right; font-family: "Times New Roman", Times, serif; }
+
+.listpage{ text-align:center; color:#525252;}
+.listpage span{ cursor:pointer;}
+.listpage a,.listpage_1 a{ margin:0 3px;}
+.listpage a:link,.listpage a:visited{color:#525252;}
+.listpage a:hover{color:#2359B1;}
+
+.listpage_1{ color:#010101; text-align:center;}
+.listpage_1 a:link,.listpage_1 a:visited{color:#010101;}
+.listpage_1 a:hover{color:#2359B1;}
+
+.nad{ height:344px; width:318px; overflow:hidden;}
+.nad img{ height:344px; width:318px;}
+.news_lim2 .hotnew{ padding-bottom:2px; padding-top:14px;}
+.news_lim2 .hotlinks{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/dot4.gif) repeat-x bottom; padding-bottom:6px; margin-left:8px; margin-right:10px;}
+.news_lim2 .boxmz{ height:339px; padding-top:3px;}
+.news_lim2 .dotul{ margin-top:7px; line-height:24px; margin-left:15px; margin-right:9px;font-size:14px;}
+.news_lir2 .rad{ width:273px; height:105px; overflow:hidden; margin-bottom:12px;}
+.news_lir2 .rad img{ width:273px; height:105px;}
+.boxfind{ border:1px solid #ACD1E1; height:225px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/cup.gif) no-repeat right bottom; overflow:hidden;}
+.boxfind .cons{ padding:16px 19px 5px 14px; }
+.boxfind .rdsearch{background:url(http://www.hecha.cn/themes/hechaV2.5/images/dot4.gif) repeat-x left bottom ;}
+.boxfind .input_01{ border:1px solid #ccc; height:16px; line-height:16px;}
+.boxfind .button_01{ border:1px solid #ccc;  line-height:16px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/newsinte.gif) no-repeat 0 -137px; width:83px; height:17px; margin-top:11px; margin-bottom:9px; cursor:pointer;}
+
+.title_01{ height:25px; margin-top:13px;}
+.title_01 .title{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/newsinte.gif) no-repeat 78px -158px; padding:0 52px 0 0; font-size:14px; float:left; font-family:"宋体";}
+.title_02 .title,.title_03 .title{background:url(http://www.hecha.cn/themes/hechaV2.5/images/newsinte.gif) no-repeat 66px -182px; padding:0 52px 0 0; font-size:14px; float:left; font-family:"宋体";}
+.title_02{  float:left; margin-left:12px;  margin-top:28px; display:inline;}
+.title_03{ position:absolute; left:12px; top:41px;}
+
+.title_01 .o{color:#FF8A00;}
+.hotkeys,.hotkeys a,.hotkeys a:link,.hotkeys a:visited{ color:#2E2E2E; line-height:22px;}
+.hotkeys a{margin:0 2px;}
+.hotkeys{ margin-left:-2px;}
+.ntit_05 h2,.ntit_05 .l{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/newsinte.gif) no-repeat 0 -54px; width:270px; height:46px; float:left;}
+.ntit_05 .l{background-position: 0 -250px;}
+.ntit_05 .m{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/titbg2.gif) repeat-x ; width:441px; height:46px;  float:left}
+.ntit_05 .r{background:url(http://www.hecha.cn/themes/hechaV2.5/images/newsinte.gif) no-repeat 100% 0;width:270px; height:46px; float:right; position:relative;}
+.ntit_05 .r .more{float:right; padding:6px 20px 0 0; font-size:12px;}
+.ntit_05 h2 img{margin:10px 0 0 26px;}
+
+.partB{clear:both; zoom:1; margin-bottom:18px;}
+.p_left{ float:left; width:437px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/partlbg.gif) repeat-y left; height:298px;}
+.p_mid{ width:268px; float:left;height:298px; }
+.p_right{ float:left; width:276px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/partrbg.gif) repeat-y right; height:298px; overflow:hidden;}
+.p_left1{float:left; width:705px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/partlbg.gif) repeat-y left; height:238px; }
+.p_right1{ height:238px;}
+
+.p_bom{ background: url(http://www.hecha.cn/themes/hechaV2.5/images/partbombg.gif) no-repeat top left; height:9px; font-size:7px;  clear:both;}
+.p_left .p_pic{ margin-left:24px; float:left; width:146px; margin-right:9px; display:inline;}
+.p_left .p_pic .pic{ border:1px solid #AFAFAF; width:144px; height:127px; text-align:center; padding:5px 0; overflow:hidden; margin-top:9px;}
+.p_left .pic .picimg{ width:134px; height:110px; display:block; overflow:hidden;margin:0 auto 2px auto;}
+.p_left .pic .picimg img{ width:134px; height:110px;}
+.p_left .p_pic  .pic_1{border:1px solid #AFAFAF; width:144px; height:218px; text-align:center; padding:6px 0;overflow:hidden; margin-top:36px;}
+.p_left .p_pic img{ margin-bottom:2px;}
+.p_cont{ width:249px; float:left; padding-top:7px;}
+.partB .dotul{ font-size:14px; line-height:24px;}
+.p_cont .line{ border-top:1px dashed #D2D2D2; padding-top:11px; margin-top:12px; }
+.p_mid .line{ border-top:1px dashed #D2D2D2; height:1px; line-height:1px; font-size:0; margin:12px 10px 11px 6px;}
+.p_mid.nbd{ border-left:none; border-right:none;}
+.p_mid .dotul{ margin-left:5px; margin-right:10px;}
+.p_mid .dotul a{ margin-left:11px;}
+.p_right .pt,.p_mid .pt{ clear:both; margin:14px 10px 0 20px;}
+.p_right h3{ margin-left:20px; margin-top:7px;}
+.p_right .pt img{ float:left; padding-right:8px;}
+.p_right .pt .p{ line-height:24px; color:#5E5E5E; text-indent:2em;}
+.p_right .dotul{ margin-left:13px; margin-top:15px; margin-right:10px;}
+
+.p_mcont{ margin-top:7px;border-left:1px dashed #CCCCCC;height:285px; border-right:1px dashed #ccc;}
+.p_mcont1{ margin-top:15px; margin-bottom:10px; height:266px;border-left:1px dashed #CCCCCC;}
+.p_mcont2{border-left:1px dashed #CCCCCC;height:281px; margin-top:5px;}
+.p_rcont{border-left:1px dashed #CCCCCC;height:285px;}
+.p_rcont1{border-left:1px dashed #CCCCCC;height:275px; margin-top:10px; padding-top:10px;}
+.p_right .p_rcont1 .dotul{ margin-top:0px;}
+.contspace{ margin-top:8px;}
+.vidios li{ float:left; width:119px; margin:0 9px 9px 9px; display:inline}
+.vidios li p{ text-align:center;}
+
+.p_mid .ptd{ margin-left:6px; color:#7C7C7C; font-size:12px; margin-bottom:16px;}
+.p_mid .ptd img{ float:left; width:96px; height:98px;}
+.p_mid .ptd .font14{ color:#000;font-family:"宋体"; margin-bottom:8px;}
+.p_mid .ptd p{ line-height:22px; margin-left:104px; margin-right:5px;}
+
+.buylists{zoom:1; margin-left:24px; width:671px; overflow:hidden; margin-top:10px;}
+.buylists li{ float:left; margin-right:21px;}
+.picbox{ border:1px solid #B4B4B4; padding:3px; padding-right:4px;}
+.picbox img{ height:189px; width:137px;}
+.pictxt{ text-align:center; line-height:28px;}
+.p_right1 .p_rcont{ margin-top:10px; height:200px;padding-top:24px;}
+.p_right.p_right1 .dotul{margin-top:0px;}
+
+.px_up,.px_down{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/arrowbg.gif) no-repeat 29px 3px; border:1px solid #7DBEEB;padding-top:3px;padding-right:15px; padding-bottom:1px; padding-left:3px; cursor:pointer; }
+.px_down{ background-position:28px -16px;}
+.px_r{ border-left:none;}
+
+
+.rec_lists{ margin:12px 5px 20px 5px;}
+.rec_lists li{ border-bottom:1px solid #CCCCCC; height:27px; line-height:27px;}
+.rec_lists li a{ color:#424242;}
+.nums{ color:#316ac5; font-weight:bold; font-family:Arial, Helvetica, sans-serif;}
+.rec_lists li.f_li1{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/firstli.gif) no-repeat 6px top; height:auto; text-align:center; padding-top:17px;}
+.rec_lists li.last{ border-bottom:none;}
+.recimgdiv{ height:108px; width:108px; margin:0 auto; overflow:hidden;}
+.recimgdiv img{height:108px; width:108px;}
+.p_ffoot{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/wlgs.jpg) no-repeat 22px top; padding-top:47px;}
+.p_ffoot .hr{  border:none; height:1px; font-size:0; line-height:0; border-bottom:1px solid #DEDEDE; padding-top:4px; margin-bottom:5px}
+
+/*.loginfos{  text-align:center; color:#414141; margin-top:-5px; margin-bottom:5px;}*/
+.loginfos{ position:absolute; top:3px;text-align:center; color:#414141;right:235px;}
+.loginfos a,.loginfos a:link,.loginfos a:visited{ color:#414141;}
+
+.catapage{padding-bottom:10px; border-bottom:1px solid #61A20A; margin-bottom:45px;}
+.a1{display:block;position:absolute; background:url(http://www.hecha.cn/themes/hechaV2.5/images/aa_2.gif) no-repeat; float:left; left:406px; top:31px; width:60px; height:13px;}
+.a2{display:block;position:absolute; background:url(http://www.hecha.cn/themes/hechaV2.5/images/aa_1.gif) no-repeat; right:60px;  top:10px; width:190px; height:48px;}
+
+.mbtn,.mbtn_1,.mbtn_3,.mbtn_4,.mbtn_5,.mbtn_6,.m_title1,.m_title2,.m_tips1,.mbtn_7,.mbtn_8{background:url(http://www.hecha.cn/themes/hechaV2.5/images/m_intebg.gif) no-repeat;}
+.mbtn{ background-position:0 -178px; height:26px; width:85px; color:#656565; line-height:26px; cursor:pointer; border:none;}
+input.mbtn_1,.mbtn_3,.mbtn_4,.mbtn_6,.mbtn_7,.mbtn_8{ background-position:0 -70px; height:32px; width:90px; color:#fff;  line-height:32px; cursor:pointer;border:none; font-size:14px; font-weight:bold;}
+.mbtn_2{ border-right:1px solid #898989; border-bottom:1px solid #898989; background-color:#E8E8E8; height:23px; width:57px;}
+.mbtn_3{background-position:-105px -71px; }
+.mbtn_4{ background-position:0 -397px; width:147px;}
+.mbtn_5{ background-position:0 -465px; width:67px; height:24px; line-height:24px; border:none; cursor:pointer; color:#fff; }
+.mbtn_6{ background-position:-49px -397px; width:98px}
+.mbtn_7{ background-position:-42px -397px; width:105px;}
+.mbtn_8{ background-position:0 -518px; width:105px;}
+
+.con_left a.price_new:link,.con_left a.price_new:visited{ color:#316ac5; font-weight:normal;}
+
+.hecha_btn,.hecha_btn1,.testbtn,.greenbtn2{cursor:pointer; background:url(http://www.hecha.cn/themes/hechaV2.5/images/commentbtn.gif) no-repeat;  height:23px; line-height:23px; border:none;}
+.hecha_btn{width:87px;}
+.hecha_btn1,.greenbtn2{ background-position:-96px top; width:61px}
+.comentdiv .fontgray .hecha_btn1{ margin-right:5px;}
+
+.messagep{font-size: 14px; font-weight:bold; color: #316ac5; width:500px}
+.msginfo{color:#FF0000; cursor:hand; text-decoration:underline}
+.linksa,a.linksa,a.linksa:link{color: #316ac5; text-decoration:underline;}
+
+.tabcatas{ border-bottom:1px solid #B1DE83; height:17px;  padding-top:5px; margin-bottom:15px; }
+.pagecata{ position:absolute; right:0; top:35px;}
+.tabcatas li{ float:left; width:60px; margin-right:3px;text-align:center;}
+.tabcatas li a{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabbg_unsel.gif) repeat-x bottom; display:block;height:17px; line-height:17px;color:#fff!important; }
+.tabcatas li a:hover,.tabcatas li.selcata a{background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabbg_sel.gif) repeat-x bottom; color:#fff;}
+.subctit{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/gdot.gif) no-repeat left center; padding-left:14px; color:#38A308; font-size:14px; font-weight:bold; line-height:25px;}
+.gbder{ border-bottom:1px solid #AFDE80; zoom:1; margin-top:40px; height:24px;padding-left:7px; margin-bottom:55px;}
+
+/*分页*/
+.page_li{ color:#666; float:right;}
+.page_li a,.page_li .page-break{ float:left; border:1px solid #B4B8B2; padding:0 5px; white-space:nowrap; text-align:center; height:18px; vertical-align:middle; margin-right:3px; color:#316AC5;}
+.page_li .page-break{ border:none;}
+.page_li a:link,.page_li a:visited{color:#316AC5;} /*ie6*/
+.page_li a span{ display:none;}
+.page_li a.psel{ border:1px solid #fff; color:#FF6D00; font-weight:bold;}
+.page_li a.psel:link,.page_li a.psel:visited{color:#FF6D00;}
+.topage{ border:1px solid #B4B8B2; width:30px; height:18px; margin:0 3px; vertical-align:top; text-align:center}
+.p_prev{ width:20px; padding:0!important; background:url(http://www.hecha.cn/themes/hechaV2.5/images/arrows.gif) no-repeat 7px 4px;}
+a.p_next{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/arrows.gif) no-repeat 45px -16px; padding-right:16px; float:left;}
+.page-skip{ padding:0 3px; float:left;}
+.page-o{ float:left; margin-right:10px; float:right; padding-top:2px;}
+
+.proimg_1{width:48px; height:60px;float:left;  border:1px solid #D2D2D2; margin-right:4px; margin-top:5px;}
+.proimg_1 img{ width:48px; height:60px;}
+.giftsul{ margin:8px 5px;}
+.giftsul li{ padding:5px 0; font-family:"宋体"; border-bottom:1px dashed #CDCDCD;zoom:1}
+.giftsul .lihover{ padding:5px 3px; padding-left:0; background-color:#F9F9F9 ; }
+.giftinfo{ font-family:"宋体"; float:left; width:90px;}
+.giftinfo *{font-family:"宋体";}
+
+/*首页礼品区*/
+.index_gf_box{padding:7px 0 7px 7px; background:#F4F6F3; border:1px solid #BFD2D9; margin-bottom:11px;height:259px;}
+.index_gf_bimg{ _margin-right:-3px;}
+.index_gf_ul{ float:right; border-bottom:1px solid #DCDCDC; width:110px; border-left:1px solid #DCDCDC; }
+.index_gf_ul li{ height:42px; border-top:1px solid #DCDCDC; text-align:center;}
+.index_gf_ul  a{ line-height:42px;height:42px; color:#444444; text-align:center; display:block;}
+.index_gf_ul  a:link,.index_gf_ul li a:visited{ background:#F8F8F8;}
+.index_gf_ul  a:hover,.index_gf_ul li.act a{ font-weight:bold; background-color:#fff!important;color:#444444}
+
+.mocard{ float:right; display:inline; cursor:pointer; margin-right:36px; margin-top:28px;}
+/*分类*/
+.catalogs,.catalogs1{ height:1019px; overflow:hidden; margin-bottom:10px;}
+.catalogs1{height:1226px; margin-bottom:13px;}
+.ctitle{margin:1px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/column_titbg.gif);font-size:14px; font-weight:normal; padding-left:12px; line-height:22px; color:#fff; padding-right:5px;}
+.ctitle a{color:#fff; font-size:12px; float:right; margin-top:1px;}
+.catalog h2{ color:#36A308;font-size:14px; height:20px; line-height:20px; margin:26px 0 5px 10px;}
+.catalist{ margin-left:10px; width:138px; overflow:hidden; font-family:"宋体"}
+.catalist li{ list-style:none; float:left; border-bottom:1px dashed #DDDDDD;  width:64px; height:27px; line-height:27px; overflow:hidden;}
+.catalist li a{ font-size:12px; line-height:14px; float:left; diplay:block;margin-top:8px; }
+.catalist li.cspace{ width:74px;}
+.catalist .line{width:100%;}
+.catalist li.cspace a{ border-left:1px solid #000;  padding-left:15px;}
+.catalist li.cspace a:hover{ color:#316ac5;}
+.catalist li a:hover{ color:#316ac5;}
+.floatcata{ position:absolute; z-index:1000;  padding:10px;  left:0; top:0; line-height:24px;}
+.float_cleft{width:61px; height:23px; border:solid 1px #a1a1a1;border-right:none; background:#fafafa; float:left; color:#000; font-weight:bold; text-align:center; line-height:23px}
+.float_crout{float:left; width:198px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/flxf_bg.gif) no-repeat 3px bottom; padding:0 4px 3px 0;}
+.float_crin{width: 180px; border: solid 1px #a1a1a1; border-left:none; float:left; padding:0 10px 10px 8px; background:url(http://www.hecha.cn/themes/hechaV2.5/images/flxf_bg1.gif) left top no-repeat #fafafa; line-height:23px;}
+.float_crin *{ line-height:23px; }
+.switchtab{ margin:5px 0 5px 4px;overflow:hidden; height:17px;}
+.switchtab a,.switchtab span{ float:left; display:block; background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabbg_unsel.gif) repeat-x left top; margin-right:2px; width:45px; height:17px; text-align:center; color:#fff;}
+.switchtab a:hover,.switchtab a.sel,.switchtab span.sel{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabbg_sel.gif) repeat-x;}
+.switchtab a.sel:link,.switchtab a.sel:visited,.switchtab a:link,.switchtab a:visited{ color:#fff;}
+.brandlogos,.brandlogos1{margin-left:5px; width:150px;}
+.brandlogos li{ height:30px; line-height:30px;}
+.brandlogos li a{ line-height:28px; margin-top:0;}
+.brandlogos img{ margin-right:3px; width:81px; height:21px; margin-top:4px;}
+.brandlogos1 li{ height:40px; line-height:40px;}
+.brandlogos1 li a{ line-height:38px; margin-top:0;}
+.brandlogos1 img{ margin-right:3px; width:81px; height:21px; margin-top:9px;}
+.morebrand{border-bottom:none; height:20px; line-height:20px; width:100%; height:auto; line-height:18px; padding-top:3px;}
+
+.tablong a,.tablong1 a{ width:64px!important; margin-right:4px;}
+.tablong1{ height:23px; font-size:14px; margin-bottom:0px;}
+.tablong1 a{ height:23px; line-height:23px;}
+.tablong1 a{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabbg_unsel1.gif) repeat-x left top; }
+.tablong1 a:hover,.tablong1 a.sel{ background:url(http://www.hecha.cn/themes/hechaV2.5/images/tabbg_sel1.gif) repeat-x;}
+
+/*商品详细页修改样式*/
+.tea_bimg{height:327px; width:249px; border:1px solid #838383}
+.tea_left{float: left; width:270px;}
+.tea_right{ float:left; width:525px;}
+.tea_right h1{ font-size:14px; color:#333333; font-weight:bold; margin-bottom:8px;}
+.baseinfo{ color:#6E706F; line-height:24px;}
+.tea_imtbar{ height:90px; color:#6E706F; line-height:24px; padding-top:25px; border-top:1px solid #B5B5B5;  border-bottom:1px solid #B5B5B5; margin-top:18px; }
+.tea_imtbar span.pricered{ margin:0 10px;}
+.tea_imtbar li{ float:left;}
+.tea_imtbar .tl{ width:277px; padding-top:10px;}
+.tea_imtbar .tm{  width:119px;}
+.tea_imtbar .tm img{ cursor:pointer;}
+.tea_imtbar .tr{  width:128px; padding-top:18px;}
+.tea_right .prolinks{ padding-top:27px; border-bottom:none;}
+.tea_topdv{  height:373px;}

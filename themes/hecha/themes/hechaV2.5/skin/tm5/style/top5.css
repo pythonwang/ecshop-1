@@ -1,0 +1,20 @@
+@charset "utf-8";/* 
+Name: top5.css
+For : http://www.hecha.cn/
+Date: 20110319  Sincol
+*/
+
+/* top */
+.top5,.top5 .rlink li.tel{background-image: url(../images/top5/top_bg1.gif);}
+.top5,.top5 .rlink li,.rlink li.tel{line-height: 34px;height: 34px; overflow:hidden;}
+.top5{background-repeat: repeat-x;background-position: 0px -34px;}
+.top5 small{color:#669a35;padding:0 6px;font-family: \5B8B\4F53;}
+.top5 .rlink {float: right;color: #9e9e9e;font-size: 14px;}
+.top5 .rlink li {float: right;font-family: \5FAE\8F6F\96C5\9ED1, \9ED1\4F53;padding-left: 10px;}
+.top5 .rlink li.tel{font-size: 24px;color: #99cb38;font-family: Arial;background-repeat: no-repeat;background-position: 0px 0px;padding-left: 25px;}
+.top5 li.user {color: #000;overflow: hidden;font-size: 12px;font-family: \5B8B\4F53;padding-right: 20px;}
+.top5 li.user a {font-weight: bold;color: #8ec303;}
+.top5 li.user a:hover {color: #8ec303;text-decoration: underline;}
+
+/* top5x */
+.top5x{background-image: url(../images/top5/top_bg1.gif);background-position: 0px -34px;line-height: 34px;height: 34px;}.top5x .xbody {width: 950px;margin-right: auto;margin-left: auto;}.top5x .lg {float: left;width: 80px;}.top5x .tl {background-image: url(../images/top5/top_bg2.gif);float: left;width: 160px;padding-left: 8px;height: 34px;}.top5x .tl big{font-size: 16px;color: #229900;padding-left: 5px;}.top5x .tl big, .top5x .tl span {float: left;padding-top: 2px;line-height: 32px;}.top5x .mu {float: right;height: 34px;}.top5x small{color:#cbced1;padding:0 6px;font-family: \5B8B\4F53;}.top5x table {border-collapse:collapse; margin:-1px -10px; 0 0; width:0; height:0;}.top5x dl{float: right;height: 34px;}.top5x dt{height: 34px;position: relative;z-index: 999998;line-height: 34px;cursor: pointer;_width:55px;}.top5x dt a {display: block;height: 34px;text-decoration: none;background-repeat: no-repeat;background-position: right -34px;width: 52px;background-image: url(../images/top5/top_bg2.gif);margin-right: 1px;margin-left: 1px;padding-left: 8px;line-height: 34px;padding-right: 5px;}.top5x dt a:hover {white-space: nowrap;position: relative;z-index: 99;background-position: right -68px;background-color: #fff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;border-right-color: #cccccc;border-left-color: #cccccc;margin-right: 0px;margin-left: 0px;}.top5x dt:hover > a {text-decoration: none;position: relative;z-index: 99;display: block;background-color: #ffffff;border-right-width: 1px;border-left-width: 1px;border-right-style: solid;border-left-style: solid;border-right-color: #cccccc;border-left-color: #cccccc;margin-right: 0px;margin-left: 0px;color: #229900;background-position: right -68px;}.top5x dt ul {left: 0px;width: 65px;z-index: 995;overflow:!important auto;zoom:1;top: -9999px;border-right-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;border-right-color: #cccccc;border-bottom-color: #cccccc;border-left-color: #cccccc;position: absolute;padding-bottom: 5px;background-color: #fff;}.top5x dt :hover ul,.top5x dt:hover ul {top: 34px;display: block;background-color: #fff;z-index: 999;left: 0px;_left:-1px;}.top5x dt ul li {background-color: #ffffff;zoom:1;float: none;padding-left: 30px;line-height: 23px;clear: both;background-image: url(../images/sico/ico.gif);background-repeat: no-repeat;background-position: 8px 2px;}.top5x dt ul li a {background-image: none;margin: 0px;padding: 0px;color: #000;display: block;width: auto;line-height: 23px;height: 23px;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;}.top5x dt ul li a:hover {color: #229900;text-decoration: underline;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;}.top5x dd{display: none;}

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+
+<link href="themes/hechaV2.5/skin/green/style/list1.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+
+<link href="themes/hecha/themes/hechaV2.5/skin/green/style/list1.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6x.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="themes/hechaV2.5/skin/tm6/js/jquery.libs-1.2.6pack.js"></script>
+<script type=text/javascript src="themes/hechaV2.5/skin/green/js/common.js"></script>
+<script type="text/javascript">
+    window.onload=function(){
+        var url = document.location.href;
+        var ul = document.getElementById('crz_id').childNodes;
+        var len = ul.length;
+        if(url.indexOf('-0')>=0||url.indexOf('brand_index.html')>=0)
+        {
+            ul[0].setAttribute("class","this");
+        }
+        else if(url.indexOf('brand_index-1')>=0)
+        {
+            ul[1].setAttribute("class","this");
+        }
+        else if(url.indexOf('brand_index-2')>=0)
+        {
+            ul[2].setAttribute("class","this");
+        }
+        else if(url.indexOf('brand_index-3')>=0)
+        {
+            ul[3].setAttribute("class","this");
+        }
+    }
+</script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header2.lbi" --><!-- #EndLibraryItem -->
+
+
+ <div class="cbody">
+		<div class="pplist">
+			<div class="title_f3">
+			<ul id="crz_id" class="crz">
+				<li><a href="brand.php">所有品牌</a></li>
+			</ul>
+		</div>
+			<div class="ppbox" id="ppbox">
+				<ol class="this">
+                
+     <!-- {foreach from=$brand_list name="brand_list_foreach" item=brand_data} -->
+     <!-- {if $brand_data.brand_logo} -->
+<li><a href="search.php?brand={$brand_data.brand_id}" class="banimg" title="{$brand_data.brand_name}"><img src="data/brandlogo/{$brand_data.brand_logo}" width="196" height="94" border="0"/></a></li>
+     <!-- {/if} -->
+	 <!-- {/foreach} -->	
+                                                                        	
+					
+					<div class="clear"></div>
+				</ol>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		<div class="line8"></div>
+		<p align="right">以上排列不分先后</p>
+		<div class="line10"></div>
+	</div>
+	
+<!-- #BeginLibraryItem "/library/page_footer2.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

@@ -1,0 +1,67 @@
+1.首页
+	（1）.分类下的商品   // 模板管理 - 设置模板里面
+
+			<!-- TemplateBeginEditable name="分类下的商品" -->      //可编辑区域，可编辑语法
+				<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->  //包含库文件 ，公共模板
+				
+				<!-- #EndLibraryItem -->
+			<!-- TemplateEndEditable -->
+			
+	（2）.广告位的添加
+			
+			1.要先添加广告位
+			
+				从后台 广告管理->广告位置->添加广告位
+			
+			2.添加完成之后，添加广告		
+				
+				广告管理->广告列表->添加广告  ，  （就会出现刚才添加的广告位）
+			
+			3.设置广告如何在首页显示
+			
+				模版管理->设置模版  在这里需要把广告位置添加一下，这样就可以在首页显示了。
+			
+			
+			eg:<!-- TemplateBeginEditable name="首页_名茶导购_右侧广告" -->
+				<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+					{insert name='ads' id=$ads_id num=$ads_num}
+				<!-- #EndLibraryItem -->
+			<!-- TemplateEndEditable -->
+
+	（3）.添加库项目
+
+			1.首先在themes/default/library/下建立一个库项目文件，比如test.lbi
+			
+			2.修改languages/zh_cn/admin/template.php文件，添加一行（库项目的描述）
+
+				eg:$_LANG['template_libs']['test'] = '测试库项目';
+
+			3.修改admin/includes/lib_template.php，找到指定模板文件名添加库项目名字，比如添加到首页：  
+
+				//之后就可以在设置模板中的首页模板找到测试库项目这个库文件（测试库项目）
+
+				eg:'index' => array(
+						'/library/ur_here.lbi' => 0,
+						'/library/search_form.lbi' => 0,
+						'/library/member.lbi' => 0,
+						...
+						  '/library/test.lbi' => 0
+						),
+
+
+			4.修改themes/default/libs.xml，找到指定模板名添加库项目名字，  //有无均可
+				
+				eg:<file name="index.dwt">
+				<region name="左边区域">
+				<lib>cart</lib>
+				<lib>category_tree</lib>
+				...
+				<lib>test</lib>
+
+
+2.标签模板常见
+		
+		（1）. <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->   //主要是用来包含lbi文件
+		（2）. {insert_scripts files='common.js'}	//主要是用来插入js文件
+		（3）. {insert name='名称' type=参数 id=参数}		//过调用includes/lib_insert.php文件中的模板显示函数。格式为insert_名称()
+

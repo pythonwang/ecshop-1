@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<title>{$page_title}</title>
+
+<link href="themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="about/about.css" rel="stylesheet" type="text/css" />
+
+<link href="themes/hecha/themes/hechaV2.5/skin/tm6/style/home6.css" rel="stylesheet" type="text/css" />
+<link href="themes/hecha/about/about.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="themes/hechaV2.5/skin/tm6/js/jquery.libs-1.2.6pack.js"></script>
+<script type="text/javascript" src="themes/hechaV2.5/skin/tm6/js/effect_commonv3.js"></script>
+<script type="text/javascript" src="js/index_url.js"></script>
+</head>
+
+<body>
+<!-- #BeginLibraryItem "/library/page_header2.lbi" --><!-- #EndLibraryItem -->
+
+<div class="ebody">
+<?php
+$GLOBALS['smarty']->assign('ad',get_adv('网店信息页_banner'));
+?>
+<!-- {if $ad.content} -->
+	<div class="ashow">{$ad.content}</div>
+	<div class="line10"></div>
+<!--{/if}-->
+    
+	<div class="ab_left">
+		<div class="title_a1"><img src="themes/hecha/about/title_a1.gif" width="200" height="37" align="absmiddle" /></div>
+		<dl>
+			<dt class="this"><p class="i1"><a href="#">网店信息</a></p></dt>
+			<dd>
+<?php
+$GLOBALS['smarty']->assign('get_class_articles', get_class_articles(2,50));
+?> 
+<!--{foreach from=$get_class_articles item=article name=article}-->  
+				<p><a href="{$article.url}" title="{$article.title}">{$article.title|truncate:12}</a></p>
+<!--{/foreach}-->                
+
+			</dd>
+		</dl>
+
+        
+        <!--<dl>
+			<dt><p class="i1">和茶团队</p></dt>
+			<dd class="none">
+				<p>团队荣誉</p>
+				<p>团队风采</p>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><p class="i1"><a href="hc_supplier.html">原产地供货商</a></p></dt>
+			<dd class="none">
+				<p><a href="hc_supplier1.html">安溪铁观音集团</a></p>
+				<p><a href="hc_supplier2.html">福建元泰茶业有限公司</a></p>
+				<p><a href="hc_supplier3.html">福建省南方佳木茶业有限公司</a></p>
+				<p><a href="hc_supplier4.html">福州春伦茶业有限公司</a></p>
+				<p><a href="hc_supplier24.html">杭州山地茶业有限公司</a></p>
+				<p><a href="hc_supplier16.html">黄山毛峰茶业集团有限公司</a></p>
+				<p><a href="hc_supplier18.html">安徽省六安瓜片茶业股份有限公司</a></p>
+				<p><a href="hc_supplier21.html">云南一品堂茶业有限公司</a></p>
+				<p><a href="hc_supplier22.html">节节清(福建)茶业有限公司</a></p>
+				<p><a href="hc_supplier23.html">黄山谢裕大茶业股份有限公司</a></p>
+				<p><a href="hc_supplier25.html">安徽省祁门红茶发展有限公司</a></p>
+				<p><a href="hc_supplier26.html">黄山天健农业科技有限公司</a></p>
+				<p><a href="hc_supplier66.html">天湖茶业有限公司</a></p>
+				<p><a href="hc_supplier77.html">云南龙润茶业集团</a></p>
+				<p><a href="hc_supplier88.html">浙江省开化县顶峰茶业有限公司</a></p>
+				<p><a href="hc_supplier9.html">福鼎市张元记茶业有限公司</a></p>
+				<p><a href="hc_supplier10.html">福鼎市芳茗茶业有限公司</a></p>
+				<p><a href="hc_supplier11.html">福建省建瓯市御壶春茶业有限公司</a></p>
+				<p><a href="hc_supplier12.html">福建仙芝楼生物科技有限公司</a></p>
+				<p><a href="hc_supplier13.html">柘荣县天禾茶业有限公司</a></p>
+				<p><a href="hc_supplier14.html">福州茗嘉茶业有限公司</a></p>
+				<p><a href="hc_supplier15.html">福建省德化兴立达陶瓷有限公司</a></p>
+				<p><a href="hc_supplier17.html">安徽天方茶业(集团)有限公司</a></p>
+				<p><a href="hc_supplier19.html">福建德化新耀华瓷业有限公司</a></p>
+				<p><a href="hc_supplier20.html">湖南省君山银针茶业有限公司</a></p>
+			</dd>
+		</dl>
+		<dl>
+			<dt><p class="i1"><a href="hc_experts.html">产品质量评审委员会</a></p></dt>
+			<dd class="none">
+				<p><a href="hc_experts.html">评审委员会成员介绍</a></p>
+				<p><a href="hc_experts_stu.html">产品质量评审委员会功能</a></p>
+				<p><a href="hc_experts_lc.html">产品质量评审流程</a></p>
+			</dd>
+		</dl>
+		<dl>
+			<dt><p class="i2"><a href="hc_tuihuo.html">7天无理由退换货流程</a></p></dt>
+		</dl>
+		<dl>
+			<dt><p class="i2"><a href="hc-join.html">加盟和茶</a></p></dt>
+		</dl>
+		<dl>
+			<dt><p class="i2"><a href="hc_addr.html">联系我们</a></p></dt>
+		</dl>-->
+        
+	</div>
+	<div class="ab_right">
+		<div class="box">
+		<div class="about">
+				<div class="tx1">
+					<p class="cn"><img src="images/logo_about.gif" width="235" height="49" align="absmiddle" /></p>
+					<p style="text-align:right; padding:0 100px;">——让天下人都能喝上好茶！</p>
+				<div class="line15"></div>
+				<div class="atx" id="a2"><strong>{$article.title|escape:html}</strong></div>
+					{$article.content}	
+				</div>
+				
+				</div>
+	</div>
+	</div>
+	<div class="clear line15"></div>
+</div>
+
+<!-- #BeginLibraryItem "/library/page_footer2.lbi" --><!-- #EndLibraryItem -->
+
+</body>
+</html>

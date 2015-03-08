@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import url("public.css");
+@import url("top5.css");
+@import url("header.css");
+body {}
+.top5 p.left{line-height: 34px;}
+.header .logo {
+	height: 64px;
+	padding-top: 18px;
+	float: left;
+	width: 360px;
+}
+.header .search {
+	float: left;
+	clear: none;
+	background-image: none;
+	margin-top: 34px;
+	background-color: #fff;
+	padding: 0px;
+}
+
+/* jk.hecha.com */
+#cmbc_top{
+	display:none;
+}

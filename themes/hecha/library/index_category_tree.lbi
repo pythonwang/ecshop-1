@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="homenav">
+	<div class="lnav7">
+
+    <!--{foreach from=$categories item=cat name=cat}-->
+		<dl <!--{if $smarty.foreach.cat.index mod 2 eq 1}-->class="xc1"<!--{/if}-->>
+			<dt><a href="{$cat.url}"><big>{$cat.name|escape:html}</big><!--[if gte IE 7]><!--></a><!--<![endif]-->
+                                <!--[if lte IE 6]><table><tr><td><![endif]-->
+					<ul>
+						<li class="tx"><strong><a href="{$cat.url}">{$cat.name|escape:html}</a></strong><em>&nbsp;</em></li>
+						<li class="txt">
+             <!--{foreach from=$cat.cat_id item=child}-->           
+							<a href="{$child.url}">{$child.name|escape:html}</a>
+             <!--{/foreach}-->
+                    
+							<div class="clear"></div>
+						</li>
+                        <li class="def">
+                        <!--{foreach from=$cat.cat_id item=child name=child}-->
+                          <!--{if $smarty.foreach.child.index < 2}-->
+						<a href="{$child.url}">{$child.name|escape:html}</a> 
+                          <!--{/if}-->
+                        <!--{/foreach}-->
+                        </li>
+					</ul>
+					<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+                </dt>
+			<dd>
+            <!--{foreach from=$cat.cat_id item=child name=child}-->
+             <!--{if $smarty.foreach.child.index < 2}-->
+            <a href="{$child.url}">{$child.name|escape:html}</a>
+             <!--{/if}-->
+            <!--{/foreach}-->
+            </dd>
+		</dl>
+<!--{/foreach}-->
+        
+			<div class="clear"></div>
+  </div></div>

@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="slide">
+<ul class="bd"> 
+<?php
+$GLOBALS['smarty']->assign('get_index_ad', get_index_ad());
+?>
+<!--{foreach from=$get_index_ad item=indexAd name=indexAd}-->
+  <!-- {if $smarty.foreach.indexAd.iteration<=5}-->
+            <li  style="background-color:#ffffff; background-image:url({$indexAd.content2})"><small><a href="{$indexAd.url}" target="_blank"><img class="hd_img" src="{$indexAd.content}" /></a></small></li>
+  <!-- {/if} -->          
+<!--{/foreach}-->
+      
+        </ul>
+<div class="hd"><ul>
+<!--{foreach from=$get_index_ad item=indexAd name=indexAd}-->
+  <!-- {if $smarty.foreach.indexAd.iteration<=5}-->
+<li>{$smarty.foreach.indexAd.iteration}</li>
+  <!-- {/if} -->    
+<!--{/foreach}-->
+</ul><a class="prev">></a></div>
+</div>
+<script type="text/javascript">jQuery(".slide").slide({titCell:".hd li",mainCell:".bd",effect:"fade",delayTime:1000,interTime:5000,autoPlay:true,nextCell:".prev"});</script>
